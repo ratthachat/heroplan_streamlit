@@ -1,0 +1,6 @@
+numpy
+pandas
+plotly
+tqdm
+ipywidgets
+Pillow
