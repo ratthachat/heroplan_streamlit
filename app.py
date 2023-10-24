@@ -91,7 +91,11 @@ def return_costume_list(df0, hero_name):
     if hero_name[-2:] == "C2":
         return ['None', 'CB1', 'CB2']
     elif hero_name[-2:] == " C":
-        return ['None', 'CB1']
+        hero_name2 = hero_name + "2"
+        if hero_name2 in df0.name.values: # if this hero has C2
+            return ['None', 'CB1', 'CB2']
+        else:
+            return ['None', 'CB1']
     else:
          return ['None']
 
