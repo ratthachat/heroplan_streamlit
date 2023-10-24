@@ -86,7 +86,8 @@ def display_heroes_from_df(df):
 #########################################
 ## Load the main file (TODO: caching)=
 st.set_page_config(layout="wide")
-
+st.header(f'HeroPlan Explorer')
+st.write('Powered by Heroplan.io : Thanks E&P community for continually update hero data.')
 
 df = pd.read_csv('heroes_ep.csv')
 class_values = ['None'] + list(df['class'].unique()) 
@@ -109,6 +110,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.header("Standard Filters:")
+    st.write("Tips: filter costume by typing ' C' or 'C2' in the Name box")
     with st.expander("Filter Options"):
         name_option = st.text_input(label="Name:", value="")
         star_option = st.selectbox(label='Star:', options=star_values, index=0)
@@ -172,7 +174,7 @@ if special_text_option != '':
     idx_all.append(filter_by_1col(df, 'effects', special_text_option, exact_flag=False))    
     
 #########################################
-st.title(f'Updated: Oct 23, 2023 -- Total heroes = {len(df)}')
+st.header(f'Updated: Oct 23, 2023 -- Total heroes = {len(df)}')
 
 df2 = df[np.all(idx_all,axis=0)]
 
