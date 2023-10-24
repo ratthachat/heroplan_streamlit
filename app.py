@@ -97,7 +97,14 @@ def return_costume_list(df0, hero_name):
         else:
             return ['None', 'CB1']
     else:
-         return ['None']
+        hero_name1 = hero_name + " C"
+        hero_name2 = hero_name + " C2"
+        if hero_name2 in df0.name.values: # if this hero has C2
+            return ['None', 'CB1', 'CB2']
+        elif hero_name1 in df0.name.values: # if this hero has C2
+            return ['None', 'CB1']
+        else:
+            return ['None']
 
 def get_prefix(lb_choice="None", costume_choice="None"):
     prefix_1 = "Max level"
