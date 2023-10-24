@@ -76,9 +76,9 @@ def display_heroes_from_df(df,display_cols=display_cols):
     for i in range(len(df)):
         url = df['image'].values[i]
         display_image(url)
-        st.write(f"{df['name'].values[i]} - {df['speed'].values[i]} - {df['class'].values[i]}")
+        st.write(f"***{df['name'].values[i]}*** - {df['speed'].values[i]} - {df['class'].values[i]}")
         st.write(f'Attack:{df["attack"].values[i]} -- Defence:{df["defense"].values[i]} -- Health:{df["health"].values[i]}')
-        st.write(df['skill'].values[i])
+        st.write(f"***{df['skill'].values[i]}***" )
         st.write(df['effects'].values[i])
         # for sp in df['effects'].values[i]:
         #     st.write(sp)
@@ -118,7 +118,7 @@ def return_hero_stat(df0, hero_name, lb_choice="None", costume_choice="None"):
     
     display_cols_0 = ['image', 'name', 'color', 'star', 'class', 'speed',]
     display_cols_1 = [] # ['power', 'attack', 'defense', 'health', ] --> to be select base one LB/Costume choice
-    display_cols_2 = ['Aether Power', 'source', 'family', 'types', 'effects']
+    display_cols_2 = ['Aether Power', 'source', 'family', 'types', 'skill', 'effects']
 
     prefix = get_prefix(lb_choice, costume_choice)
 
@@ -247,4 +247,4 @@ else:
     costume_choice = st.selectbox(label='Costume:', options=costume_list, index=0)
 
     df_ret = return_hero_stat(df_extra, name_choice, lb_choice=lb_choice, costume_choice=costume_choice)
-    display_heroes_from_df(df_ret,display_cols=df_ret.columns[:-1]) # display all except special-skill text
+    display_heroes_from_df(df_ret,display_cols=df_ret.columns[:-2]) # display all except special-skill text
