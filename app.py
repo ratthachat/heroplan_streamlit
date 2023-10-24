@@ -189,13 +189,15 @@ if genre == ':rainbow[Heroes Explorer]':
             special_text_option = st.text_input(label="SpecialSkill Text", value="Dispel")
     with col2:
         st.header("Stat Filters")
+        st.write("Tips: put the **minimum** att/def/hp stat you want to filter heroes")
         with st.expander("Stat Options"):   
             defense_option = st.text_input(label="Defense:", value="0")
             attack_option = st.text_input(label="Attack:", value="0")
             health_option = st.text_input(label="Health:", value="0")
     with col3:
-        st.header("Sorted By (or directly click at the column name)")
-        sort_option = st.selectbox(label='Sort by', options=display_cols[1:], index=5) # default is power
+        st.header("Sorted By")
+        st.write("Tips: you can also directly click at the column name to sort")
+        sort_option = st.selectbox(label='', options=display_cols[1:], index=5) # default is power
     
     idx_all = []
 
