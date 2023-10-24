@@ -108,7 +108,7 @@ source_values = ['None'] + list(df['source'].unique())
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.header(Standard Filters:")
+    st.header("Standard Filters:")
     with st.expander("Filter Options"):
         name_option = st.text_input(label="Name:", value="")
         star_option = st.selectbox(label='Star:', options=star_values, index=0)
