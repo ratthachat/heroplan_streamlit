@@ -234,7 +234,11 @@ if genre == ':rainbow[Heroes Explorer]':
 ## Program 2
 else:
     st.header("Analyze Hero LB/CB Stat (without Emblem)")
-    st.write("HeroPlan and DataVault are combined here. Thanks Elioty33 for his DataVault contribution")
+    st.write("HeroPlan and DataVault are combined here. Thanks ***@Elioty33*** for his DataVault contribution")
+    st.write(f"Currently, there are {len(df_extra)} heroes having both data on HeroPlan and DataVault.")
+    st.write(f"We don't have emblem calculator here, you can go heroplan.io to do the job.")
+    st.write(f"***Heuristically*** Choose Sword-path can increase att 100-150, def 50-100, hp ~100 (reverse att-def for shield path)")
+    st.write(f"Choose HP-path can increase att 50-100, def 50-100, hp ~200")
     df_extra = pd.read_csv("heroes_ep_extra.csv")
 
     name_values = sorted(list(df_extra['name'].values))
