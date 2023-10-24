@@ -66,7 +66,7 @@ def display_image(url, scale=0.5):
     image = Image.open(urlopen(url))
     st.image(image.resize(( int(image.width * scale), int(image.height * scale))))
 
-def display_heroes_from_df(df):
+def display_heroes_from_df(df,display_cols=display_cols):
     st.dataframe(df[display_cols],
                  column_config={
                          "image": st.column_config.ImageColumn("Avatar", help="")},
@@ -84,6 +84,59 @@ def display_heroes_from_df(df):
         #     st.write(sp)
 
 #########################################
+## Helper function for LB/CB stat analysis
+def return_costume_list(df0, hero_name):
+    assert hero_name in df0.name.values
+
+    if hero_name[-2:] == "C2":
+        return ['None', 'CB1', 'CB2']
+    elif hero_name[-2:] == " C":
+        return ['None', 'CB1']
+    else:
+         return ['None']
+
+def get_prefix(lb_choice="None", costume_choice="None"):
+    prefix_1 = "Max level"
+
+    if lb_choice != 'None':
+        prefix_1 = "Limit Break"
+    
+    prefix_2 = ""
+    if costume_choice != "None":
+        prefix_2 = f" {costume_choice}" # CB1 or CB2
+
+    prefix_3 = ":"
+    if lb_choice == 'LB1':
+        prefix_3 = " #1:"
+    elif lb_choice == 'LB2':
+        prefix_3 = " #2:"
+
+    return prefix_1 + prefix_2 + prefix_3
+
+def return_hero_stat(df0, hero_name, lb_choice="None", costume_choice="None"):
+    assert hero_name in df0.name.values
+    
+    display_cols_0 = ['image', 'name', 'color', 'star', 'class', 'speed',]
+    display_cols_1 = [] # ['power', 'attack', 'defense', 'health', ] --> to be select base one LB/Costume choice
+    display_cols_2 = ['Aether Power', 'source', 'family', 'types', 'effects']
+
+    prefix = get_prefix(lb_choice, costume_choice)
+
+    display_cols_1.append(f'{prefix} Power')
+    display_cols_1.append(f'{prefix} Attack')
+    display_cols_1.append(f'{prefix} Defense')
+    display_cols_1.append(f'{prefix} Health')
+    
+    display_cols_all = display_cols_0 + display_cols_1 + display_cols_2
+    df_ret = df0[df0.name == hero_name][display_cols_all]
+
+    df_ret = df_ret.rename(columns={f'{prefix} Power':'power',
+                    f'{prefix} Attack':'attack',
+                    f'{prefix} Defense':'defense',
+                    f'{prefix} Health':'health'})
+    return df_ret
+
+#########################################
 ## Load the main file (TODO: caching)=
 st.set_page_config(layout="wide")
 st.header(f'HeroPlan Explorer')
@@ -95,10 +148,6 @@ star_values = ['None'] + list(df['star'].unique())
 color_values = ['None'] + list(df['color'].unique())
 speed_values = ['None'] + list(df['speed'].unique())
 source_values = ['None'] + list(df['source'].unique())
-
-# defense_values = ['None'] + list(df['defense'].unique())
-# attack_values = ['None'] + list(df['attack'].unique())
-# health_values = ['None'] + list(df['health'].unique())
 
 #########################################
 ## Select Main Program
@@ -184,4 +233,18 @@ if genre == ':rainbow[Heroes Explorer]':
 #########################################
 ## Program 2
 else:
-    st.write(" Work in progress")
+    st.header("Analyze Hero LB/CB Stat (without Emblem)")
+    st.write("HeroPlan and DataVault are combined here. Thanks Elioty33 for his DataVault contribution")
+    df_extra = pd.read_csv("heroes_ep_extra.csv")
+
+    name_values = sorted(list(df_extra['name'].values))
+    name_choice = st.selectbox(label='Hero Name:', options=name_values, index=0)
+
+    lb_list = ['None', 'LB1', 'LB2']
+    costume_list = return_costume_list(df_extra, name_choice)
+
+    lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0)
+    costume_choice = st.selectbox(label='Costume:', options=costume_list, index=0)
+
+    df_ret = return_hero_stat(df_extra, name_choice, lb_choice=lb_choice, costume_choice=costume_choice)
+    display_heroes_from_df(df_ret,display_cols=df_ret.columns[:-1]) # display all except special-skill text
