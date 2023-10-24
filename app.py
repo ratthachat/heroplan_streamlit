@@ -12,6 +12,23 @@ from collections import defaultdict
 
 display_cols = ['image','name', 'color', 'star', 'class', 'speed', 'power', 'attack', 'defense', 'health', 'types', 'source', 'family']
 
+def filter_by_1col_num(df, col_name, query, oper_flag="eq"):
+    ok_flag_list = []
+    assert col_name in df.columns, "col_name must be valid"
+
+    for i, val in enumerate(df[col_name]):
+        if oper_flag == 'ge':
+            flag = True if val >= query else False
+        elif oper_flag == 'le':
+            flag = True if val <= query else False
+        else: # default = eq
+            flag = True if val == query else False
+
+        ok_flag_list.append(flag)
+    
+    assert len(ok_flag_list) == len(df)
+    return np.array(ok_flag_list)
+
 def filter_by_1col(df, col_name, query, exact_flag=False):
 
     def check_valid_value(query, string, exact_flag=False):
@@ -78,22 +95,31 @@ color_values = ['None'] + list(df['color'].unique())
 speed_values = ['None'] + list(df['speed'].unique())
 source_values = ['None'] + list(df['source'].unique())
 
+# defense_values = ['None'] + list(df['defense'].unique())
+# attack_values = ['None'] + list(df['attack'].unique())
+# health_values = ['None'] + list(df['health'].unique())
+
 #########################################
 ## Select options
 ## TODO: family, costume
 
-with st.sidebar:
-    st.title('Filter Options')
+# with st.sidebar:
+with st.expander("Filter Options"):
     name_option = st.text_input(label="Name:", value="")
-    # star_option = st.selectbox(label='Speed:', options=star_values, index=5)
+    star_option = st.selectbox(label='Star:', options=star_values, index=0)
     color_option = st.selectbox(label='Color:', options=color_values, index=0)
     speed_option = st.selectbox(label='Speed:', options=speed_values, index=0)
     class_option = st.selectbox(label='Class:', options=class_values, index=0)
     source_option = st.selectbox(label='Origin:', options=source_values, index=0)
+    
+    defense_option = st.text_input(label="Defense:", value="0")
+    attack_option = st.text_input(label="Attack:", value="0")
+    health_option = st.text_input(label="Health:", value="0")
+    
     special_type_option = st.text_input(label="SpecialSkill Category", value="Hit 3")
     special_text_option = st.text_input(label="SpecialSkill Text", value="Dispel")
 
-    st.title('Sorted By')
+    st.title('Sorted By (or directly click at the column name)')
     sort_option = st.selectbox(label='Sort by', options=display_cols[1:], index=5) # default is power
     
 idx_all = []
@@ -101,8 +127,8 @@ idx_all = []
 if name_option != '':
     idx_all.append(filter_by_1col(df, 'name', name_option, exact_flag=False)) 
 
-# if star_option is not None:
-#     idx_all.append(filter_by_1col(df, 'star', star_option, exact_flag=False))    
+if star_option != 'None':
+    idx_all.append(filter_by_1col_num(df, 'star', star_option, oper_flag="eq"))    
 
 if speed_option != 'None':
     idx_all.append(filter_by_1col(df, 'speed', speed_option, exact_flag=True))    
@@ -116,6 +142,18 @@ if class_option != 'None':
 if source_option != 'None':
     idx_all.append(filter_by_1col(df, 'source', source_option, exact_flag=False))    
 
+if defense_option != "0":
+    defense_option = int(defense_option)
+    idx_all.append(filter_by_1col_num(df, 'defense', defense_option, oper_flag="ge"))   
+
+if attack_option != "0":
+    attack_option = int(attack_option)
+    idx_all.append(filter_by_1col_num(df, 'attack', attack_option, oper_flag="ge"))   
+
+if health_option != "0":
+    health_option = int(health_option)
+    idx_all.append(filter_by_1col_num(df, 'health', health_option, oper_flag="ge"))   
+
 
 if special_type_option  != '':
     idx_all.append(filter_by_1col(df, 'types', special_type_option, exact_flag=False))    
@@ -124,6 +162,7 @@ if special_text_option != '':
     idx_all.append(filter_by_1col(df, 'effects', special_text_option, exact_flag=False))    
     
 #########################################
+st.title(f'Updated: Oct 23, 2023 -- Total heroes = {len(df)}')
 
 df2 = df[np.all(idx_all,axis=0)]
 
