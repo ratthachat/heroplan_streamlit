@@ -104,22 +104,32 @@ source_values = ['None'] + list(df['source'].unique())
 ## TODO: family, costume
 
 # with st.sidebar:
-with st.expander("Filter Options"):
-    name_option = st.text_input(label="Name:", value="")
-    star_option = st.selectbox(label='Star:', options=star_values, index=0)
-    color_option = st.selectbox(label='Color:', options=color_values, index=0)
-    speed_option = st.selectbox(label='Speed:', options=speed_values, index=0)
-    class_option = st.selectbox(label='Class:', options=class_values, index=0)
-    source_option = st.selectbox(label='Origin:', options=source_values, index=0)
-    
-    defense_option = st.text_input(label="Defense:", value="0")
-    attack_option = st.text_input(label="Attack:", value="0")
-    health_option = st.text_input(label="Health:", value="0")
-    
-    special_type_option = st.text_input(label="SpecialSkill Category", value="Hit 3")
-    special_text_option = st.text_input(label="SpecialSkill Text", value="Dispel")
+#     st.radio
+col1, col2, col3 = st.columns(3)
 
-    st.title('Sorted By (or directly click at the column name)')
+with col1:
+    st.header(Standard Filters:")
+    with st.expander("Filter Options"):
+        name_option = st.text_input(label="Name:", value="")
+        star_option = st.selectbox(label='Star:', options=star_values, index=0)
+        color_option = st.selectbox(label='Color:', options=color_values, index=0)
+        speed_option = st.selectbox(label='Speed:', options=speed_values, index=0)
+        class_option = st.selectbox(label='Class:', options=class_values, index=0)
+        source_option = st.selectbox(label='Origin:', options=source_values, index=0)
+    
+        special_type_option = st.text_input(label="SpecialSkill Category", value="Hit 3")
+        special_text_option = st.text_input(label="SpecialSkill Text", value="Dispel")
+
+
+with col2:
+    st.header("Stat Filters")
+    with st.expander("Stat Options"):   
+        defense_option = st.text_input(label="Defense:", value="0")
+        attack_option = st.text_input(label="Attack:", value="0")
+        health_option = st.text_input(label="Health:", value="0")
+
+with col3:
+    st.header("Sorted By (or directly click at the column name)")
     sort_option = st.selectbox(label='Sort by', options=display_cols[1:], index=5) # default is power
     
 idx_all = []
