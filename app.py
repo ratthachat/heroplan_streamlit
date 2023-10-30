@@ -66,8 +66,12 @@ def display_image(url, scale=0.5):
     image = Image.open(urlopen(url))
     st.image(image.resize(( int(image.width * scale), int(image.height * scale))))
 
-def display_heroes_from_df(df,display_cols=display_cols):
-    st.dataframe(df[display_cols],
+def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
+    vtob = "is" if len(df)<=1 else "are"
+    st.write(f'There {vtob} {len(df)} heroes in the filtered list')
+
+    if show_df:
+        st.dataframe(df[display_cols],
                  column_config={
                          "image": st.column_config.ImageColumn("Avatar", help="")},
                  use_container_width=True,
@@ -154,11 +158,18 @@ st.header(f'HeroPlan Explorer')
 st.write('Powered by Heroplan.io : Thanks E&P community for continually update hero data.')
 
 df = pd.read_csv('heroes_ep.csv')
+st.write(f'### Updated: Oct 23, 2023 -- Total heroes in HeroPlan database = {len(df)}')
+
+df_extra = pd.read_csv("heroes_ep_extra.csv")
+all_name_extra = sorted(list(df_extra['name'].values))
+
+#########################################
+
 class_values = ['None'] + list(df['class'].unique()) 
 star_values = ['None'] + list(df['star'].unique())
 color_values = ['None'] + list(df['color'].unique())
 speed_values = ['None'] + list(df['speed'].unique())
-source_values = ['None'] + list(df['source'].unique())
+source_values = ['None'] + list(df['source'].unique()) # Contain lot of typo bugs from HeroPlan
 
 #########################################
 ## Select Main Program
@@ -166,7 +177,7 @@ source_values = ['None'] + list(df['source'].unique())
 with st.sidebar:
     genre = st.radio(
     "Choose how to explore heroes",
-    [":rainbow[Heroes Explorer]", "***LB/CB Hero Stat*** :movie_camera:"],
+    [":rainbow[Heroes Explorer]", "Team Simulation","***LB/CB Hero Stat*** :movie_camera:"],
     captions = ["Filter only heroes with certain properties", "Co-powered by Elioty33's DataVault"])
 
 #########################################
@@ -176,7 +187,7 @@ if genre == ':rainbow[Heroes Explorer]':
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Standard Filters:")
-        st.write("Tips: filter costume by typing ' C' or 'C2' in the Name box")
+        st.write("Tips: filter costume by typing ' C' or 'C2' in the Name box.")
         with st.expander("Filter Options"):
             name_option = st.text_input(label="Name:", value="")
             star_option = st.selectbox(label='Star:', options=star_values, index=0)
@@ -191,13 +202,17 @@ if genre == ':rainbow[Heroes Explorer]':
         st.header("Stat Filters")
         st.write("Tips: put the **minimum** att/def/hp stat you want to filter heroes")
         with st.expander("Stat Options"):   
+            power_option = st.text_input(label="Power:", value="0")
             defense_option = st.text_input(label="Defense:", value="0")
             attack_option = st.text_input(label="Attack:", value="0")
             health_option = st.text_input(label="Health:", value="0")
+
+            total_dot_option = st.text_input(label="Total DoT Damage:", value="0")
+            dot_per_turn_option = st.text_input(label="DoT Damage Per Turn:", value="0")
     with col3:
         st.header("Sorted By")
         st.write("Tips: you can also directly click at the column name to sort")
-        sort_option = st.selectbox(label='', options=display_cols[1:], index=5) # default is power
+        sort_option = st.selectbox(label='Sort by', options=display_cols[1:], index=5) # default is power
     
     idx_all = []
 
@@ -219,6 +234,10 @@ if genre == ':rainbow[Heroes Explorer]':
     if source_option != 'None':
         idx_all.append(filter_by_1col(df, 'source', source_option, exact_flag=False))    
 
+    if power_option != "0":
+        power_option = int(power_option)
+        idx_all.append(filter_by_1col_num(df, 'power', power_option, oper_flag="ge"))
+    
     if defense_option != "0":
         defense_option = int(defense_option)
         idx_all.append(filter_by_1col_num(df, 'defense', defense_option, oper_flag="ge"))   
@@ -229,7 +248,15 @@ if genre == ':rainbow[Heroes Explorer]':
 
     if health_option != "0":
         health_option = int(health_option)
-        idx_all.append(filter_by_1col_num(df, 'health', health_option, oper_flag="ge"))   
+        idx_all.append(filter_by_1col_num(df, 'health', health_option, oper_flag="ge"))
+
+    if total_dot_option != "0":
+        total_dot_option = int(total_dot_option)
+        idx_all.append(filter_by_1col_num(df, 'total_dot_damage', total_dot_option, oper_flag="ge"))
+
+    if dot_per_turn_option != "0":
+        dot_per_turn_option = int(dot_per_turn_option)
+        idx_all.append(filter_by_1col_num(df, 'dot_damage_per_turn', dot_per_turn_option, oper_flag="ge"))
 
     if special_type_option  != '':
         idx_all.append(filter_by_1col(df, 'types', special_type_option, exact_flag=False))    
@@ -238,15 +265,62 @@ if genre == ':rainbow[Heroes Explorer]':
         idx_all.append(filter_by_1col(df, 'effects', special_text_option, exact_flag=False))    
     
     #########################################
-    st.header(f'Updated: Oct 23, 2023 -- Total heroes = {len(df)}')
 
     df2 = df[np.all(idx_all,axis=0)]
 
     display_heroes_from_df(df2.sort_values(sort_option, ascending=False))
 #########################################
-## Program 2
+## Program 2 "Team Simulation"
+elif genre == "Team Simulation":
+    
+    def choose_hero(key="Hero1"):
+        name_choice = st.selectbox(label='Hero Name:', options=all_name_extra, index=0, key=key+"_name")
+        costume_list = return_costume_list(df_extra, name_choice)
+        costume_choice = st.selectbox(label='Costume:', options=costume_list, index=0, key=key+"_costume")
+        lb_list = ['None', 'LB1', 'LB2']
+        lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0, key=key+"_lb")
+    
+        df_ret = return_hero_stat(df_extra, name_choice, lb_choice=lb_choice, costume_choice=costume_choice)
+        return df_ret
+
+    def write_short_description(df_hero):
+        url = df_hero['image'].values[0]
+        display_image(url)
+        st.write(f'Power: {df_hero["power"].values[0]}')
+        st.write(f'Attack: {df_hero["attack"].values[0]}')
+        st.write(f'Defense: {df_hero["defense"].values[0]}')
+        st.write(f'Health: {df_hero["health"].values[0]}')
+        st.write(f'Speed: {df_hero["speed"].values[0]}')
+        st.write(f'Class: {df_hero["class"].values[0]}')
+        st.write(f'Types: {df_hero["types"].values[0]}')
+
+    nheroes_choice_list = [2,3,4,5]
+    nheroes_choice = st.selectbox(label='Number of Heroes:', options=nheroes_choice_list, index=len(nheroes_choice_list)-1)
+    
+    col_list = st.columns(nheroes_choice+1)
+    df_hero_list = []
+    total_power = 0
+    for ii in range(nheroes_choice):
+        with col_list[ii]:
+            df_hero_list.append(choose_hero(key=f"Hero{ii+1}")) # 'key' in st.selectbox to differentiate widgets
+            write_short_description(df_hero_list[-1])
+        total_power += df_hero_list[ii]['power'].values[0]
+
+    with col_list[-1]:
+        txt = st.text_area("Write your note about team synergy", max_chars=1000, height = 480)
+
+    df_hero_all5 = pd.concat(df_hero_list)
+        
+    st.write(f'======================')
+    st.write(f'### Total power = {total_power}')
+    st.write(f'======================')
+    
+    display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=False) # display all except special-skill text
+    
+#########################################
+## Program 3 "Individual Stat"
 else:
-    df_extra = pd.read_csv("heroes_ep_extra.csv")
+    
     
     st.header("Analyze Hero LB/CB Stat (without Emblem)")
     st.write("HeroPlan and DataVault are combined here. Thanks ***@Elioty33*** for his DataVault contribution")
@@ -259,11 +333,11 @@ else:
     name_values = sorted(list(df_extra['name'].values))
     name_choice = st.selectbox(label='Hero Name:', options=name_values, index=0)
 
-    lb_list = ['None', 'LB1', 'LB2']
     costume_list = return_costume_list(df_extra, name_choice)
-
-    lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0)
     costume_choice = st.selectbox(label='Costume:', options=costume_list, index=0)
+    
+    lb_list = ['None', 'LB1', 'LB2']
+    lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0)
 
     df_ret = return_hero_stat(df_extra, name_choice, lb_choice=lb_choice, costume_choice=costume_choice)
     display_heroes_from_df(df_ret,display_cols=df_ret.columns[:-2]) # display all except special-skill text
