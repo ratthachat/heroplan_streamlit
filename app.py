@@ -170,7 +170,7 @@ st.header(f'HeroPlan Explorer')
 st.write('Powered by Heroplan.io : Thanks E&P community for continually update hero data.')
 
 df = pd.read_csv('heroes_ep.csv')
-st.write(f'### Updated: Oct 23, 2023 -- Total heroes in HeroPlan database = {len(df)}')
+st.write(f'### Updated: Nov 10, 2023 -- Total heroes in HeroPlan database = {len(df)} (including Toon Costume3)')
 
 df_extra = pd.read_csv("heroes_ep_extra.csv")
 all_name_extra = sorted(list(df_extra['name'].values))
@@ -199,7 +199,7 @@ if genre == ':rainbow[Heroes Explorer]':
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Standard Filters:")
-        st.write("Tips: filter costume by typing ' C' or 'C2' in the Name box.")
+        st.write("Tips: filter costume by typing ' C' 'C2' or 'C3' in the Name box.")
         with st.expander("Filter Options"):
             name_option = st.text_input(label="Name:", value="")
             star_option = st.selectbox(label='Star:', options=star_values, index=0)
