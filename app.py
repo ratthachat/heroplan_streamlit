@@ -92,18 +92,30 @@ def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
 def return_costume_list(df0, hero_name):
     assert hero_name in df0.name.values
 
+    if hero_name[-2:] == "C3":
+        return ['None', 'CB1', 'CB2', 'CB3']
     if hero_name[-2:] == "C2":
-        return ['None', 'CB1', 'CB2']
+        hero_name2 = hero_name[:-1] + "3"
+        if hero_name2 in df0.name.values: # if this hero has C3
+            return ['None', 'CB1', 'CB2', 'CB3']
+        else:
+            return ['None', 'CB1', 'CB2']
     elif hero_name[-2:] == " C":
         hero_name2 = hero_name + "2"
-        if hero_name2 in df0.name.values: # if this hero has C2
+        hero_name3 = hero_name + "3"
+        if hero_name3 in df0.name.values: # if this hero has C2
+            return ['None', 'CB1', 'CB2', 'CB3']
+        elif hero_name2 in df0.name.values: # if this hero has C2
             return ['None', 'CB1', 'CB2']
         else:
             return ['None', 'CB1']
     else:
         hero_name1 = hero_name + " C"
         hero_name2 = hero_name + " C2"
-        if hero_name2 in df0.name.values: # if this hero has C2
+        hero_name3 = hero_name + " C3"
+        if hero_name3 in df0.name.values: # if this hero has C2
+            return ['None', 'CB1', 'CB2', 'CB3']
+        elif hero_name2 in df0.name.values: # if this hero has C2
             return ['None', 'CB1', 'CB2']
         elif hero_name1 in df0.name.values: # if this hero has C2
             return ['None', 'CB1']
