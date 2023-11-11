@@ -86,7 +86,7 @@ def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
         st.write("\n**Special Skills**")
         st.write(df['effects'].values[i])
 
-        if df['passives'].values[i] != 0:
+        if df['passives'].values[i] != 0 and df['passives'].values[i] != '0':
             st.write("\n**Passives**")
             st.write(df['passives'].values[i])
 
@@ -213,6 +213,7 @@ if genre == ':rainbow[Heroes Explorer]':
     
             special_type_option = st.text_input(label="SpecialSkill Category", value="Hit 3")
             special_text_option = st.text_input(label="SpecialSkill Text", value="Dispel")
+            passive_text_option = st.text_input(label="Passive Text", value="")
     with col2:
         st.header("Stat Filters")
         st.write("Tips: put the **minimum** att/def/hp stat you want to filter heroes")
@@ -278,6 +279,9 @@ if genre == ':rainbow[Heroes Explorer]':
 
     if special_text_option != '':
         idx_all.append(filter_by_1col(df, 'effects', special_text_option, exact_flag=False))    
+
+    if passive_text_option != '':
+        idx_all.append(filter_by_1col(df, 'passives', passive_text_option, exact_flag=False))    
     
     #########################################
 
