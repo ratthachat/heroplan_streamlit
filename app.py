@@ -148,7 +148,7 @@ def return_hero_stat(df0, hero_name, lb_choice="None", costume_choice="None"):
     
     display_cols_0 = ['image', 'name', 'color', 'star', 'class', 'speed',]
     display_cols_1 = [] # ['power', 'attack', 'defense', 'health', ] --> to be select base one LB/Costume choice
-    display_cols_2 = ['Aether Power', 'source', 'family', 'types', 'skill', 'effects']
+    display_cols_2 = ['Aether Power', 'source', 'family', 'types', 'skill', 'effects', 'passives']
 
     prefix = get_prefix(lb_choice, costume_choice)
 
