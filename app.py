@@ -83,9 +83,12 @@ def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
         st.write(f"***{df['name'].values[i]}*** - {df['speed'].values[i]} - {df['class'].values[i]}")
         st.write(f'Attack:{df["attack"].values[i]} -- Defence:{df["defense"].values[i]} -- Health:{df["health"].values[i]}')
         st.write(f"***{df['skill'].values[i]}***" )
+        st.write("\n**Special Skills**")
         st.write(df['effects'].values[i])
-        # for sp in df['effects'].values[i]:
-        #     st.write(sp)
+
+        if df['passives'].values[i] != 0:
+            st.write("\n**Passives**")
+            st.write(df['passives'].values[i])
 
 #########################################
 ## Helper function for LB/CB stat analysis
