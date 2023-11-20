@@ -223,6 +223,8 @@ if genre == ':rainbow[Heroes Explorer]':
             attack_option = st.text_input(label="Attack:", value="0")
             health_option = st.text_input(label="Health:", value="0")
 
+            max_percent_option = st.text_input(label="Max % in Special Skill:", value="0")
+            
             total_dot_option = st.text_input(label="Total DoT Damage:", value="0")
             dot_per_turn_option = st.text_input(label="DoT Damage Per Turn:", value="0")
     with col3:
@@ -274,6 +276,10 @@ if genre == ':rainbow[Heroes Explorer]':
         dot_per_turn_option = int(dot_per_turn_option)
         idx_all.append(filter_by_1col_num(df, 'dot_damage_per_turn', dot_per_turn_option, oper_flag="ge"))
 
+    if max_percent_option != "0":
+        max_percent_option = int(max_percent_option)
+        idx_all.append(filter_by_1col_num(df, 'max_special_percent', max_percent_option, oper_flag="ge"))
+    
     if special_type_option  != '':
         idx_all.append(filter_by_1col(df, 'types', special_type_option, exact_flag=False))    
 
