@@ -313,10 +313,16 @@ elif genre == "Team Simulation":
         st.write(f'Class: {df_hero["class"].values[0]}')
         st.write(f'Types: {df_hero["types"].values[0]}')
 
+    note_flag = st.checkbox("Displayt Notepad", value=False)
+    
     nheroes_choice_list = [2,3,4,5]
     nheroes_choice = st.selectbox(label='Number of Heroes:', options=nheroes_choice_list, index=len(nheroes_choice_list)-1)
-    
-    col_list = st.columns(nheroes_choice+1)
+
+    additional_col = 0
+    if note_flag:
+        additional_col = 1
+        
+    col_list = st.columns(nheroes_choice+additional_col)
     df_hero_list = []
     total_power = 0
     for ii in range(nheroes_choice):
@@ -325,8 +331,9 @@ elif genre == "Team Simulation":
             write_short_description(df_hero_list[-1])
         total_power += df_hero_list[ii]['power'].values[0]
 
-    with col_list[-1]:
-        txt = st.text_area("Write your note about team synergy", max_chars=1000, height = 480)
+    if note_flag:
+        with col_list[-1]:
+            txt = st.text_area("Write your note about team synergy", max_chars=1000, height = 480)
 
     df_hero_all5 = pd.concat(df_hero_list)
         
