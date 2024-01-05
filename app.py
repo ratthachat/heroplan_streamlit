@@ -175,7 +175,7 @@ st.header(f'HeroPlan Explorer')
 st.write('Powered by Heroplan.io : Thanks E&P community for continually update hero data.')
 
 df = pd.read_csv('heroes_ep.csv')
-st.write(f'### Updated: {{time.ctime(os.path.getmtime("heroes_ep.csv"))}} -- Total heroes in HeroPlan database = {len(df)} (including Toon Costume3)')
+st.write(f'### Updated: {time.ctime(os.path.getmtime("heroes_ep.csv"))} -- Total heroes in HeroPlan database = {len(df)}')
 
 df_extra = pd.read_csv("heroes_ep_extra.csv")
 all_name_extra = sorted(list(df_extra['name'].values))
