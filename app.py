@@ -61,12 +61,15 @@ def filter_by_1col(df, col_name, query, exact_flag=False):
     assert len(ok_flag_list) == len(df)
     return np.array(ok_flag_list)
 
-def display_image(url, scale=0.5):
+def display_image(url, scale=0.5, enable_flag = False):
     from urllib.request import urlopen
     from PIL import Image
 
-    image = Image.open(urlopen(url))
-    st.image(image.resize(( int(image.width * scale), int(image.height * scale))))
+    enable_flag = False if display_img_flag != 'Yes' else True # adhoc code, should send this variable properly
+    
+    if enable_flag: # default to False as imgur server seems to refuse our request and cause permanent error
+        image = Image.open(urlopen(url))
+        st.image(image.resize(( int(image.width * scale), int(image.height * scale))))
 
 def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
     vtob = "is" if len(df)<=1 else "are"
@@ -80,6 +83,10 @@ def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
                  hide_index=True)
 
     for i in range(len(df)):
+        st.write(" ")
+        st.write(f"#########################################")
+        st.write(" ")
+        
         url = df['image'].values[i]
         display_image(url)
         st.write(f"***{df['name'].values[i]}*** - {df['speed'].values[i]} - {df['class'].values[i]}")
@@ -197,6 +204,12 @@ with st.sidebar:
     [":rainbow[Heroes Explorer]", "Team Simulation","***LB/CB Hero Stat*** :movie_camera:"],
     captions = ["Filter only heroes with certain properties", "Co-powered by Elioty33's DataVault"])
 
+    display_img_flag = st.radio(
+        "Display Avatar in Description",
+        ["No", "Yes"],
+        captions = ["Currently default to 'no' since the server seems to ban our service", "If problem occur, set to 'no'"]
+    )
+    
 #########################################
 ## Program 1
 if genre == ':rainbow[Heroes Explorer]':
