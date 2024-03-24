@@ -78,8 +78,8 @@ def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
     if show_df:
         st.dataframe(df[display_cols],
                  column_config={
-                         "image": st.column_config.ImageColumn("*** Avatar ***", help="",
-                                                              width="medium"
+                         "image": st.column_config.ImageColumn("Avatar", help="",
+                                                              # width="medium", # width alone doesnt matter and there is no height option
                                                               )},
                  use_container_width=True,
                  # height=128, # this is height of the whold df, not on each line
