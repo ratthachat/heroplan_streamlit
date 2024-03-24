@@ -78,7 +78,7 @@ def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
     if show_df:
         st.dataframe(df[display_cols],
                  column_config={
-                         "image": st.column_config.ImageColumn("Avatar", help="")},
+                         "image": st.column_config.ImageColumn("Avatar", help="",width="large")},
                  use_container_width=True,
                  hide_index=True)
 
