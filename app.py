@@ -78,11 +78,11 @@ def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
     if show_df:
         st.dataframe(df[display_cols],
                  column_config={
-                         "image": st.column_config.ImageColumn("Avatar", help="",
-                                                              # width="medium",height="medium"
+                         "image": st.column_config.ImageColumn("*** Avatar ***", help="",
+                                                              width="medium"
                                                               )},
                  use_container_width=True,
-                 height=128,
+                 # height=128, # this is height of the whold df, not on each line
                  hide_index=True)
 
     for i in range(len(df)):
