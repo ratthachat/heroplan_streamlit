@@ -82,6 +82,7 @@ def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
                                                               # width="medium",height="medium"
                                                               )},
                  use_container_width=True,
+                 height=128,
                  hide_index=True)
 
     for i in range(len(df)):
