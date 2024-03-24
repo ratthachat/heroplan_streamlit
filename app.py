@@ -362,7 +362,7 @@ elif genre == "Team Simulation":
     st.write(f'### Total power = {total_power}')
     st.write(f'======================')
     
-    display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=False) # display all except special-skill text
+    display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=True) # display all except special-skill text
     
 #########################################
 ## Program 3 "Individual Stat"
