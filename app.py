@@ -315,8 +315,8 @@ if genre == ':rainbow[Heroes Explorer]':
 ## Program 2 "Team Simulation"
 elif genre == "Team Simulation":
     
-    def choose_hero(key="Hero1"):
-        name_choice = st.selectbox(label='Hero Name:', options=all_name_extra, index=0, key=key+"_name")
+    def choose_hero(key="Hero1", default_index=0):
+        name_choice = st.selectbox(label='Hero Name:', options=all_name_extra, index=default_index, key=key+"_name")
         costume_list = return_costume_list(df_extra, name_choice)
         costume_choice = st.selectbox(label='Costume:', options=costume_list, index=0, key=key+"_costume")
         lb_list = ['None', 'LB1', 'LB2']
@@ -350,7 +350,7 @@ elif genre == "Team Simulation":
     total_power = 0
     for ii in range(nheroes_choice):
         with col_list[ii]:
-            df_hero_list.append(choose_hero(key=f"Hero{ii+1}")) # 'key' in st.selectbox to differentiate widgets
+            df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=ii)) # 'key' in st.selectbox to differentiate widgets
             write_short_description(df_hero_list[-1])
         total_power += df_hero_list[ii]['power'].values[0]
 
