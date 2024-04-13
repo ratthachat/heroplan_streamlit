@@ -70,6 +70,11 @@ def display_image(url, scale=0.5, enable_flag = False):
     if enable_flag: # default to False as imgur server seems to refuse our request and cause permanent error
         # image = Image.open(urlopen(url))
         # st.image(image.resize(( int(image.width * scale), int(image.height * scale))))
+
+        """
+        The problem occur because imgur remove file extension e.g. 'jpg', 
+        so either url is wrong with urlopen or Image.open does not know image type if use requests/urllib3
+        """
         st.image(url)
 
 def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
@@ -210,8 +215,8 @@ with st.sidebar:
 
     display_img_flag = st.radio(
         "Display Avatar in Description",
-        ["No", "Yes"],
-        captions = ["Currently default to 'no' since the server seems to ban our service", "If problem occur, set to 'no'"]
+        ["Yes", "No"],
+        captions = ["Default", "If problem occur, set to 'no'"]
     )
     
 #########################################
