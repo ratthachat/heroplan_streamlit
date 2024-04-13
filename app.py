@@ -71,10 +71,9 @@ def display_image(url, scale=0.5, enable_flag = False):
         # image = Image.open(urlopen(url))
         # st.image(image.resize(( int(image.width * scale), int(image.height * scale))))
 
-        """
-        The problem occur because imgur remove file extension e.g. 'jpg', 
-        so either url is wrong with urlopen or Image.open does not know image type if use requests/urllib3
-        """
+        
+        #The problem occur because imgur remove file extension e.g. 'jpg', 
+        #so either url is wrong with urlopen or Image.open does not know image type if use requests/urllib3
         st.image(url)
 
 def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
