@@ -68,8 +68,9 @@ def display_image(url, scale=0.5, enable_flag = False):
     enable_flag = False if display_img_flag != 'Yes' else True # adhoc code, should send this variable properly
     
     if enable_flag: # default to False as imgur server seems to refuse our request and cause permanent error
-        image = Image.open(urlopen(url))
-        st.image(image.resize(( int(image.width * scale), int(image.height * scale))))
+        # image = Image.open(urlopen(url))
+        # st.image(image.resize(( int(image.width * scale), int(image.height * scale))))
+        st.image(url)
 
 def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
     vtob = "is" if len(df)<=1 else "are"
