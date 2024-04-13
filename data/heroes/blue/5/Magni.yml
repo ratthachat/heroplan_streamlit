@@ -1,8 +1,8 @@
 name: Magni
-class: Fighter
 source: Season1
 family: Classic
 speed: Fast
+class: Fighter
 power: 754
 attack: 793
 defense: 591
@@ -29,9 +29,9 @@ costume:
   types:
     - Hit 1
     - Defense Debuff
-  family: Classic
   image: https://i.imgur.com/A0jPrh9.jpg
 costume2:
+  bonuses: 5/5/10/5
   class: Rogue
   power: 858
   attack: 852
@@ -46,5 +46,22 @@ costume2:
   types:
     - Hit 3
     - Defense Debuff
-  family: Classic
   image: https://i.imgur.com/npmSFHz.jpg
+costume3:
+  bonuses: 5/5/10/5
+  class: Fighter
+  power: 1054
+  attack: 1064
+  defense: 873
+  health: 2235
+  skill: Strike of the Toons
+  effects:
+    - Deals 500% damage to the target.
+    - The caster and nearby allies get 56% defense for 4 turns.
+    - Deals extra damage against Fire.
+  types:
+    - Hit 1
+    - Defense Buff
+  passives:
+    - 'Toon: 75% extra chance to resist all status ailments, mana reductions and buff dispels.'
+  image: https://i.imgur.com/bakqHYB.jpg

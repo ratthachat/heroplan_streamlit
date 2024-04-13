@@ -1,8 +1,8 @@
 name: Li Xiu
-class: Monk
 source: Season1
 family: Classic
 speed: Average
+class: Monk
 power: 640
 attack: 616
 defense: 665
@@ -31,6 +31,7 @@ costume:
     - Mana Reduction
   image: https://i.imgur.com/6LRP9pF.jpg
 costume2:
+  bonuses: 5/5/10/5
   class: Wizard
   power: 731
   attack: 725
@@ -43,5 +44,22 @@ costume2:
   types:
     - Hit 3
     - Silencer
-  family: Classic
   image: https://i.imgur.com/kSRi1Vn.jpg
+costume3:
+  bonuses: 5/5/10/5
+  class: Monk
+  power: 743
+  attack: 725
+  defense: 780
+  health: 1332
+  skill: Slash of Seven Toons
+  effects:
+    - Deals 180% damage to all enemies.
+    - Reduces the mana of all enemies by 16%.
+    - Deals extra damage against Dark.
+  types:
+    - Hit All
+    - Mana Reduction
+  passives:
+    - 'Toon: 75% extra chance to resist all status ailments, mana reductions and buff dispels.'
+  image: https://i.imgur.com/9y6lz7h.jpg
