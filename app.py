@@ -394,5 +394,25 @@ else:
     lb_list = ['None', 'LB1', 'LB2']
     lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0)
 
+    talent_list = ['None', 'Sword', 'Shield', 'Health']
+    talent_choice = st.radio(  #st.selectbox(label='Approx. Talent:', options=lb_list, index=0)
+        "Approx. Talent",
+        talent_list,
+        captions = ["Default", "Talents stat are all cruded approximated. Visit heroplan.io for exact calculation."]
+    )
+    talent_tp, talent_attack, talent_defense, talent_health = 0, 0, 0, 0
+    if talent_choice == 'Sword':
+        talent_tp, talent_attack, talent_defense, talent_health = 100, 150, 50, 100
+    elif talent_choice == 'Shield':
+        talent_tp, talent_attack, talent_defense, talent_health = 100, 50, 150, 100
+    elif talent_choice == 'Health':
+        talent_tp, talent_attack, talent_defense, talent_health = 100, 75, 75, 200
+        
+    
     df_ret = return_hero_stat(df_extra, name_choice, lb_choice=lb_choice, costume_choice=costume_choice)
+    df_ret.power.values[0] += talent_tp
+    df_ret.attack.values[0] += talent_attack
+    df_ret.defense.values[0] += talent_defense
+    df_ret.health.values[0] += talent_health
+    
     display_heroes_from_df(df_ret,display_cols=df_ret.columns[:-2]) # display all except special-skill text
