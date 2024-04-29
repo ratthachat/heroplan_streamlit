@@ -395,11 +395,12 @@ else:
     lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0)
 
     talent_list = ['None', 'Sword', 'Shield', 'Health']
-    talent_choice = st.radio(  #st.selectbox(label='Approx. Talent:', options=lb_list, index=0)
-        "Approx. Talent",
-        talent_list,
-        captions = ["Default", "Talents stat are all cruded approximated. Visit heroplan.io for exact calculation."]
-    )
+    # talent_choice = st.radio(  
+    #     "Approx. Talent",
+    #     talent_list,
+    #     captions = ["Default", "Talents stat are all cruded approximated. Visit heroplan.io for exact calculation."]
+    # )
+    talent_choice = st.selectbox(label='Approx. Talent (stat are all cruded approximated. Visit heroplan.io for exact calculation.) :', options=talent_list, index=0)
     talent_tp, talent_attack, talent_defense, talent_health = 0, 0, 0, 0
     if talent_choice == 'Sword':
         talent_tp, talent_attack, talent_defense, talent_health = 100, 150, 50, 100
