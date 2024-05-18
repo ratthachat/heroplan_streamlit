@@ -394,7 +394,7 @@ else:
     lb_list = ['None', 'LB1', 'LB2']
     lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0)
 
-    talent_list = ['None', 'Sword+20', 'Shield+20', 'Health+20', 'Sword+25', 'Shield+25', 'Health+20 Shield+5','Sword+20 Shield+5']
+    talent_list = ['None', 'Sword+20', 'Shield+20', 'Health+20', 'Sword+25', 'Shield+25', 'Health+20 Shield+5','Sword+20 Shield+5','Shield+20 Sword+5']
     talent_choice = st.selectbox(label='Approx. Talent (stat are all cruded approximated. Visit heroplan.io for exact calculation.) :', options=talent_list, index=0)
     talent_tp, talent_attack, talent_defense, talent_health = 0, 0, 0, 0
     if talent_choice == 'Sword+20':
@@ -411,6 +411,8 @@ else:
         talent_tp, talent_attack, talent_defense, talent_health = 125, 75, 255, 300
     elif talent_choice == 'Sword+20 Shield+5':
         talent_tp, talent_attack, talent_defense, talent_health = 125, 150, 230, 200
+    elif talent_choice == 'Shield+20 Sword+5':
+        talent_tp, talent_attack, talent_defense, talent_health = 125, 200, 150, 200
         
     
     df_ret = return_hero_stat(df_extra, name_choice, lb_choice=lb_choice, costume_choice=costume_choice)
