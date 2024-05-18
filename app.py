@@ -394,20 +394,21 @@ else:
     lb_list = ['None', 'LB1', 'LB2']
     lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0)
 
-    talent_list = ['None', 'Sword', 'Shield', 'Health']
-    # talent_choice = st.radio(  
-    #     "Approx. Talent",
-    #     talent_list,
-    #     captions = ["Default", "Talents stat are all cruded approximated. Visit heroplan.io for exact calculation."]
-    # )
+    talent_list = ['None', 'Sword+20', 'Shield+20', 'Health+20', 'Sword+25', 'Shield+25', 'Health+25']
     talent_choice = st.selectbox(label='Approx. Talent (stat are all cruded approximated. Visit heroplan.io for exact calculation.) :', options=talent_list, index=0)
     talent_tp, talent_attack, talent_defense, talent_health = 0, 0, 0, 0
-    if talent_choice == 'Sword':
+    if talent_choice == 'Sword+20':
         talent_tp, talent_attack, talent_defense, talent_health = 100, 150, 50, 100
-    elif talent_choice == 'Shield':
+    elif talent_choice == 'Shield+20':
         talent_tp, talent_attack, talent_defense, talent_health = 100, 50, 150, 100
-    elif talent_choice == 'Health':
+    elif talent_choice == 'Health+20':
         talent_tp, talent_attack, talent_defense, talent_health = 100, 75, 75, 200
+    if talent_choice == 'Sword+25':
+        talent_tp, talent_attack, talent_defense, talent_health = 125, 300, 50, 200
+    elif talent_choice == 'Shield+25':
+        talent_tp, talent_attack, talent_defense, talent_health = 125, 50, 330, 200
+    elif talent_choice == 'Health+25': # choose shield-path on 5 master nodes
+        talent_tp, talent_attack, talent_defense, talent_health = 125, 75, 255, 300
         
     
     df_ret = return_hero_stat(df_extra, name_choice, lb_choice=lb_choice, costume_choice=costume_choice)
