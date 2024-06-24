@@ -1,8 +1,8 @@
 name: Mok-Arr
-class: Barbarian
 source: Season2
 family: Lagoon
 speed: Average
+class: Barbarian
 power: 772
 attack: 741
 defense: 688
@@ -19,17 +19,15 @@ image: https://i.imgur.com/f9fc9eh.jpg
 costume:
   bonuses: 5/5/10/5
   class: Fighter
-  power: 829
-  attack: 803
-  defense: 732
-  health: 1559
+  power: 917
+  attack: 916
+  defense: 822
+  health: 1725
   skill: Emerald Tine
   effects:
     - Deals 280% damage to all enemies.
     - All Dark allies and enemies get +54% attack for 4 turns.
-    - >-
-      All allies and enemies that are not Dark element get -44% attack for 4
-      turns. This effect is uncleansable for all Holy enemies.
+    - All allies and enemies that are not Dark element get -44% attack for 4 turns. This effect is uncleansable for all Holy enemies.
     - Deals extra damage against Holy.
   types:
     - Hit All

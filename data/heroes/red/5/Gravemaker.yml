@@ -9,7 +9,7 @@ defense: 708
 health: 1363
 skill: Ashes to Ashes
 effects:
-  - Deals 135% damage to the target and nearby enemies.
+  - Deals 170% damage to the target and nearby enemies.
   - The target and nearby enemies receive 298 burn damage over 2 turns.
   - Deals extra damage against Nature.
   - >-
@@ -22,14 +22,14 @@ image: https://i.imgur.com/pPTSbFy.jpg
 costume:
   bonuses: 5/5/10/5
   class: Paladin
-  power: 935
-  attack: 872
-  defense: 847
-  health: 1918
+  power: 976
+  attack: 922
+  defense: 882
+  health: 2015
   skill: Dust to Dust
   effects:
-    - Deals 115% damage to all enemies.
-    - All enemies receive 322 Burn damage over 2 turns.
+    - Deals 145% damage to all enemies.
+    - All enemies receive 432 Burn damage over 2 turns.
     - >-
       Element Link give all Fire allies +5% attack and +5% defense for 6 turns.
       This effect can't be dispelled.
