@@ -262,7 +262,7 @@ Passives:
 
     return txt
 
-def generate_end_prompt(df0, hero1, hero2):
+def generate_end_prompt(df0, hero1, hero2, df1=None, df2=None):
 
     end_txt = """
 Now please begin with
@@ -275,10 +275,12 @@ Head to Head Analysis
 {hero1} vs. {hero2}
 
 """
-    df_hero1 = return_hero_stat(df0, hero1)
-    df_hero2 = return_hero_stat(df0, hero2)
-    txt_hero1 = generate_hero_description(df_hero1)
-    txt_hero2 = generate_hero_description(df_hero2)
+    if df1 is None:
+        df1 = return_hero_stat(df0, hero1)
+    if df2 is None:
+        df2 = return_hero_stat(df0, hero2)
+    txt_hero1 = generate_hero_description(df1)
+    txt_hero2 = generate_hero_description(df2)
 
     txt += txt_hero1 + txt_hero2 + end_txt
 
@@ -490,7 +492,7 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
 
     hero1 = df_hero_list[0]['name'].values[0]
     hero2 = df_hero_list[1]['name'].values[0]
-    end_prompt = generate_end_prompt(df_extra, hero1, hero2)
+    end_prompt = generate_end_prompt(df_extra, hero1, hero2, df1=df_hero_list[0] , df2=df_hero_list[1] )
 
     current_prompt = prompt+end_prompt
     response = model.generate_content(current_prompt)
