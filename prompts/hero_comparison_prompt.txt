@@ -1,0 +1,146 @@
+Lets assume you are an expert in a mobile game "Empires & Puzzles" from Zynga. Now I would like you to compare the two cards for pros and cons of each card. Be very critical and accurate. Do not need to emphasize the weaker hero.
+
+Following these examples:
+
+=============================
+Example 1:
+Willow vs. Bennu
+
+Willow description:
+Power: 891
+Attack: 832
+Defense: 900
+Health: 1598
+Speed: Magic
+Class: Druid
+
+Special Skills
+['Special Skill has a different effect when charged with 100%/200% mana:', '1x Mana Charge:', ' * Deals 175% damage to all enemies.', ' * Dispels status effect buffs that affect defense from all enemies.', ' * All enemies are immune to new status effect buffs that affect defense for 3 turns.', '2x Mana Charge:', ' * All allies bypass defensive buffs with their attacks for 5 turns. Defensive buffs include counterattacks.', ' * All allies reduce all received damage by -45% for 5 turns.', ' * All allies counterattack with 115% of the damage received for 5 turns.']
+Passives
+['Health recovery on Special: When this character casts their Special Skill, they have a 50% chance to recover 15% health for all allies. If the Special Skill is fully charged, the chance is 100%.', 'Stack on Special: When this character casts their Special Skill, all enemies get -5% mana generation stack. If the Special Skill is fully charged, all enemies get two stacks. An enemy can have up to 10 stacks.']
+
+
+
+Bennu Description:
+Power: 861
+Attack: 793
+Defense: 859
+Health: 1563
+Speed: Average
+Class: Druid
+
+Special Skills
+['The caster and nearby allies counterattack with 100% of the damage received for 5 turns. The damage of the counterattack increases by +5% with each counterattack, maxing out at 130%.', 'The caster and nearby allies reduce all received damage by -50% for 5 turns.']
+Passives
+['Effects on Special Skill: 60% chance to perform the following actions when this character casts their Special Skill', ' * Boosts health of all allies by 10%. Boosted health can exceed max HP.', ' * Cleanses the latest cleansable status ailment from all allies.']
+
+
+
+********************
+Head to Head Analysis
+********************
+
+Overall: These two heroes have partial similarity. Namely, both can do counterattack and damage reduction. However, the main difference is that Willow has wider variety of skills.
+
+
+Bennu Advantage
+-----------------------
+Bennu is specialized on counter-attack. He generally has a bit stronger counterattack compared to Willow on 5 turns. Also, his damage-reduction is 5% more than Willow, but more importantly, the damage reduction is applied "after" counterattack. This make the counterattack very strong while the damage receive very minor. 
+
+For example, original 100 damage to one ally may produce 120 counter on turn 3, and the ally will receive only 50 damage himself.
+
+In contrast, Willow reduce the damage "before" counter attack. Therefore, in the above example, Willow's ally will receive 55 damage, and counter only 55*1.15 = 63.25 damage. You can see that Bennu produce almost twice the damage of Willow.
+
+Bennu passive allow him 60% chance to clean latest cleansable ailment which is good. Also 60% chance to heal 10% is kind of nice, but inferior overall to Willow's 2nd passive.
+
+Willow Advantage
+-----------------------
+Having said that, Willow is a kind of swiss-knife who does a different of thing. In addition to counterattack on his 2nd charge, Willow also does 3 other things :
+
+	1) Willow let all allies bypass all enemies defensive buff, so enemies defense-buff are now useless
+	2) With passive 1, Willow will give -10% mana-(de)generation stack to enemies. This is uncleansible and last forever, which is fairly strong
+	3) With passive 2, Willow will give 15% heal with 100% chance on 2nd charge.
+
+Although this 2nd charge is slower than Bennu's average speed, it is more applicable when facing defense oriented team, because of the bypassing. Also, with 15% heal and mana-degeneration-stack, Willow allow the team to survive better.
+
+To summarize, while Bennu is specialized only on hard-hitter opponent, Willow can face both hard-hitter and also defense-oriented opponent. In the latter situation, Willow 1st-charge becomes useful as it is very fast and can dispel and block all defensive buff on enemies.
+
+Head-to-Head Synergy Analysis with Other Heroes:
+------------------
+With swiss-knife property, Willow seems to be more suitable to synergy to various kind of other heroes compared to Bennu. For example, both synergize well with other-type defense buffers, but Willow alone synergize also well with hard-hitter (because Willow give the bypassing to the hard-hitter)
+
+Winner:
+---------
+Willow is a winner here with small margin due to his/her wider applications though a bit weaker counterattacker. Willow also has a slightly more stat power than Bennu, especially on Defense + Health stats which are most important for support heroes.
+
+=============================
+Example 2:
+Starlass vs.  Xandrella
+
+Starlass Description:
+Power: 1062
+Attack: 1032
+Defense: 1165
+Health: 1788
+Speed: Slow
+Class: Ranger
+
+Special Skills
+['This Special Skill never misses its targets.', 'Deals 550% damage to target and nearby enemies', 'Automatically does 701 damage to the hit enemy and consumes 75% mana from hit enemy every time when the hit enemy’s mana gets full for 3 tuns.']
+Passives
+['Resist Poison: This character has innate resistance against Poison.', 'Share Received Damage: 20% of damage received by this charater is shared with other allies.']
+
+
+Xandrella Description:
+Power: 900
+Attack: 844
+Defense: 854
+Health: 1724
+Speed: Average
+Class: Sorcerer
+
+Special Skills
+['Deals 450% damage to target and all Ice enemies.', 'Automatically does 438 damage to the target and all Ice enemies, when their mana is full and reduces their mana by 50% for 4 turns.', 'Alters the power of all Nature shields on the board. When an attacking Hero casts the special, the shields become enhanced and give +37% more mana. When a defending Hero casts the special, the shields become weakened and give -30% less mana.']
+
+Passives
+['Troop Mastery: This Passive Skill has two different functions based on if this character is in attack or in defense.', 'Passive Skill as attacking character: This character’s Troops deal +100% more additional damage against weaker element.', 'Passive Skill as defending character: This character receives -10% less additional damage from Troops of stronger element.']
+
+
+
+********************
+Head to Head Analysis
+********************
+Overall: These two heroes are actually quite similar in their main function. Namely, both are rangers which can do "mana control" which is one of the most important in the game. Both control mana with the same mechanic, by reducing mana of enemies when the mana-bar is full.
+
+Starlass has 3 targets with slow, while Xandrella is average speed, but the number of targets depending on the number of ice enemies. 
+
+
+Xandrella Advantage
+-----------------------
+	- If there > 2 ice enemies, Xandrella can also hit 3 targets with quicker average speed
+	- The quicker speed means Xandrella can better stop the enemy at the most critical moment
+	- On Attack, Xandrella help other green heroes to charge faster by increase mana on the board's tiles (aka. Board shields), while on attack Xandrella negatively affect the green enemies by decrease the mana on the board tiles.
+	- The passive make Xandrella tile attack quite good
+	- Mana control of Starlass last only 3 turns while Xandrella last 4 turns.
+
+Starlass Advantage
+-----------------------
+	- Clearly Starlass is much stronger stat-wise, so if %damage in special skill is equal, Starlass always hit harder and has better survivability. In fact, he has 20% better attack stat, and around 30% more defense stat.
+	- Not only that, his special is considerably much stronger than Xandrella with 550% to 3 enemies. The 2nd effect is also much stronger i.e. 701 vs. 438
+	- The third effect is arguably no winner. Though Starlass reduce higher 75%, the reduction of 50% of Xandrella can make the 2nd effect activate again easier.
+	- Though slower than Xandrella, if Starlass can fire, with the right partner, he has a chance to finish all 3 enemies with single blow, while it is much less likely with Xandrella.
+	- His "never-miss" skill can be paired nicely with Gamble-attack-buff heroes like WuKong so that his special damage will be much stronger and still always hit. (though there are no green-gamble heroes, and WuKong is yellow, so off-color to Starlass). But there can be green-gamble heroes in the future.
+	- His passive of 20% share damage make him even much better surviability, but his poison resistance is just a nice-to-have (nothing extraordinary)
+
+Head-to-Head Synergy Analysis with Other Heroes:
+------------------
+As they both have the same main functional, they can be synergized by the same heroes. E.g. green defense-down (DD) or elemental defense down (EDD), or any other attack-buff heroes.
+
+Winner:
+---------
+Starlass is a clear winner here. Though Starlass speed is at disadvantage, but once Starlass fires, Starlass will likely finish the job.
+
+=============================
+
+
+Now following the above analysis, analyze the following two:
