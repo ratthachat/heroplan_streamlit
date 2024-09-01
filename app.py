@@ -500,7 +500,7 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
 
     current_prompt = prompt+end_prompt
     response = model.generate_content(current_prompt)
-    st.write(response)
+    st.write(response.text)
 
 #########################################
 ## Program 3 "Individual Stat"
