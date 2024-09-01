@@ -211,6 +211,79 @@ def return_talent_choice(key="default_key"):
         talent_tp, talent_attack, talent_defense, talent_health = 125, 200, 150, 200
     return talent_tp, talent_attack, talent_defense, talent_health
 
+def choose_hero(key="Hero1", default_index=0):
+    name_choice = st.selectbox(label='Hero Name:', options=all_name_extra, index=default_index, key=key+"_name")
+    costume_list = return_costume_list(df_extra, name_choice)
+    costume_choice = st.selectbox(label='Costume:', options=costume_list, index=0, key=key+"_costume")
+    lb_list = ['None', 'LB1', 'LB2']
+    lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0, key=key+"_lb")
+
+    talent_tp, talent_attack, talent_defense, talent_health = return_talent_choice(key=key+"_talent")
+        
+    df_ret = return_hero_stat(df_extra, name_choice, lb_choice=lb_choice, costume_choice=costume_choice)
+    df_ret.power.values[0] += talent_tp
+    df_ret.attack.values[0] += talent_attack
+    df_ret.defense.values[0] += talent_defense
+    df_ret.health.values[0] += talent_health
+        
+    return df_ret
+
+def write_short_description(df_hero):
+    url = df_hero['image'].values[0]
+    display_image(url)
+    st.write(f'Power: {df_hero["power"].values[0]}')
+    st.write(f'Attack: {df_hero["attack"].values[0]}')
+    st.write(f'Defense: {df_hero["defense"].values[0]}')
+    st.write(f'Health: {df_hero["health"].values[0]}')
+    st.write(f'Speed: {df_hero["speed"].values[0]}')
+    st.write(f'Class: {df_hero["class"].values[0]}')
+    st.write(f'Types: {df_hero["types"].values[0]}')
+
+
+def generate_hero_description(df_hero):
+    txt =  f"""
+
+{df_hero.name.values[0]} Description:
+Element: {df_hero.color.values[0]}
+Star: {df_hero.star.values[0]}
+Power: {df_hero.power.values[0]}
+Attack: {df_hero.attack.values[0]}
+Defense: {df_hero.defense.values[0]}
+Health: {df_hero.health.values[0]}
+Speed: {df_hero.speed.values[0]}
+Class: {df_hero['class'].values[0]}
+
+Special Skills:
+{df_hero['effects'].values[0]}
+Passives:
+{df_hero['passives'].values[0]}
+
+"""
+
+    return txt
+
+def generate_end_prompt(df0, hero1, hero2):
+
+    end_txt = """
+Now please begin with
+********************
+Head to Head Analysis
+********************
+"""
+
+    txt =  f"""
+{hero1} vs. {hero2}
+
+"""
+    df_hero1 = return_hero_stat(df0, hero1)
+    df_hero2 = return_hero_stat(df0, hero2)
+    txt_hero1 = generate_hero_description(df_hero1)
+    txt_hero2 = generate_hero_description(df_hero2)
+
+    txt += txt_hero1 + txt_hero2 + end_txt
+
+    return txt
+
 #########################################
 ## Load the main file (TODO: caching)=
 st.set_page_config(layout="wide")
@@ -237,7 +310,10 @@ source_values = ['None'] + list(df['source'].unique()) # Contain lot of typo bug
 with st.sidebar:
     genre = st.radio(
     "Choose how to explore heroes",
-    [":rainbow[Heroes Explorer]", "Team Simulation","***LB/CB Hero Stat*** :movie_camera:"],
+    [":rainbow[Heroes Explorer]", 
+     "Team Simulation", 
+     "Hero Comparison by Gemini AI (new)!!",
+     "***LB/CB Hero Stat*** :movie_camera:"],
     captions = ["Filter only heroes with certain properties", "Co-powered by Elioty33's DataVault"])
 
     display_img_flag = st.radio(
@@ -348,35 +424,6 @@ if genre == ':rainbow[Heroes Explorer]':
 #########################################
 ## Program 2 "Team Simulation"
 elif genre == "Team Simulation":
-    
-    def choose_hero(key="Hero1", default_index=0):
-        name_choice = st.selectbox(label='Hero Name:', options=all_name_extra, index=default_index, key=key+"_name")
-        costume_list = return_costume_list(df_extra, name_choice)
-        costume_choice = st.selectbox(label='Costume:', options=costume_list, index=0, key=key+"_costume")
-        lb_list = ['None', 'LB1', 'LB2']
-        lb_choice = st.selectbox(label='Limit Break:', options=lb_list, index=0, key=key+"_lb")
-
-        talent_tp, talent_attack, talent_defense, talent_health = return_talent_choice(key=key+"_talent")
-        
-        df_ret = return_hero_stat(df_extra, name_choice, lb_choice=lb_choice, costume_choice=costume_choice)
-        df_ret.power.values[0] += talent_tp
-        df_ret.attack.values[0] += talent_attack
-        df_ret.defense.values[0] += talent_defense
-        df_ret.health.values[0] += talent_health
-        
-        return df_ret
-
-    def write_short_description(df_hero):
-        url = df_hero['image'].values[0]
-        display_image(url)
-        st.write(f'Power: {df_hero["power"].values[0]}')
-        st.write(f'Attack: {df_hero["attack"].values[0]}')
-        st.write(f'Defense: {df_hero["defense"].values[0]}')
-        st.write(f'Health: {df_hero["health"].values[0]}')
-        st.write(f'Speed: {df_hero["speed"].values[0]}')
-        st.write(f'Class: {df_hero["class"].values[0]}')
-        st.write(f'Types: {df_hero["types"].values[0]}')
-
     note_flag = st.checkbox("Displayt Notepad", value=False)
     
     nheroes_choice_list = [2,3,4,5]
@@ -406,7 +453,55 @@ elif genre == "Team Simulation":
     st.write(f'======================')
     
     display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=True) # display all except special-skill text
+
+#########################################
+## Program 4 "Hero Comparison by Gemini AI (new)!!"
+elif genre == "Hero Comparison by Gemini AI (new)!!":
+    note_flag = st.checkbox("Displayt Notepad", value=False)
+    nheroes_choice = 2
+
+    additional_col = 0
+    if note_flag:
+        additional_col = 1
+        
+    col_list = st.columns(nheroes_choice+additional_col)
+    df_hero_list = []
+    total_power = 0
+    for ii in range(nheroes_choice):
+        with col_list[ii]:
+            df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=ii)) # 'key' in st.selectbox to differentiate widgets
+            write_short_description(df_hero_list[-1])
+        total_power += df_hero_list[ii]['power'].values[0]
+
+    if note_flag:
+        with col_list[-1]:
+            txt = st.text_area("Write your note about team synergy", max_chars=1000, height = 480)
+
+    df_hero_all5 = pd.concat(df_hero_list)
+        
+    st.write(f'======================')
+    st.write(f'### Total power = {total_power}')
+    st.write(f'======================')
     
+    display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=True) # display all except special-skill text
+
+    ### BEGIN Gemini API
+    GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+    import google.generativeai as genai
+    genai.configure(api_key=GOOGLE_API_KEY)
+    model = genai.GenerativeModel('gemini-1.5-flash')
+
+    with open('prompts/hero_compare_prompt.txt', 'r') as f:
+        prompt = f.read()
+
+    hero1 = df_hero_list[0]['name'].values[0]
+    hero2 = df_hero_list[1]['name'].values[0]
+    end_prompt = generate_end_prompt(df_extra, hero1, hero2)
+
+    current_prompt = prompt+end_prompt
+    response = model.generate_content(current_prompt)
+    st.write(response)
+
 #########################################
 ## Program 3 "Individual Stat"
 else:
