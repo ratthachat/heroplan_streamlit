@@ -1,6 +1,17 @@
-Lets assume you are an expert in a mobile game "Empires & Puzzles" from Zynga. Now I would like you to compare the two cards for pros and cons of each card. Be very critical and accurate. Do not need to emphasize the weaker hero.
+Lets assume you are an expert in a mobile game "Empires & Puzzles" from Zynga. Now I would like you to compare the two cards for pros and cons of each card. 
 
-Following these examples:
+	- Following examples below in analysis style and format
+	- Be conscious and very serious on quantitative number, not only on qualitative. For examples, 
+		○ 5% dodge chance is almost nothing. Almost elemental-links (except 2017 family) are nothing.
+		○ 200%-damage of Hero with 1000 attack stat, is much better than 300%-damage of Hero with only 500 attack stat - so be conscious on quantitative number
+		○ Stat is very important, for examples, 3-stars defensive stat of around 500 is much quicker to be killed than 5-stars defensive stat of 1000. And 5-stars attack stat of 1000 hit much harder than 3-stars attack of 500 since the damage calculation is non-linear.
+	- Do not need to emphasize the weaker hero. Be decisive to say which hero is better in the end in most situation.
+	- Be aware of charges of magic, styx and ninja families. Practically, 
+		○ Magic: 1st charge is Very Fast (6 tiles), and 2nd charge is slow (12 tiles)
+		○ Styx: 1st charge is Very Fast (6 tiles), 2nd charge is Fast (8-9 tiles), and 3rd charge is "Slow" (12 tiles), 
+		○ Ninja: 1st charge is Extreme Fast (5 tiles), 2nd charge is average speed (10 tiles), while 3rd is "impractical", extremely slow (15 tiles) and do not need to be considered
+
+
 
 =============================
 Example 1:
@@ -44,7 +55,9 @@ Passives
 Head to Head Analysis
 ********************
 
-Overall: These two heroes have partial similarity. Namely, both can do counterattack and damage reduction. However, the main difference is that Willow has wider variety of skills.
+Overall: These two heroes have partial similarity. Namely, both can do counterattack and damage reduction. However, the main difference is that Willow has wider variety of skills. 
+
+Stat: Their stats looks comparable, so we may focus mainly on special skills.
 
 
 Bennu Advantage
@@ -122,6 +135,8 @@ Overall: These two heroes are actually quite similar in their main function. Nam
 
 Starlass has 3 targets with slow, while Xandrella is average speed, but the number of targets depending on the number of ice enemies. 
 
+Stat: Starlass Stat is 15%-20% better than Xandrella on both attack and defense. Starlass looks more premium quantitatively.
+
 
 Xandrella Advantage
 -----------------------
@@ -188,6 +203,7 @@ Head to Head Analysis
 ********************
 Overall: These two are similar, average speed, purple, hard hitter. We can see that Voidstar is the more recent hero so better stat on all measures (around 15%).
 
+Stat: Voidstar Stat is 15%-20% better than Rochefort on both attack and defense. Voidstar looks more premium quantitatively.
 
 Rochefort Advantage
 -----------------------
@@ -216,3 +232,72 @@ Winner:
 ---------
 Both are good, but Voidstar is the clear hero here.
 
+
+=============================
+Example 4:
+Aviana vs. Christine Daae 
+
+Aviana Description:
+Element: Yellow
+Star: 5
+Power: 957
+Attack: 1001
+Defense: 931
+Health: 1582
+Speed: Average
+Class: Fighter
+
+Special Skills:
+['Deals 300% damage to the target and nearby enemies.', 'The target and nearby enemies are immune to new status effects buffs for 4 turns.', 'The caster and nearby allies get +50% critical chance for 4 turns.', 'Element Link gives all Holy allies +5% dodge chance for 6 turns. This effect cannot be dispelled.']
+
+Passives:
+['Resist Bleed Damage: This character has innate resistance against Bleed.', 'Mana on Buff Received: This character gains 5% mana when they receive a buff or a positive stack.']
+
+
+Christine Daae Description:
+Element: Yellow
+Star: 5
+Power: 957
+Attack: 994
+Defense: 894
+Health: 1672
+Speed: Fast
+Class: Cleric
+
+Special Skills:
+['Deals 355% damage to the target and nearby enemies.', 'The target and nearby enemies dance to Ballad of Passion for 3 turns. All existing status effects will be removed when this effect is added.', 'Ballad of Passion', '* -40% acuracy.', '* -40% defense.', '* Gives immunity to new status effects. New dance status effects will replace this effect.', '* This effect cannot be dispelled. The effect is removed when the caster dies.']
+
+Passives:
+['Resist Attack Ailments: This character has innate resistance against status ailments that affect attack.', 'Heal when status ailment expires or is cleared: This character receives 5% health each time a status ailment expires or is cleansed, removed or reallocated from them. This effect can activate only once per turn.']
+
+
+********************
+Head to Head Analysis
+********************
+Overall: Both are yellow-hit3. However, Christine is faster and hit-harder. Christine dance is also effective prevent enemies buffs as Aviana, but much more superior as dance is uncleansible (except if the opponent team also has another dancer where new dance will replace the old dance).
+
+Stat: These two have similar stats. 
+
+Aviana Advantage
+-----------------------
+	- Only main advantage is 50% critical buff for nearby allies. This buff make tile attack 50% stronger than usual.
+	- The 5% dodge chance from elemental-link is almost luxury. 5% is too small to be reliable.
+	- Aviana's passive can make him effectively fast provided that his teammate give lots of buffs.
+
+Christine Advantage
+-----------------------
+	- As mentioned, Christine is superior to Aviana in almost every other way, hit-harder, faster, and much stronger & effective ailments.
+	- Christine dance also make enemies  -40% accuracy and -40% defense so much more easier to kill. They are effectively sandbags. Two only way to remove Christine dance is to cast another "dance special skill", or kill Christine herself. With -40% accuracy, this is much difficult (except for the elves, which is "never miss")
+
+Head-to-Head Synergy Analysis with Other Heroes:
+------------------
+	- Aviana needs to pair with heroes who give buffs, so that Aviana can be "Fast" instead of "Average". Also, pair her with other 2024 family heroes will give her extra bonus.
+	- Christine Daae has to be avoid pairing her with allies giving ailments, since all other ailments will be replaced by Christine's dance. So pair her with buffs maker or hard-hitters to finish the enemy team off.
+
+Winner:
+---------
+It is clear from the analysis that Christine is the much better one here.
+
+
+
+=============================
