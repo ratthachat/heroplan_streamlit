@@ -4,3 +4,4 @@ plotly
 tqdm
 ipywidgets
 Pillow
+google-generativeai
