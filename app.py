@@ -478,12 +478,6 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
             txt = st.text_area("Write your note about team synergy", max_chars=1000, height = 480)
 
     df_hero_all5 = pd.concat(df_hero_list)
-        
-    st.write(f'======================')
-    st.write(f'### Total power = {total_power}')
-    st.write(f'======================')
-    
-    display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=True) # display all except special-skill text
 
     ### BEGIN Gemini API
     GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
@@ -501,6 +495,8 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
     current_prompt = prompt+end_prompt
     response = model.generate_content(current_prompt)
     st.write(response.text)
+
+    display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=True) # display all except special-skill text
 
 #########################################
 ## Program 3 "Individual Stat"
