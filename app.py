@@ -475,7 +475,8 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
     for ii in range(nheroes_choice):
         rand_ii = random.randint(0, len(df_extra))
         with col_list[ii]:
-            df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=rand_ii)) # 'key' in st.selectbox to differentiate widgets
+            # UNFORTUNATELY, couldn't use rand_ii as default_index as program always refresh
+            df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=ii)) # 'key' in st.selectbox to differentiate widgets
             write_short_description(df_hero_list[-1])
         total_power += df_hero_list[ii]['power'].values[0]
 
@@ -502,7 +503,10 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
 
     ### Generate FUN story
     if story_flag:
-        story_prompt = "Generate a fun, fighting story of two heroes based on the following head-to-head information:\n\n" + end_prompt + response.text
+            txt_hero1 = generate_hero_description(df1)
+            txt_hero2 = generate_hero_description(df2)
+
+        story_prompt = "Generate a fun, fighting story of two heroes based on the following {hero1} vs. {hero2} information:\n\n" + txt_hero1 + txt_hero2 + response.text
         story_response = model.generate_content(story_prompt)
         st.write(story_response.text)
 
