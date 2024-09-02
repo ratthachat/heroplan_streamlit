@@ -267,7 +267,7 @@ def generate_end_prompt(df0, hero1, hero2, df1=None, df2=None):
     end_txt = """
 Now please begin with
 ********************
-Head to Head Analysis
+# Head to Head Analysis
 ********************
 """
 
