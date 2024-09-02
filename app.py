@@ -473,7 +473,7 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
     df_hero_list = []
     total_power = 0
     for ii in range(nheroes_choice):
-        rand_ii = random.randint(len(df_extra))
+        rand_ii = random.randint(0, len(df_extra))
         with col_list[ii]:
             df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=rand_ii)) # 'key' in st.selectbox to differentiate widgets
             write_short_description(df_hero_list[-1])
