@@ -510,7 +510,7 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
         
         story_prompt = f"Generate a fun, fighting story of two heroes based on the following {hero1} vs. {hero2} information:\n\n" + txt_hero1 + txt_hero2 + response.text
         story_response = model.generate_content(story_prompt)
-        st.write("\nFIGHTING STORY\n____________\n")
+        st.write("## FIGHTING STORY")
         st.write(story_response.text)
 
 #########################################
