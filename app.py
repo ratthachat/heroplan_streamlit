@@ -503,8 +503,8 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
 
     ### Generate FUN story
     if story_flag:
-            txt_hero1 = generate_hero_description(df1)
-            txt_hero2 = generate_hero_description(df2)
+        txt_hero1 = generate_hero_description(df_hero_list[0])
+        txt_hero2 = generate_hero_description(df_hero_list[1])
 
         story_prompt = f"Generate a fun, fighting story of two heroes based on the following {hero1} vs. {hero2} information:\n\n" + txt_hero1 + txt_hero2 + response.text
         story_response = model.generate_content(story_prompt)
