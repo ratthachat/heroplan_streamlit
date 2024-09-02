@@ -8,7 +8,7 @@ from pathlib import Path
 from collections import defaultdict
 
 import os, time
-
+import random
 #########################################
 # Helpers Functions
 
@@ -459,25 +459,25 @@ elif genre == "Team Simulation":
 #########################################
 ## Program 4 "Hero Comparison by Gemini AI (new)!!"
 elif genre == "Hero Comparison by Gemini AI (new)!!":
-    note_flag = st.checkbox("Displayt Notepad", value=False)
+    story_flag = st.checkbox("Imagine Exciting Fighting Between The Two", value=False)
     nheroes_choice = 2
 
-    additional_col = 0
-    if note_flag:
-        additional_col = 1
-        
-    col_list = st.columns(nheroes_choice+additional_col)
+    #################
+    # FUN Idea
+    # COULDN'T do this even on init, since when user specified, df_extra must be used instead of df_init_rand
+    # rand_power_threshold = 850 # will randomly show heroes which power above threshold
+    # idx = filter_by_1col_num(df_extra, 'power', rand_power_threshold, oper_flag="ge")
+    # df_init_rand = df_extra[idx]
+    
+    col_list = st.columns(nheroes_choice)
     df_hero_list = []
     total_power = 0
     for ii in range(nheroes_choice):
+        rand_ii = random.randint(len(df_extra))
         with col_list[ii]:
-            df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=ii)) # 'key' in st.selectbox to differentiate widgets
+            df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=rand_ii)) # 'key' in st.selectbox to differentiate widgets
             write_short_description(df_hero_list[-1])
         total_power += df_hero_list[ii]['power'].values[0]
-
-    if note_flag:
-        with col_list[-1]:
-            txt = st.text_area("Write your note about team synergy", max_chars=1000, height = 480)
 
     df_hero_all5 = pd.concat(df_hero_list)
 
@@ -499,6 +499,12 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
     st.write(response.text)
 
     display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=True) # display all except special-skill text
+
+    ### Generate FUN story
+    if story_flag:
+        story_prompt = "Generate a fun, fighting story of two heroes based on the following head-to-head information:\n\n" + end_prompt + response.text
+        story_response = model.generate_content(story_prompt)
+        st.write(story_response.text)
 
 #########################################
 ## Program 3 "Individual Stat"
