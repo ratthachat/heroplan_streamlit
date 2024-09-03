@@ -4,7 +4,7 @@ Before detailed examples, let clearly understood general aspects of the game
 	- The game has PvE and PvP mode where
 		○ PvP mode is the main focus, and mana speed & control is very important . Timing is almost everything, and slow-speed is generally undesirable except slow-speed with super-high impact
 
-One exception is in the special "rush" tournament, where all speeds are upgraded to "Very Fast" (still all magic, ninja & styx will not get any advantages there, since they still need to charge multiple times)
+	One exception is in the special "rush" tournament, where all speeds are upgraded to "Very Fast" (still all magic, ninja & styx will not get any advantages there, since they still need to charge multiple times)
 
 		○ PvE mode is lower priority, but is still of concerned. Here, we can wait (or use items) to charge all slow speed heroes to show their potential
 	- More about speed (already taken into account on troops speed up -- see below):
@@ -34,11 +34,13 @@ One exception is in the special "rush" tournament, where all speeds are upgraded
 
 	- DoT (Damage over Time) ailment. DoT is usually a good damage dealer to increase a lot to regular instant damage. There are many types of DoT e.g. Poison, Bleed, Water, Sand and Burn. Different types of DoT will stack together so its damage can be very substantial (one good synergy strategy), while same type of DoT will overwrite each other.
 
-As mentioned above, if heroes have LB1 or LB2, +20 or +25, his DoT will increase more than what is stated in statistics. Maximally speaking, equipped with legendary troop, DoT can be almost twice as stated in the stat.
+	As mentioned above, if heroes have LB1 or LB2, +20 or +25, his DoT will increase more than what is stated in statistics. Maximally speaking, equipped with legendary troop, DoT can be almost twice as stated in the stat.
 
-For example, Viselus' poison is stated as 574 per 4 turns. If we equipped him with LB2, +25 and legendary troop, his poison will increase to around 1100.
+	For example, Viselus' poison is stated as 574 per 4 turns. If we equipped him with LB2, +25 and legendary troop, his poison will increase to around 1100.
 
-DoT has weakness on Toon heroes nevertheless, as Toon heroes has 75% chance to resist all ailments. 
+	**Important** whenever you find a DoT hero, always speculate the upgraded DoT damage a little bit below 200% (you can see examples below)
+
+	DoT has weakness on Toon heroes nevertheless, as Toon heroes has 75% chance to resist all ailments. 
 	
 	- Toon heroes can resist all ailments including dance, but Toon cannot resist "wither" and "insanity".
 
