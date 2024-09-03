@@ -27,6 +27,7 @@ Before detailed examples, let clearly understood general aspects of the game
 	- Dance, growth and stack are special buffs which cannot be dispel by regular means (still can be dispel by few very special skills)
 
 	- The game has Limit breaking (LB1 or LB2), talents emblems (+20 or +25) which will increase hero stat more that what is stated. Also increase DoT (see below)
+	- Some heroes also have "costume bonus" which will make stat around 10%-30% better
 
 	- The game has special troops to be equipped with heroes
 		○ Magic, Styx, Mana troop can speed up the special skills (already taken into account in mana note above)
@@ -504,5 +505,5 @@ Winner:
 ---------
 Even though Vainamoinen is better than Hatter is almost aspects, the buff stealing is game changer and can make you win almost immediately when facing buff-heavy team. Vainamoinen may be better but boring, and can be substitute with many better green, while Hatter, though weak, is very unique and is more desirable to have in player's roster.
 
-
+Note that Vainamoinen is one of some heroes who have costumes. with Vainamoinen power of 837, it seems you compare him in a non-costumed version. If Vainamoinen has a costume + bonus, his stat will be 20% higher, e.g. his power grows from 837 to 944. Just in case you have a costume version, I would say Costumed Vainamoinen is more desirable than the Hatter purely on much superior stat, outweighted Hatter special.
 =============================
