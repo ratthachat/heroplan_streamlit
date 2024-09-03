@@ -1,17 +1,61 @@
 Lets assume you are an expert in a mobile game "Empires & Puzzles" from Zynga. Now I would like you to compare the two cards for pros and cons of each card. 
 
-	- Following examples below in analysis style and format
+Before detailed examples, let clearly understood general aspects of the game 
+	- The game has PvE and PvP mode where
+		○ PvP mode is the main focus, and mana speed & control is very important . Timing is almost everything, and slow-speed is generally undesirable except slow-speed with super-high impact
+
+One exception is in the special "rush" tournament, where all speeds are upgraded to "Very Fast" (still all magic, ninja & styx will not get any advantages there, since they still need to charge multiple times)
+
+		○ PvE mode is lower priority, but is still of concerned. Here, we can wait (or use items) to charge all slow speed heroes to show their potential
+	- More about speed (already taken into account on troops speed up -- see below):
+		○ Very Fast = 6 tiles (usually can fire at least twice in the PvP)
+		○ Fast = 7-8 tiles (usually can fire around 1-2  in PvP)
+		○ Average = 9 tiles (perhaps fire once in PvP)
+		○ Slow = 10 tiles (it may die before it can fire, so you need healer to keep this hero alive while waiting for enough tiles)
+		○ Very Slow = 12 tiles (usually no one use this speed beside PvE or rush mode)
+	
+	Magic, Ninja & Styx are special as they have different charges.
+		○ Magic: 1st charge is Very Fast (6 tiles), and 2nd charge is slow (12 tiles)
+		○ Styx: 1st charge is Very Fast (6 tiles), 2nd charge is Fast (8-9 tiles), and 3rd charge is "Slow" (12 tiles), 
+		○ Ninja: 1st charge is Extreme Fast (5 tiles), 2nd charge is average speed (10 tiles), while 3rd is "impractical", extremely slow (13 tiles) and do not need to be considered
+	With this multi-charge mechanic, Ninja, Styx and Magic are inherently mitigate the enemies mana-cut (good thing)
+	
+	You can see that "Very Fast" heroes usually cast at least twice, but to make this hero useful, the very fast special should provide some considerable effect to either enemies or allies. For "Slow", the effect must be pretty strong to be able to turn the table all around (e.g. Grimsteel or Starlass are good examples)
+
+	Some heroes which can increase mana directly are valuable. Uncleansible mana-generation buff is also good.
+	
+	- Dance, growth and stack are special buffs which cannot be dispel by regular means (still can be dispel by few very special skills)
+
+	- The game has Limit breaking (LB1 or LB2), talents emblems (+20 or +25) which will increase hero stat more that what is stated. Also increase DoT (see below)
+
+	- The game has special troops to be equipped with heroes
+		○ Magic, Styx, Mana troop can speed up the special skills (already taken into account in mana note above)
+		○ Legendary troop can speed up mana, increase attack, defense and HP significantly. DoT will also increase in the same scale of attack boost.
+
+	- DoT (Damage over Time) ailment. DoT is usually a good damage dealer to increase a lot to regular instant damage. There are many types of DoT e.g. Poison, Bleed, Water, Sand and Burn. Different types of DoT will stack together so its damage can be very substantial (one good synergy strategy), while same type of DoT will overwrite each other.
+
+As mentioned above, if heroes have LB1 or LB2, +20 or +25, his DoT will increase more than what is stated in statistics. Maximally speaking, equipped with legendary troop, DoT can be almost twice as stated in the stat.
+
+For example, Viselus' poison is stated as 574 per 4 turns. If we equipped him with LB2, +25 and legendary troop, his poison will increase to around 1100.
+
+DoT has weakness on Toon heroes nevertheless, as Toon heroes has 75% chance to resist all ailments. 
+	
+	- Toon heroes can resist all ailments including dance, but Toon cannot resist "wither" and "insanity".
+
+	- Each class has a talent, but the most important classes to aware are
+		○ Cleric : it has 30% chance to reject all mana-related attack & ailments
+		○ Monk: it has 50% chance to reject all ailments (but not mana-cut)
+		○ Druid: it has 20% chance to summon minions to protect the hero (equivalent to 15% self-heal each), so translate to at least 10% more HP for this hero during the fight
+
+
+On analysis, do this:
 	- Be conscious and very serious on quantitative number, not only on qualitative. For examples, 
 		○ 5% dodge chance is almost nothing. Almost elemental-links (except 2017 family) are nothing.
 		○ 200%-damage of Hero with 1000 attack stat, is much better than 300%-damage of Hero with only 500 attack stat - so be conscious on quantitative number
 		○ Stat is very important, for examples, 3-stars defensive stat of around 500 is much quicker to be killed than 5-stars defensive stat of 1000. And 5-stars attack stat of 1000 hit much harder than 3-stars attack of 500 since the damage calculation is non-linear.
 	- Do not need to emphasize the weaker hero. Be decisive to say which hero is better in the end in most situation.
-	- Be aware of charges of magic, styx and ninja families. Practically, 
-		○ Magic: 1st charge is Very Fast (6 tiles), and 2nd charge is slow (12 tiles)
-		○ Styx: 1st charge is Very Fast (6 tiles), 2nd charge is Fast (8-9 tiles), and 3rd charge is "Slow" (12 tiles), 
-		○ Ninja: 1st charge is Extreme Fast (5 tiles), 2nd charge is average speed (10 tiles), while 3rd is "impractical", extremely slow (15 tiles) and do not need to be considered
 
-
+Following examples below in analysis style and format
 
 =============================
 Example 1:
@@ -88,7 +132,7 @@ With swiss-knife property, Willow seems to be more suitable to synergy to variou
 
 Winner:
 ---------
-Willow is a winner here with small margin due to his/her wider applications though a bit weaker counterattacker. Willow also has a slightly more stat power than Bennu, especially on Defense + Health stats which are most important for support heroes.
+Willow is a winner here with small margin due to his/her wider applications though a bit weaker counterattacker. Willow also has a slightly more stat power than Bennu, especially on Defense + Health stats which are most important for support heroes. When using Willow (as well as many other Magic heroes), you need to enter the "battle of endurance" (or long-game mode) though.
 
 =============================
 Example 2:
@@ -161,7 +205,7 @@ As they both have the same main functional, they can be synergized by the same h
 
 Winner:
 ---------
-Starlass is a clear winner here. Though Starlass speed is at disadvantage, but once Starlass fires, Starlass will likely finish the job.
+Starlass is a clear winner here. Though Starlass speed is at disadvantage, but once Starlass fires, Starlass will likely finish the job. This is generally true on both PvP and PvE.
 
 =============================
 Example 3:
@@ -230,7 +274,7 @@ Nevertheless, Voidstar's "special skill" defense buff can stack with "normal" de
 
 Winner:
 ---------
-Both are good, but Voidstar is the clear hero here.
+Both are good, but Voidstar is the clear hero here. Note that on PvE mode, Rochefort can save your time because it can kill many enemies mob faster.
 
 
 =============================
@@ -296,7 +340,91 @@ Head-to-Head Synergy Analysis with Other Heroes:
 
 Winner:
 ---------
-It is clear from the analysis that Christine is the much better one here.
+It is clear from the analysis that Christine is the much better one here. This is true on both PvP and PvE mode in general.
+
+
+=============================
+Example 5:
+Viselus vs.  Alucard
+
+Viselus Description:
+Star: 5
+Color: Green
+Power: 820
+Attack: 716
+Defense: 826
+Health: 1524
+Speed: Average
+Class: Druid
+
+Special Skills:
+['Destroys all Minions from the target and nearby enemies.', 'Deals 310% damage to the target and nearby enemies.', 'The target and nearby enemies receive 572 Poison damage over 4 turns.', 'Element Link gives all Nature allies +5% chance to dodge status ailments for 4 turns. This effect cannot be dispelled.']
+
+Passives:
+['Resist Poison: This character has innate resistance against Poison.', 'Health Boost of Poison: Boosts health of this character and nearby allies by 2% for each enemy inflicted with Poison at the end of each turn. Boosted health can exceed max HP.']
+
+
+Alucard Description:
+Star: 5
+Color: Green
+Power: 851
+Attack: 852
+Defense: 803
+Health: 1454
+Speed: Very Fast
+Class: Sorcerer
+
+Special Skills
+['Destroys all Minions from the target and nearby enemies.', 'Deals 250% damage to the target and nearby enemies.', 'All allies recover 10% health for each destroyed Minion.', 'All allies get 3% mana for each destroyed Minion.', 'The attack bypasses defensive buffs. This includes counterattacks.']
+
+Passives
+['Steal Buff - When this character casts their Special Skill, they have a 50% chance to steal the newest dispellable buff from a random enemy that has buffs. If no enemy has buffs, deals 70% damage to all enemies.']
+
+
+
+********************
+Head to Head Analysis
+********************
+Stat: Alucard has slightly better overall stat. Breaking down, Alucard has 20% more attack stat, but slightly weaker defense and HP, so Viselus is more durable.
+
+Overall: Both are 3-enemies hitter which can eliminate minions instantly. However, they differ in speed, minion after-effects, and DoT.
+
+
+Viselus Advantage
+-----------------------
+	- Surprisingly, Viselus actually damage slightly more instantly as we can see the calculation details:
+		○ Alucard : 250% x 852 = 2,130 
+		○ Viselus: 310% x 716 = 2,219
+	
+	Viselus has also significant DoT poison of base 574, or around 1100 with LB2 +25 and legendary troop. This surprisingly make Viselus a decent hitter even though he has bad attack stat. 
+	Nevertheless, their overall-in-game damage may be roughly the same as Alucard has superior very fast speed.
+	- Combining with his better defense & HP (also better with his 2023 family bonus which +10% even more defense), Viselus can be more reliable to survive enemy hit
+	- Viselus passive is also surprisingly good than most people thought. He heal 2% per poison per enemy per turn. Note that he poison to 3 enemies for 4 turns, this actually make Viselus heal 2% x 3 x 4 = 24% which is equivalent to a good secondary healer of the team.
+
+Alucard Advantage
+-----------------------
+	- The main advantage is his "Very Fast" speed, which almost guarantee that he mostly destroy most minions in time before the minions will show any of their special effects. For example, if minions can heal the owner, Alucard can kill them off instantly, while for Viselus, the minions may successfully heal the owners 1-2 turns at least.
+
+Note that with Waterpipe's minion which can cut mana, the chance of both Alucard and Viselus are reduced to 50-50 and 20-80 respectively.
+	- Alucard can "bypass" defensive buffs, so in this situation where enemy have defensive buffs, Alucard can produce more instant damage than Viselus. However, this may not compensate Viselus DoT.
+	- With minions destroying, Alucard can heal even more than Viselus! For examples, he heal 30% just for 3 minions, and also give 9% mana to allies.
+	
+Head-to-Head Synergy Analysis with Other Heroes:
+------------------
+	- With his passive "Heal-over-time", he can synergize very well with heroes who has advantage on healing. For example, R&N and Sir Casmir got mana every time they got healed. He also pair well to other poison caster so that his passive heal can activate most of the time. Or he can pair with other DoT type for stacking.
+
+If he pair with other 2023-family, he will get even more defense bonus.
+
+	- Alucard can pair well with attack-buffer so that his bypassing will show the most potential. If he pair with other Morlovia family heroes, he get more mana-generation bonus (but this may not be significant as he is already Very Fast)
+
+Winner:
+---------
+Surprisingly, I found Viselus is a little bit better in "most" situation as described above where Viselus can provide more damage even with his inferior attack stat. (similar damage in total overall-in-game damage if taking into account Alucard speed)
+
+The main difference maker is that Viselus can provide reliable heal which is very important on both PvP and PvE, where as Alucard needs minion summoners on this effect.
+
+Alucard has a certain situation where he is better, which is when enemies has a lot of minion summoners, or additionally, lots of defensive buffers, where Alucard can shine the best. Nevertheless, minion summoners are not popular nowadays due to many existing minion-counters (including both Alucard, Viselus and "Lunar"-family heroes)
+
 
 
 
