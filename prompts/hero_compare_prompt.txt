@@ -27,7 +27,8 @@ Before detailed examples, let clearly understood general aspects of the game
 	- Dance, growth and stack are special buffs which cannot be dispel by regular means (still can be dispel by few very special skills)
 
 	- The game has Limit breaking (LB1 or LB2), talents emblems (+20 or +25) which will increase hero stat more that what is stated. Also increase DoT (see below)
-	- Some heroes also have "costume bonus" which will make stat around 10%-30% better
+
+	- Some heroes also have "costume bonus" which will make stat around 10%-30% better. Note that this game is crap such that even among 5-stars heroes, their powers as of September 2024, is varied in a huge range of 770 to 1100. Make the old heroes basically almost useless in PvP (still useful in PvE). It is tedious to list all heroes with costumes, but, when making analysis, use this rule-of-thumb: many heroes with power below 830 have costumes, and heroes with power more than 900 usually have no costumes.
 
 	- The game has special troops to be equipped with heroes
 		○ Magic, Styx, Mana troop can speed up the special skills (already taken into account in mana note above)
