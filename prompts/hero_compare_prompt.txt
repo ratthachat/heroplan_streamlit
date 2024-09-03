@@ -48,14 +48,16 @@ Before detailed examples, let clearly understood general aspects of the game
 		○ Cleric : it has 30% chance to reject all mana-related attack & ailments
 		○ Monk: it has 50% chance to reject all ailments (but not mana-cut)
 		○ Druid: it has 20% chance to summon minions to protect the hero (equivalent to 15% self-heal each), so translate to at least 10% more HP for this hero during the fight
-
+	- When the text say "minor damage", it actually mean 50% damage of the stated main damage
 
 On analysis, do this:
 	- Be conscious and very serious on quantitative number, not only on qualitative. For examples, 
 		○ 5% dodge chance is almost nothing. Almost elemental-links (except 2017 family) are nothing.
 		○ 200%-damage of Hero with 1000 attack stat, is much better than 300%-damage of Hero with only 500 attack stat - so be conscious on quantitative number
 		○ Stat is very important, for examples, 3-stars defensive stat of around 500 is much quicker to be killed than 5-stars defensive stat of 1000. And 5-stars attack stat of 1000 hit much harder than 3-stars attack of 500 since the damage calculation is non-linear.
+
 	- Do not need to emphasize the weaker hero. Be decisive to say which hero is better in the end in most situation.
+	- Be very precise on damage (and other number calculation) as shown in various examples below. When comparing damage output, always use special-%-damage x attack-stat to compare.
 
 Following examples below in analysis style and format
 
@@ -428,6 +430,79 @@ The main difference maker is that Viselus can provide reliable heal which is ver
 Alucard has a certain situation where he is better, which is when enemies has a lot of minion summoners, or additionally, lots of defensive buffers, where Alucard can shine the best. Nevertheless, minion summoners are not popular nowadays due to many existing minion-counters (including both Alucard, Viselus and "Lunar"-family heroes)
 
 
+=============================
+Example 5:
+Vainamoinen vs.  The Hatter
+
+Vainamoinen Description:
+Star: 5
+Color: Green
+Power: 837
+Attack: 799
+Defense: 807
+Health: 1481
+Speed: Fast
+Class: Sorcerer
+
+Special Skills
+['Deals 270% damage to the target and nearby enemies.', 'All enemies get -30% accuracy for 3 turns. Against Fire characters, this status effect becomes uncleansable and lasts 2 turns longer. Chance to miss also applies to offensive Special Skills.']
+
+Passives
+['Power of Sisu: When this character starts a turn with low health for the first time during a battle, they recover 15% health and receive 15% mana.']
+
+
+
+The Hatter Description:
+Star: 5
+Color: Green
+Power: 768
+Attack: 735
+Defense: 710
+Health: 1341
+Speed: Average
+Class: Cleric
+
+Special Skills
+['Deals 400% damage to the target and minor damage to nearby enemies', 'Steals all the dispellable buffs from all enemies and randomly allocates them on all allies']
+
+
+********************
+Head to Head Analysis
+********************
+Stat: Vainamoinen has a significantly better stat around 10% in all areas.
+
+Overall: Both are green 3-target hitters with a focus on different aspects. Vainamoinen is faster and focused on control with an accuracy ailment, while The Hatter is slower but can do a buff stealer, offering a potentially chaotic gameplay twist.
+
+Their damage output have different aspects:
+	- Vainamoinen hit-3 with damage 799x270% = 2,157 to all 3 enemies
+	- Hatter hit major damage = 735*400% = 2,940 to the main enemy and minor (half) = 2940/2 = 1470 to nearby enemies.
+You can see that Hatter hit the main enemy harder, while Vainamoinen total hit on 3 is harder. So on damage, it's depend that you want to focus on a single enemy or 3-enemies altogether. 
+
+However, I would say with recent heroes in 2024 equipped with Legendary troop, the damage these two old heroes made are quite negligible, so we may focus on their non-damage capabilities.
+
+ Vainamoinen Advantage
+-----------------------
+	- Faster hit, faster ailment
+	- The accuracy-ailment is not bad, but with only 30%, it can increase survivability of the whole team a bit. We may need to pair him with other fast-green dodger to help avoid enemies special.
+	- His passive is good, effectively make him 15% more HP, much more durable than the Hatter. The mana addition is not too much since he is already fast.
+
+
+Hatter Advantage
+-----------------------
+	- Only one advantage on the Hatter is the buff-stealing. Nevertheless, this is huge as this game much evolve around buffs. So this skill can be game changer, unlike Vainamoinen which do a lot of boring things.
+	
+Head-to-Head Synergy Analysis with Other Heroes:
+------------------
+	- Pair Vainamoinen with 
+		○ dodger to better enemies special
+		○ Other red-killer heroes to focus on red enemies
+		○ Some heroes which can change enemy's color e.g. Salmon Loki or Chameleon
+	- Pair Hatter with
+		○ Healer and defense buffer, since Hatter with weak defense & HP stat really needs to survive to make a difference
+
+Winner:
+---------
+Even though Vainamoinen is better than Hatter is almost aspects, the buff stealing is game changer and can make you win almost immediately when facing buff-heavy team. Vainamoinen may be better but boring, and can be substitute with many better green, while Hatter, though weak, is very unique and is more desirable to have in player's roster.
 
 
 =============================
