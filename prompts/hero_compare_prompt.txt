@@ -4,7 +4,7 @@ Before detailed examples, let clearly understood general aspects of the game
 	- The game has PvE and PvP mode where
 		○ PvP mode is the main focus, and mana speed & control is very important . Timing is almost everything, and slow-speed is generally undesirable except slow-speed with super-high impact
 
-	One exception is in the special "rush" tournament, where all speeds are upgraded to "Very Fast" (still all magic, ninja & styx will not get any advantages there, since they still need to charge multiple times)
+One exception is in the special "rush" tournament, where all speeds are upgraded to "Very Fast" (still all magic, ninja & styx will not get any advantages there, since they still need to charge multiple times)
 
 		○ PvE mode is lower priority, but is still of concerned. Here, we can wait (or use items) to charge all slow speed heroes to show their potential
 	- More about speed (already taken into account on troops speed up -- see below):
@@ -27,8 +27,8 @@ Before detailed examples, let clearly understood general aspects of the game
 	- Dance, growth and stack are special buffs which cannot be dispel by regular means (still can be dispel by few very special skills)
 
 	- The game has Limit breaking (LB1 or LB2), talents emblems (+20 or +25) which will increase hero stat more that what is stated. Also increase DoT (see below)
-
-	- Some heroes also have "costume bonus" which will make stat around 10%-30% better. Note that this game is crap such that even among 5-stars heroes, their powers as of September 2024, is varied in a huge range of 770 to 1100. Make the old heroes basically almost useless in PvP (still useful in PvE). It is tedious to list all heroes with costumes, but, when making analysis, use this rule-of-thumb: many heroes with power below 830 have costumes, and heroes with power more than 900 usually have no costumes.
+	
+	- Some heroes also have "costume bonus" which will make stat around 10%-30% better. Note that this game is crap such that even among 5-stars heroes, their powers as of September 2024, is varied in a huge range of 770 to 1100. Make the old heroes basically almost useless in PvP (still useful in PvE). It is tedious to list all heroes with costumes, but, when making analysis, use this rule-of-thumb: all seasons 1-5 heroes have costumes, 2017-2018 family heroes have costumes, and many heroes with power below 800 have costumes , and heroes with power more than 900 usually have NO costumes.
 
 	- The game has special troops to be equipped with heroes
 		○ Magic, Styx, Mana troop can speed up the special skills (already taken into account in mana note above)
@@ -36,13 +36,13 @@ Before detailed examples, let clearly understood general aspects of the game
 
 	- DoT (Damage over Time) ailment. DoT is usually a good damage dealer to increase a lot to regular instant damage. There are many types of DoT e.g. Poison, Bleed, Water, Sand and Burn. Different types of DoT will stack together so its damage can be very substantial (one good synergy strategy), while same type of DoT will overwrite each other.
 
-	As mentioned above, if heroes have LB1 or LB2, +20 or +25, his DoT will increase more than what is stated in statistics. Maximally speaking, equipped with legendary troop, DoT can be almost twice as stated in the stat.
+As mentioned above, if heroes have LB1 or LB2, +20 or +25, his DoT will increase more than what is stated in statistics. Maximally speaking, equipped with legendary troop, DoT can be almost twice as stated in the stat.
 
-	For example, Viselus' poison is stated as 574 per 4 turns. If we equipped him with LB2, +25 and legendary troop, his poison will increase to around 1100.
+For example, Viselus' poison is stated as 574 per 4 turns. If we equipped him with LB2, +25 and legendary troop, his poison will increase to around 1100.
+	
+**Important** whenever you find a DoT hero, always speculate the upgraded DoT damage a little bit below 200% (you can see examples below)
 
-	**Important** whenever you find a DoT hero, always speculate the upgraded DoT damage a little bit below 200% (you can see examples below)
-
-	DoT has weakness on Toon heroes nevertheless, as Toon heroes has 75% chance to resist all ailments. 
+DoT has weakness on Toon heroes nevertheless, as Toon heroes has 75% chance to resist all ailments. 
 	
 	- Toon heroes can resist all ailments including dance, but Toon cannot resist "wither" and "insanity".
 
@@ -50,15 +50,16 @@ Before detailed examples, let clearly understood general aspects of the game
 		○ Cleric : it has 30% chance to reject all mana-related attack & ailments
 		○ Monk: it has 50% chance to reject all ailments (but not mana-cut)
 		○ Druid: it has 20% chance to summon minions to protect the hero (equivalent to 15% self-heal each), so translate to at least 10% more HP for this hero during the fight
-	- When the text say "minor damage", it actually mean 50% damage of the stated main damage
 
+	- When the text say "minor damage", it actually mean 50% damage of the stated main damage
+	
 On analysis, do this:
 	- Be conscious and very serious on quantitative number, not only on qualitative. For examples, 
 		○ 5% dodge chance is almost nothing. Almost elemental-links (except 2017 family) are nothing.
 		○ 200%-damage of Hero with 1000 attack stat, is much better than 300%-damage of Hero with only 500 attack stat - so be conscious on quantitative number
 		○ Stat is very important, for examples, 3-stars defensive stat of around 500 is much quicker to be killed than 5-stars defensive stat of 1000. And 5-stars attack stat of 1000 hit much harder than 3-stars attack of 500 since the damage calculation is non-linear.
-
 	- Do not need to emphasize the weaker hero. Be decisive to say which hero is better in the end in most situation.
+	
 	- Be very precise on damage (and other number calculation) as shown in various examples below. When comparing damage output, always use special-%-damage x attack-stat to compare.
 
 Following examples below in analysis style and format
@@ -136,6 +137,8 @@ Head-to-Head Synergy Analysis with Other Heroes:
 ------------------
 With swiss-knife property, Willow seems to be more suitable to synergy to various kind of other heroes compared to Bennu. For example, both synergize well with other-type defense buffers, but Willow alone synergize also well with hard-hitter (because Willow give the bypassing to the hard-hitter)
 
+Synergy between these two? : Since their skills rewrite each other, and not making direct damage, I could not see much how these two can synergize each other.
+
 Winner:
 ---------
 Willow is a winner here with small margin due to his/her wider applications though a bit weaker counterattacker. Willow also has a slightly more stat power than Bennu, especially on Defense + Health stats which are most important for support heroes. When using Willow (as well as many other Magic heroes), you need to enter the "battle of endurance" (or long-game mode) though.
@@ -209,6 +212,9 @@ Head-to-Head Synergy Analysis with Other Heroes:
 ------------------
 As they both have the same main functional, they can be synergized by the same heroes. E.g. green defense-down (DD) or elemental defense down (EDD), or any other attack-buff heroes.
 
+Synergy between these two? : Not much clever synergy, but two of them together perhaps can control mana of 4-5 enemies at the same time. (Except e.g. Toon heroes who has passive to 75% resist ailments)
+
+
 Winner:
 ---------
 Starlass is a clear winner here. Though Starlass speed is at disadvantage, but once Starlass fires, Starlass will likely finish the job. This is generally true on both PvP and PvE.
@@ -278,6 +284,8 @@ If function as a hard-hitter, both can have similar synergy to other hard hitter
 
 Nevertheless, Voidstar's "special skill" defense buff can stack with "normal" defense buff, so he synergize also well with other defense-oriented heroes to protect the whole team.
 
+Synergy between these two? : Indeed. Fire Rochefort first to mark his ailment to the enemy. Then, fire Voidstar to finish that enemy and invoke the secondary effects to all enemies. Being on-color of the same speed, fire the two of them together is a given. If facing legendary troop, we may need another purple to make some def-down ailment to the enemies first.
+
 Winner:
 ---------
 Both are good, but Voidstar is the clear hero here. Note that on PvE mode, Rochefort can save your time because it can kill many enemies mob faster.
@@ -344,6 +352,8 @@ Head-to-Head Synergy Analysis with Other Heroes:
 	- Aviana needs to pair with heroes who give buffs, so that Aviana can be "Fast" instead of "Average". Also, pair her with other 2024 family heroes will give her extra bonus.
 	- Christine Daae has to be avoid pairing her with allies giving ailments, since all other ailments will be replaced by Christine's dance. So pair her with buffs maker or hard-hitters to finish the enemy team off.
 
+Synergy between these two? : Being on-color damage dealer with similar speed, a little synergy of 1-2 punches is always possible. First from Christine making enemies' defense down with her dance, then Aviana can hit harder.
+
 Winner:
 ---------
 It is clear from the analysis that Christine is the much better one here. This is true on both PvP and PvE mode in general.
@@ -403,7 +413,9 @@ Viselus Advantage
 		○ Viselus: 310% x 716 = 2,219
 	
 	Viselus has also significant DoT poison of base 574, or around 1100 with LB2 +25 and legendary troop. This surprisingly make Viselus a decent hitter even though he has bad attack stat. 
-	Nevertheless, their overall-in-game damage may be roughly the same as Alucard has superior very fast speed.
+
+Nevertheless, their overall-in-game damage may be roughly the same as Alucard has superior very fast speed.
+
 	- Combining with his better defense & HP (also better with his 2023 family bonus which +10% even more defense), Viselus can be more reliable to survive enemy hit
 	- Viselus passive is also surprisingly good than most people thought. He heal 2% per poison per enemy per turn. Note that he poison to 3 enemies for 4 turns, this actually make Viselus heal 2% x 3 x 4 = 24% which is equivalent to a good secondary healer of the team.
 
@@ -423,6 +435,8 @@ If he pair with other 2023-family, he will get even more defense bonus.
 
 	- Alucard can pair well with attack-buffer so that his bypassing will show the most potential. If he pair with other Morlovia family heroes, he get more mana-generation bonus (but this may not be significant as he is already Very Fast)
 
+Synergy between these two? : Not see much synergy since they are off-color, very different speed. Perhaps when you meet a very heavy minion summoner team, where you need more than one minion destroyer.
+
 Winner:
 ---------
 Surprisingly, I found Viselus is a little bit better in "most" situation as described above where Viselus can provide more damage even with his inferior attack stat. (similar damage in total overall-in-game damage if taking into account Alucard speed)
@@ -430,7 +444,6 @@ Surprisingly, I found Viselus is a little bit better in "most" situation as desc
 The main difference maker is that Viselus can provide reliable heal which is very important on both PvP and PvE, where as Alucard needs minion summoners on this effect.
 
 Alucard has a certain situation where he is better, which is when enemies has a lot of minion summoners, or additionally, lots of defensive buffers, where Alucard can shine the best. Nevertheless, minion summoners are not popular nowadays due to many existing minion-counters (including both Alucard, Viselus and "Lunar"-family heroes)
-
 
 =============================
 Example 5:
@@ -491,7 +504,7 @@ However, I would say with recent heroes in 2024 equipped with Legendary troop, t
 
 Hatter Advantage
 -----------------------
-	- Only one advantage on the Hatter is the buff-stealing. Nevertheless, this is huge as this game much evolve around buffs. So this skill could be game changer when situations are right. I did not meant to say that buff-stealer is the best skill, for example "direct mana increament" maybe one of the best, but Vainamoinen does only a lot of boring things, especially the accuracy ailment 30% is quite weak.
+	- Only one advantage on the Hatter is the buff-stealing. Nevertheless, this is huge as this game much evolve around buffs. So this skill can be game changer  when situations are right. I did not meant to say that buff-stealer is the best skill, for example "direct mana increament" maybe one of the best, but Vainamoinen does only a lot of boring things, especially the accuracy ailment 30% is quite weak.
 	
 Head-to-Head Synergy Analysis with Other Heroes:
 ------------------
@@ -502,9 +515,11 @@ Head-to-Head Synergy Analysis with Other Heroes:
 	- Pair Hatter with
 		○ Healer and defense buffer, since Hatter with weak defense & HP stat really needs to survive to make a difference
 
+Synergy between these two? : Not much synergy beside a very weak 1-2 punches. There synergy is weak since both of them doesn't make any defense down, with the exception when Hatter is able to steal some strong attack buff for Vainamoinen first. This is not effective still since Hatter is slower than Vainamoinen.
+
 Winner:
 ---------
-Even though Vainamoinen is better than Hatter is almost aspects, the buff stealing is game changer and can make you win almost immediately when facing buff-heavy team. Vainamoinen may be better but boring, and can be substitute with many better green, while Hatter, though weak, is more unique and is more desirable to have in player's roster  when compared to Vainamoinen.
+Even though Vainamoinen is better than Hatter is almost aspects, the buff stealing is game changer and can make you win almost immediately when facing buff-heavy team. Vainamoinen may be better but boring, and can be substitute with many better green, while Hatter, though weak, is more unique and is more desirable to have in player's roster when compared to Vainamoinen.
 
 Note that both Hatter and Vainamoinen is one of some heroes who have costumes. With Vainamoinen power of 837, it seems you compare him in a non-costumed version. If Vainamoinen has a costume + bonus, his stat will be 20% higher, e.g. his power grows from 837 to 944. Just in case you have a costume version, I would say Costumed Vainamoinen is more desirable than the Hatter purely on much superior stat, outweighted Hatter special.
 
