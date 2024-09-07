@@ -7,6 +7,9 @@ Before detailed examples, let clearly understood general aspects of the game
 One exception is in the special "rush" tournament, where all speeds are upgraded to "Very Fast" (still all magic, ninja & styx will not get any advantages there, since they still need to charge multiple times)
 
 		○ PvE mode is lower priority, but is still of concerned. Here, we can wait (or use items) to charge all slow speed heroes to show their potential
+	- There are different between attack team and defense team which some heroes may suit only one of them
+		○ In attack team, players have to match tiles (solving puzzles) to increase heroes' mana
+		○ In defense team, mana is guarantee to increase steadily each turn, and all attack decisions are done by game AI (which is not quite smart -- not optimal)
 	- More about speed (already taken into account on troops speed up -- see below):
 		○ Very Fast = 6 tiles (usually can fire at least twice in the PvP)
 		○ Fast = 7-8 tiles (usually can fire around 1-2  in PvP)
@@ -106,42 +109,49 @@ Passives
 Head to Head Analysis
 ********************
 
-Overall: These two heroes have partial similarity. Namely, both can do counterattack and damage reduction. However, the main difference is that Willow has wider variety of skills. 
+Overall: These two heroes have partial similarity. Namely, both can do counterattack and damage reduction. However, the main difference is that Bennu, while faster, can cast these buffs to only 3 allies, and Willow, with slower at 2nd charge, can cast these buffs to all allies and provide much wider variety of effects. 
 
 Stat: Their stats looks comparable, so we may focus mainly on special skills.
 
 
 Bennu Advantage
 -----------------------
-Bennu is specialized on counter-attack. He generally has a bit stronger counterattack compared to Willow on 5 turns. Also, his damage-reduction is 5% more than Willow, but more importantly, the damage reduction is applied "after" counterattack. This make the counterattack very strong while the damage receive very minor. 
+	- Bennu is average speed, so he is faster than Willow 2nd charge
+	- Bennu has only one skill so easy to activate when using as defense team, while for Willow which has not-so-good 1st charge, but very good 2nd charge, we have to hope for defense AI to activate the right charge.
+	- Bennu is specialized on counter-attack to 3 allies. His counterattack buff is weaker than Willow's at first but can increase steadily when being attacked on 5 turns. In a situation where enemies have minions, Bennu counterattack can be at maximum quickly.
+	- His damage-reduction is 50% while Willow is 45%. Lets say enemy hit 100 damage, Bennu allies will receive 50 damage while Willow allies will receive 55 damage
 
-For example, original 100 damage to one ally may produce 120 counter on turn 3, and the ally will receive only 50 damage himself.
+ In general, we might say broadly that counterattack + damage-reduction buffs of Willow & Bennu are roughly the same.
 
-In contrast, Willow reduce the damage "before" counter attack. Therefore, in the above example, Willow's ally will receive 55 damage, and counter only 55*1.15 = 63.25 damage. You can see that Bennu produce almost twice the damage of Willow.
+	- His healing passive is weaker than Willow, but he has 60% chance to clean latest ailment as a small bonus. Nevertheless, only 60% chance and only clean 1 ailment is not a good thing to boast about.
 
-Bennu passive allow him 60% chance to clean latest cleansable ailment which is good. Also 60% chance to heal 10% is kind of nice, but inferior overall to Willow's 2nd passive.
 
 Willow Advantage
 -----------------------
-Having said that, Willow is a kind of swiss-knife who does a different of thing. In addition to counterattack on his 2nd charge, Willow also does 3 other things :
 
-	1) Willow let all allies bypass all enemies defensive buff, so enemies defense-buff are now useless
-	2) With passive 1, Willow will give -10% mana-(de)generation stack to enemies. This is uncleansible and last forever, which is fairly strong
-	3) With passive 2, Willow will give 15% heal with 100% chance on 2nd charge.
+	- Willow 1st charge, though Very Fast, is quite not impactful with the exception where enemies rely on defense buffs
 
-Although this 2nd charge is slower than Bennu's average speed, it is more applicable when facing defense oriented team, because of the bypassing. Also, with 15% heal and mana-degeneration-stack, Willow allow the team to survive better.
+	- Willow 2nd charge, albeit at slow speed, is a kind of premium swiss-knifes who does a different of impactful things. 
+		○ Willow's counterattack & damage reduction buffs on his 2nd charge apply to "all" allies, which is very strong buffs effect, and unique to Willow. Only Prince Siegfried perhaps has stronger buffs than Willow in this respect
 
-To summarize, while Bennu is specialized only on hard-hitter opponent, Willow can face both hard-hitter and also defense-oriented opponent. In the latter situation, Willow 1st-charge becomes useful as it is very fast and can dispel and block all defensive buff on enemies.
+	- Willow let all allies bypass all enemies defensive buff, so enemies defense-buff are now useless. This buff is also rare in the game.
+	- With passive 1, Willow will give -10% mana-(de)generation stack to enemies. This is uncleansible and last forever, which is fairly good ailment stack
+	- With passive 2, Willow will give 15% heal with 100% chance on 2nd charge. Note that combining with 45% damage reduction, the first 5 turns, this 15% HP will feel like 30%, so he can also act as 2nd healer.
+
+Although this 2nd charge is slower than Bennu's average speed, it is more applicable when facing defense oriented team, because of the bypassing. Considerably counter stronger to AoE (Hit-all) type enemies, since buffs apply to all allies. Also, with 15% heal and mana-degeneration-stack, Willow allow the team to survive much better.
+
 
 Head-to-Head Synergy Analysis with Other Heroes:
 ------------------
-With swiss-knife property, Willow seems to be more suitable to synergy to various kind of other heroes compared to Bennu. For example, both synergize well with other-type defense buffers, but Willow alone synergize also well with hard-hitter (because Willow give the bypassing to the hard-hitter)
+With swiss-knife property, Willow seems to be more suitable to synergy to various kind of other heroes compared to Bennu. For example, both synergize well with other-type defense buffers, but Willow alone synergize also well with hard-hitter (because Willow give the bypassing to the hard-hitter). Importantly, we need to support Willow with strong healer or fast minion summoners, to ensure that Willow will survive until he can cast the 2nd-charge special skill.
 
 Synergy between these two? : Since their skills rewrite each other, and not making direct damage, I could not see much how these two can synergize each other.
 
 Winner:
 ---------
-Willow is a winner here with small margin due to his/her wider applications though a bit weaker counterattacker. Willow also has a slightly more stat power than Bennu, especially on Defense + Health stats which are most important for support heroes. When using Willow (as well as many other Magic heroes), you need to enter the "battle of endurance" (or long-game mode) though.
+Willow is a winner here, especially on attack team, where players can aim for 2nd charge to turn the tide of the match. 
+While Bennu is specialized only on hard-hitter opponent, Willow can face both hard-hitter and also defense-oriented opponent. In the latter situation, Willow 1st-charge becomes useful as it is very fast and can dispel and block all defensive buff on enemies. 
+Willow also has a slightly more stat power than Bennu, especially on Defense + Health stats which are most important for support heroes. When using Willow (as well as many other Magic heroes), you need to enter the "battle of endurance" (or long-game mode) though.
 
 =============================
 Example 2:
