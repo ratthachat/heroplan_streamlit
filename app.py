@@ -50,8 +50,11 @@ def filter_by_1col(df, col_name, query, exact_flag=False):
 
         if isinstance(s, list):
             for s2 in s:
-                flag = check_valid_value(query, s2, exact_flag=exact_flag)
-                if flag: break
+                try:
+                    flag = check_valid_value(query, s2, exact_flag=exact_flag)
+                    if flag: break
+                except Exception as e: # s can be ['None']
+                    flag=False
         else:
             flag = check_valid_value(query, s, exact_flag=exact_flag)
 
@@ -106,6 +109,10 @@ def display_heroes_from_df(df,display_cols=display_cols, show_df=True):
         if df['passives'].values[i] != 0 and df['passives'].values[i] != '0':
             st.write("\n**Passives**")
             st.write(df['passives'].values[i])
+
+        if df['family_bonus'].values[i] != 0 and df['passives'].values[i] != '0':
+            st.write("\n**Family Bonus**")
+            st.write(df['family_bonus'].values[i])
 
 #########################################
 ## Helper function for LB/CB stat analysis
@@ -165,7 +172,7 @@ def return_hero_stat(df0, hero_name, lb_choice="None", costume_choice="None"):
     
     display_cols_0 = ['image', 'name', 'color', 'star', 'class', 'speed',]
     display_cols_1 = [] # ['power', 'attack', 'defense', 'health', ] --> to be select base one LB/Costume choice
-    display_cols_2 = ['AetherPower', 'source', 'family', 'types', 'skill', 'effects', 'passives'] # 'Aether Power' name is changed in June 2024
+    display_cols_2 = ['AetherPower', 'source', 'family', 'types', 'skill', 'effects', 'passives', 'family_bonus'] # 'Aether Power' name is changed in June 2024
 
     prefix = get_prefix(lb_choice, costume_choice)
 
