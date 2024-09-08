@@ -475,6 +475,12 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
     # rand_power_threshold = 850 # will randomly show heroes which power above threshold
     # idx = filter_by_1col_num(df_extra, 'power', rand_power_threshold, oper_flag="ge")
     # df_init_rand = df_extra[idx]
+
+    ############
+    # showcase
+    hero_showcase = []
+    hero_showcase.append(np.where(df3['name'].values == 'Voidstar')[0][0])
+    hero_showcase.append(np.where(df3['name'].values == 'Rochefort')[0][0])
     
     col_list = st.columns(nheroes_choice)
     df_hero_list = []
@@ -483,7 +489,7 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
         rand_ii = random.randint(0, len(df_extra))
         with col_list[ii]:
             # UNFORTUNATELY, couldn't use rand_ii as default_index as program always refresh
-            df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=ii)) # 'key' in st.selectbox to differentiate widgets
+            df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=hero_showcase[ii])) # 'key' in st.selectbox to differentiate widgets
             write_short_description(df_hero_list[-1])
         total_power += df_hero_list[ii]['power'].values[0]
 
