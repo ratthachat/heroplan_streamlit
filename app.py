@@ -479,8 +479,8 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
     ############
     # showcase
     hero_showcase = []
-    hero_showcase.append(np.where(df3['name'].values == 'Voidstar')[0][0])
-    hero_showcase.append(np.where(df3['name'].values == 'Rochefort')[0][0])
+    hero_showcase.append(np.where(df_extra['name'].values == 'Voidstar')[0][0])
+    hero_showcase.append(np.where(df_extra['name'].values == 'Rochefort')[0][0])
     
     col_list = st.columns(nheroes_choice)
     df_hero_list = []
