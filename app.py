@@ -479,8 +479,11 @@ elif genre == "Hero Comparison by Gemini AI (new)!!":
     ############
     # showcase
     hero_showcase = []
-    hero_showcase.append(np.where(df_extra['name'].values == 'Voidstar')[0][0])
-    hero_showcase.append(np.where(df_extra['name'].values == 'Rochefort')[0][0])
+    # list cannot use numpy index
+    h1 = int(np.where(df_extra['name'].values == 'Voidstar')[0][0])
+    h2 = int(np.where(df_extra['name'].values == 'Rochefort')[0][0])
+    hero_showcase.append(h1)
+    hero_showcase.append(h2)
     assert type(hero_showcase[0]) is int and type(hero_showcase[1]) is int
     
     col_list = st.columns(nheroes_choice)
