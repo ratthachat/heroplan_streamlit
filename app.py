@@ -319,13 +319,12 @@ source_values = ['None'] + list(df['source'].unique()) # Contain lot of typo bug
 from streamlit_option_menu import option_menu
 
 with st.sidebar:
-
-    genre = option_menu("Choose how to explore heroes",
-            ["Heroes Explorer", 
+    genre = st.selectbox(label="Choose how to explore heroes",
+            options=["Heroes Explorer", 
              "Team Simulation", 
              "Hero Comparison by Gemini AI",
              "LB CB Hero Stat"],
-                icons=['house', 'gear','cast', 'gear'], default_index=1
+             index=0
     )
     
     # genre = st.radio(
