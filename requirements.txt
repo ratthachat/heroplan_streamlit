@@ -5,4 +5,3 @@ tqdm
 ipywidgets
 Pillow
 google-generativeai
-streamlit-option-menu
