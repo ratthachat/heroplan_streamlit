@@ -321,8 +321,8 @@ with st.sidebar:
     "Choose how to explore heroes",
     ["Heroes Explorer", 
      "Team Simulation", 
-     "Hero Comparison by Gemini AI (new)!!",
-     "LB/CB Hero Stat"],
+     "Hero Comparison by Gemini AI",
+     "LB CB Hero Stat"],
     captions = ["Filter only heroes with certain properties", "Co-powered by Elioty33's DataVault"])
 
     display_img_flag = st.radio(
@@ -465,7 +465,7 @@ elif genre == "Team Simulation":
 
 #########################################
 ## Program 4 "Hero Comparison by Gemini AI (new)!!"
-elif genre == "Hero Comparison by Gemini AI (new)!!":
+elif genre == "Hero Comparison by Gemini AI":
     story_flag = st.checkbox("Imagine Exciting Fighting Between The Two", value=False)
     nheroes_choice = 2
 
