@@ -325,11 +325,12 @@ with st.sidebar:
      "LB CB Hero Stat"],
     captions = ["Filter only heroes with certain properties", "Co-powered by Elioty33's DataVault"])
 
-    display_img_flag = st.radio(
-        "Display Avatar in Description",
-        ["Yes", "No"],
-        captions = ["Default", "If problem occur, set to 'no'"]
-    )
+    display_img_flag = "Yes"
+    # display_img_flag = st.radio(
+    #     "Display Avatar in Description",
+    #     ["Yes", "No"],
+    #     captions = ["Default", "If problem occur, set to 'no'"]
+    # )
     
 #########################################
 ## Program 1
