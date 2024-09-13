@@ -319,10 +319,10 @@ source_values = ['None'] + list(df['source'].unique()) # Contain lot of typo bug
 with st.sidebar:
     genre = st.radio(
     "Choose how to explore heroes",
-    [":rainbow[Heroes Explorer]", 
+    ["**Heroes Explorer**", 
      "Team Simulation", 
      "Hero Comparison by Gemini AI (new)!!",
-     "***LB/CB Hero Stat*** :movie_camera:"],
+     "***LB/CB Hero Stat***"],
     captions = ["Filter only heroes with certain properties", "Co-powered by Elioty33's DataVault"])
 
     display_img_flag = st.radio(
@@ -333,7 +333,7 @@ with st.sidebar:
     
 #########################################
 ## Program 1
-if genre == ':rainbow[Heroes Explorer]':
+if genre == '**Heroes Explorer**':
     
     col1, col2, col3 = st.columns(3)
     with col1:
