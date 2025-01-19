@@ -3,10 +3,10 @@ source: Ninja
 family: Ninja
 speed: Charge
 class: Cleric
-power: 1095
+power: 1107
 attack: 1275
 defense: 1054
-health: 1639
+health: 1720
 skill: Kunai Assault
 effects:
   - 1x Mana Charge
@@ -24,7 +24,7 @@ effects:
 types:
   - Charge Hit
   - Exploding Fiends
-passives:
+passives:  
   - >-
-    Resist Negative Minion Effects: This character has innate resistance against incoming negative effects and damage from Minions.
+    Decreased Minion Health: Enemy Minions inherit -50% less Health when summoned.
 image: https://i.imgur.com/y4ft1xP.jpg
