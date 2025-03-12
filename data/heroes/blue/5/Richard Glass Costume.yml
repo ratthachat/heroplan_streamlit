@@ -1,16 +1,18 @@
 name: Richard Glass Costume
 is_costume: true
-source: Season1
-family: Classic
+design: glass
+source: season1
+family: classic
 speed: Average
 class: Paladin
-power: 1176
-attack: 1222
-defense: 1084
-health: 2286
+power: 1207
+attack: 1259
+defense: 1116
+health: 2353
 skill: Glass Hammer
 effects:
   - Deals 575% damage to the target and minor damage to nearby enemies.
+  - The attack bypasses defensive buffs. (This includes counterattacks.)
   - The target and nearby enemies get -30% attack for 6 turns.
 types:
   - Hit 3

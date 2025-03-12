@@ -1,6 +1,6 @@
 name: Phorcys
 source: untoldtales
-family: DefendersofAtlantis
+family: defendersofatlantis
 speed: Changing Tides
 class: Monk
 power: 906
@@ -26,18 +26,18 @@ types:
 passives:
   - >-
     Effects on Special Skill: 50% chance to perform the following actions when this character casts their Special Skill
-      * Deals 80% damage to all enemies.
-      * All allies get +21% critical chance for 2 turns.
+  - ' * Deals 80% damage to all enemies.'
+  - ' * All allies get +21% critical chance for 2 turns.'
   - >-
     Resist Insanity: This character has innate resistance against Insanity.
 image: https://i.imgur.com/6o3KSeL.jpg
 costume:
   bonuses: 5/5/10/5
   class: Paladin
-  power: 1018
-  attack: 1061
-  defense: 927
-  health: 1878
+  power: 1063
+  attack: 1117
+  defense: 976
+  health: 1958
   skill: Order from the Depths
   effects:
     - 'Special Skill need consecutive uses to reach full power, the following order:'
@@ -57,8 +57,8 @@ costume:
   passives:
     - >-
       Effects on Special Skill: 50% chance to perform the following actions when this character casts their Special Skill
-        * Deals 80% damage to all enemies.
-        * All allies get +21% critical chance for 2 turns.
+    - ' * Deals 80% damage to all enemies.'
+    - ' * All allies get +21% critical chance for 2 turns.'
     - >-
       Resist Insanity: This character has innate resistance against Insanity.
   image: https://i.imgur.com/FXIdE4S.jpg

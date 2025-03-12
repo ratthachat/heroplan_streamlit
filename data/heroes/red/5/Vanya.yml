@@ -3,10 +3,10 @@ source: goblinvillage
 family: garrisonguard
 speed: Slow
 class: Monk
-power: 1063
-attack: 1116
-defense: 1095
-health: 1722
+power: 1075
+attack: 1126
+defense: 1106
+health: 1759
 skill: Sense of Wonder
 effects:
   - Recovers 54% health of all allies.

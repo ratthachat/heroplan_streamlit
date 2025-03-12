@@ -1,7 +1,8 @@
 name: Joon Second Costume
 is_costume: true
-source: Season1
-family: Classic
+design: costume2
+source: season1
+family: classic
 speed: Fast
 class: Barbarian
 power: 855
@@ -12,9 +13,7 @@ skill: Stellar Beam
 effects:
   - Deals 260% damage to target and nearby enemies
   - The target and nearby enemies receive 195 Burn damage over 3 turns
-  - >-
-    The target and nearby enemies get -35% accuracy for 3 turns. Chance to
-    miss also applies to offensive Special Skills
+  - The target and nearby enemies get -35% accuracy for 3 turns. Chance to miss also applies to offensive Special Skills
 types:
   - Hit 3
   - Dot 3

@@ -1,19 +1,21 @@
 name: Isidore
 source: wilderness
-family: Woodland Faun
+family: woodlandfaun
 speed: Slow
 class: Barbarian
-power: 1139
-attack: 1170
-defense: 1104
-health: 2115
+power: 1154
+attack: 1184
+defense: 1118
+health: 2158
 skill: Flurry of Blows
 effects:
-  - Enhanced Defense Ailment: All enemies get -64% defense against Special Skills. This effect lasts until the enemy takes damage from a Special Skill 3 times.
+  - >-
+    Enhanced Defense Ailment: All enemies get -64% defense against Special Skills. This effect lasts until the enemy takes damage from a Special Skill 3 times.
   - After the Enhanced Defense Ailment ends or is removed or replaced, the enemy gets -80% decrease of any healing received for 6 turns.
   - Deals 300% damage to the target and 9 random enemies. The damage is reduced on each consecutive hit.
 types:
   - Enhanced Defense Ailment
+  - Delayed Healing Debuff 1
   - Hit 1
   - Hit 9 random
 passives:

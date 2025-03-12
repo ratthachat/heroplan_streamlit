@@ -1,7 +1,8 @@
 name: Grimm Second Costume
 is_costume: true
-source: Season1
-family: Classic
+design: costume2
+source: season1
+family: classic
 speed: Average
 class: Ranger
 power: 733
@@ -11,9 +12,7 @@ health: 1328
 skill: Postal Pulverizer
 effects:
   - Deals 295% damage to the target and minor damage to nearby enemies.
-  - >-
-    The caster and nearby allies Special Skill deal an additional +40% damage
-    for 6 turns.
+  - The caster and nearby allies Special Skill deal an additional +40% damage for 6 turns.
 types:
   - Hit 3
 image: https://i.imgur.com/cDO5QOd.jpg

@@ -1,22 +1,21 @@
 name: Araminta
 source: wilderness
-family: Woodland Faun
+family: woodlandfaun
 speed: Fast
 class: Barbarian
-power: 1109
-attack: 1126
-defense: 1071
-health: 2078
+power: 1144
+attack: 1159
+defense: 1104
+health: 2177
 skill: Forceful Advance
 effects:
   - Deals 260% damage to all enemies.
-  - >-
-    Stack (Max: 10): All damage all enemies recieve is increased by +7%
+  - 'Stack (Max: 10): All damage all enemies recieve is increased by +7%.'
   - All allies gain 10% mana after 2 turns, or immediatelly if the effect is removed before the duration ends.
 types:
   - Hit All
-  - Damage increase stack
-  - Mana boost
+  - Damage Increase Stack
+  - Delayed Mana boost
 passives:
   - >-
     Resist Insanity: This character has innate resistance against Insanity.

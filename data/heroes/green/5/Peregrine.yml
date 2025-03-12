@@ -1,12 +1,12 @@
 name: Peregrine
 source: wilderness
-family: Woodland Faun
+family: woodlandfaun
 speed: Average
 class: Ranger
-power: 1107
-attack: 1106
-defense: 1081
-health: 2092
+power: 1137
+attack: 1135
+defense: 1110
+health: 2177
 skill: Feyfire Slash
 effects:
   - Deals 440% damage to the target and nearby enemies.
@@ -15,7 +15,8 @@ effects:
   - After the Enhanced Dodge ends or is removed or replaced, the ally gets +70% attack for 5 turns.
 types:
   - Hit 3
-  - Enhanced Dodge
+  - Enhanced Dodge 3
+  - Delayed Attack Buff 3
 passives:
   - >-
     Resist Insanity: This character has innate resistance against Insanity.

@@ -1,6 +1,6 @@
 name: Marjana
-source: Season1
-family: Classic
+source: season1
+family: classic
 speed: Fast
 class: Rogue
 power: 755
@@ -16,6 +16,7 @@ types:
   - Dot 1
 image: https://i.imgur.com/H8u69R9.jpg
 costume:
+  design: costume1
   bonuses: 5/5/10/5
   class: Wizard
   power: 795
@@ -33,6 +34,7 @@ costume:
     - Elemental Attack Debuff
   image: https://i.imgur.com/E1sWcp1.jpg
 costume2:
+  design: costume2
   bonuses: 5/5/10/5
   class: Ranger
   power: 858
@@ -42,19 +44,15 @@ costume2:
   skill: Volcanic Blast
   effects:
     - Deals 300% damage to target and nearby enemies.
-    - >-
-      The target and nearby enemies get -34% defense for 3 turns. Against Ice 
-      characters, this status effect becomes uncleansable, and lasts 2 turns longer.
-    - >-
-      The target and nearby enemies receive 321 Burn damage over 3 turns. 
-      Against Ice characters, this status effect becomes uncleansable, and 
-      lasts 2 turns longer.
+    - The target and nearby enemies get -34% defense for 3 turns. Against Ice characters, this status effect becomes uncleansable, and lasts 2 turns longer.
+    - The target and nearby enemies receive 321 Burn damage over 3 turns. Against Ice characters, this status effect becomes uncleansable, and lasts 2 turns longer.
   types:
     - Hit 3
     - Defense Debuff
     - DoT
   image: https://i.imgur.com/onSikNW.jpg
 costume3:
+  design: toon
   bonuses: 5/5/10/5
   class: Rogue
   power: 1110
@@ -73,3 +71,24 @@ costume3:
     - >-
       Toon: 75% extra chance to resist all status ailments, mana reductions and buff dispels.
   image: https://i.imgur.com/CuDeIo0.jpg
+costume4:
+  design: glass
+  bonuses: 5/5/10/5
+  class: Rogue
+  power: 1209
+  attack: 1273
+  defense: 1123
+  health: 2317
+  skill: Glass Flame Smash
+  effects:
+    - Deals 548% damage to the target.
+    - The attack bypasses defensive buffs. (This includes counterattacks.)
+    - The target receives 648 Burn damage over 3 turns.
+  types:
+    - Hit 1
+    - Bypass
+    - DoT 1
+  passives:
+    - >-
+      Glass: 60% extra chance to reflect status ailments back to the attacker.
+  image: https://i.imgur.com/wWSeZW9.jpg

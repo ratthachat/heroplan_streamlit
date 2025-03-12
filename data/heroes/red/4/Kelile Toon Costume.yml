@@ -1,6 +1,8 @@
 name: Kelile Toon Costume
-source: Season1
-family: Classic
+is_costume: true
+design: toon
+source: season1
+family: classic
 speed: Fast
 class: Rogue
 power: 746

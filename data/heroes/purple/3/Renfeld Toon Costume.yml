@@ -1,7 +1,8 @@
 name: Renfeld Toon Costume
 is_costume: true
-source: Season1
-family: Classic
+design: toon
+source: season1
+family: classic
 speed: Average
 class: Fighter
 power: 507

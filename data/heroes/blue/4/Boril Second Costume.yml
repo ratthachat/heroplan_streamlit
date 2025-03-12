@@ -1,7 +1,8 @@
 name: Boril Second Costume
 is_costume: true
-source: Season1
-family: Classic
+design: costume2
+source: season1
+family: classic
 speed: Average
 class: Fighter
 power: 735
@@ -10,9 +11,7 @@ defense: 884
 health: 1404
 skill: Unrelenting Riposte
 effects:
-  - >-
-    All allies counterattacks with 80% of the damage received for 4 turns. 
-    The counterattack damage increases by 20% each turn up to 140%.
+  - All allies counterattacks with 80% of the damage received for 4 turns. The counterattack damage increases by 20% each turn up to 140%.
 types:
-  - Counterattack
+  - Counterattack All
 image: https://i.imgur.com/9wlyamA.jpg

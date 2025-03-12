@@ -1,12 +1,12 @@
 name: Sini
-source: Hotm
+source: hotm
 family: 2024
 speed: Average
 class: Wizard
 power: 970
-attack: 1040
-defense: 947
-health: 1547
+attack: 1067
+defense: 974
+health: 1629
 skill: Conjure the Azure Spirit
 effects:
   - Deals 250% damage to all enemies.
@@ -18,8 +18,7 @@ types:
   - Board Alterer
 passives:
   - >-
-    Resist Special Skill Blocking: This character has innate resistance against
-    status ailments that block Special Skills.
+    Resist Special Skill Blocking: This character has innate resistance against status ailments that block Special Skills.
   - >-
     Status Effect on Mana Reduction: This character get +30% attack for 3 turns when their mana is reduced.
 image: https://i.imgur.com/IV4i4UQ.jpg

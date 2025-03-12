@@ -1,19 +1,19 @@
 name: Revna
-source: Covenant
-family: PlainsHunter
+source: covenant
+family: plainshunter
 speed: Fast
 class: Cleric
 power: 1107
-attack: 1089
-defense: 1091
-health: 2115
+attack: 1124
+defense: 1126
+health: 2214
 skill: Cloak of Feathers
 effects:
   - Safely cleanses 1 status ailment from all allies. (Status ailments are cleansed in the order they have been received. The latest status ailments are cleansed first.)
   - Recovers 35% health for all allies.
   - All allies reflect status ailments, negative stacks, and Wither effects to a random character on the opposing team for 4 turns.
 types:
-  - Cleanse 1 ailment
+  - Safely Cleanses 1 ailment
   - Heal All
   - Reflect Debuffs
 passives:

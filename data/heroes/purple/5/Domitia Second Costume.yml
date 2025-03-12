@@ -1,7 +1,8 @@
 name: Domitia Second Costume
 is_costume: true
-source: Season1
-family: Classic
+design: costume2
+source: season1
+family: classic
 speed: Average
 class: Barbarian
 power: 860
@@ -11,10 +12,7 @@ health: 1551
 skill: Dark Bolt
 effects:
   - Deals 335% damage to target and nearby enemies
-  - >-
-    The target and nearby enemies get -64% defense against Dark for 4 turns.
-    Against Holy characters, this status effect becomes uncleansable and lasts
-    2 turns longer.
+  - The target and nearby enemies get -64% defense against Dark for 4 turns. Against Holy characters, this status effect becomes uncleansable and lasts 2 turns longer.
   - Deals extra damage against Holy.
 types:
   - Hit 3

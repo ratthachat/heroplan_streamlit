@@ -1,6 +1,6 @@
 name: Leonidas
-source: Season1
-family: Classic
+source: season1
+family: classic
 speed: Average
 class: Monk
 power: 752
@@ -18,6 +18,7 @@ types:
   - Self Heal
 image: https://i.imgur.com/SPyWzYD.jpg
 costume:
+  design: costume1
   bonuses: 5/5/10/5
   class: Barbarian
   power: 792
@@ -33,6 +34,7 @@ costume:
     - Hit 3
   image: https://i.imgur.com/c7cvRg8.jpg
 costume2:
+  design: costume2
   bonuses: 5/5/10/5
   class: Ranger
   power: 792
@@ -43,15 +45,14 @@ costume2:
   effects:
     - Deals 240% damage to all enemies.
     - Reduces the mana of all enemies by 10%.
-    - >-
-      All enemies get -34% defense for 3 turns. Against Dark characters, this
-      status effect becomes uncleansable lasts 2 turn longer.
+    - All enemies get -34% defense for 3 turns. Against Dark characters, this status effect becomes uncleansable lasts 2 turn longer.
   types:
     - Hit All
     - Mana Reduction
     - Defense Debuff
   image: https://i.imgur.com/6haP2Yz.jpg
 costume3:
+  design: toon
   bonuses: 5/5/10/5
   class: Monk
   power: 1102
@@ -72,3 +73,26 @@ costume3:
     - >-
       Toon: 75% extra chance to resist all status ailments, mana reductions and buff dispels.
   image: https://i.imgur.com/PKsAK4b.jpg
+costume4:
+  design: glass
+  bonuses: 5/5/10/5
+  class: Monk
+  power: 1204
+  attack: 1298
+  defense: 1173
+  health: 2119
+  skill: Glass Cleave
+  effects:
+    - Deals 575% damage to the target.
+    - The attack bypasses defensive buffs. (This includes counterattacks.)
+    - Reduces the mana of the target by -38%.
+    - Heals the caster for 70% of damage dealt.
+  types:
+    - Hit 1
+    - Bypass
+    - Mana reducer 1
+    - Self Heal
+  passives:
+    - >-
+      Glass: 60% extra chance to reflect status ailments back to the attacker.
+  image: https://i.imgur.com/7lvHaTO.jpg

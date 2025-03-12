@@ -1,8 +1,8 @@
 name: Captain Kestrel
-class: Rogue
-source: Pirates
-family: Pirate
+source: pirates
+family: corellia
 speed: Fast
+class: Rogue
 power: 765
 attack: 727
 defense: 702

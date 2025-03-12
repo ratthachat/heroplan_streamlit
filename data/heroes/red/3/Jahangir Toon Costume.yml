@@ -1,8 +1,9 @@
 name: Jahangir Toon Costume
 is_costume: true
+design: toon
 class: Sorcerer
-source: Season1
-family: Classic
+source: season1
+family: classic
 speed: Slow
 power: 506
 attack: 555

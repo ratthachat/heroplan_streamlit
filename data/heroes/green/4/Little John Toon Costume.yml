@@ -1,6 +1,8 @@
 name: Little John Toon Costume
-source: Season1
-family: Classic
+is_costume: true
+design: toon
+source: season1
+family: classic
 speed: Slow
 class: Barbarian
 power: 744
@@ -14,7 +16,7 @@ effects:
   - Deals extra damage against Ice.
 types:
   - Hit All
-  - Mana Generation Debuff
+  - Mana Generation Debuff All
 passives:
   - >-
     Toon: 75% extra chance to resist all status ailments, mana reductions and buff dispels.

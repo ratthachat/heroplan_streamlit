@@ -1,8 +1,9 @@
 name: Azar Toon Costume
 is_costume: true
+design: toon
 class: Barbarian
-source: Season1
-family: Classic
+source: season1
+family: classic
 speed: Fast
 power: 487
 attack: 561
@@ -15,7 +16,7 @@ effects:
   - Deals extra damage against Nature.
 types:
   - Hit 1
-  - Mana Reduction
+  - Mana Reduction 1
 passives:
   - 'Toon: 75% extra chance to resist all status ailments, mana reductions and buff dispels.'
 image: https://i.imgur.com/Mwzt0jr.jpg

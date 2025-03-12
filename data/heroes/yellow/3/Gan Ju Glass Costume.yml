@@ -1,7 +1,8 @@
 name: Gan Ju Glass Costume
 is_costume: true
-source: Season1
-family: Classic
+design: glass
+source: season1
+family: classic
 speed: Fast
 class: Monk
 power: 516
@@ -11,10 +12,12 @@ health: 995
 skill: Glass Chop
 effects:
   - Deals 310% damage to the target.
+  - The attack bypasses defensive buffs. (This includes counterattacks.)
   - Reduces the mana of the target by 23%.
 types:
   - Hit 1
-  - Mana Reduction
+  - Bypass
+  - Mana Reduction 1
 passives:
   - >-
     Glass: 60% extra chance to reflect status ailments back to the attacker.

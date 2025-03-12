@@ -1,6 +1,6 @@
 name: Medea
 source: untoldtales
-family: Nightmares of Atlantis
+family: nightmaresofatlantis
 speed: Changing Tides
 class: Ranger
 power: 999
@@ -20,8 +20,8 @@ effects:
   - ' * The target and nearby enemies get -75% decrease for any healing received for 4 turns.'
 types:
   - Hit 3
-  - Mindless attack
-  - Healing debuff
+  - Mindless attack 1
+  - Healing debuff 3
 passives:
   - >-
     Effects on Special Skill: 50% chance to perform the following actions when this character casts their Special Skill
@@ -33,10 +33,10 @@ image: https://i.imgur.com/RtOVjbp.jpg
 costume:
   bonuses: 5/5/10/5
   class: Fighter
-  power: 1125
-  attack: 1158
-  defense: 1116
-  health: 2016
+  power: 1174
+  attack: 1219
+  defense: 1175
+  health: 2102
   skill: Shatter Soul
   effects:
     - 'Special Skill need consecutive uses to reach full power, the following order:'
@@ -50,8 +50,8 @@ costume:
     - ' * The target and nearby enemies get -85% decrease for any healing received for 4 turns.'
   types:
     - Hit 3
-    - Mindless attack
-    - Healing debuff
+    - Mindless attack 1
+    - Healing debuff 3
   passives:
     - >-
       Effects on Special Skill: 50% chance to perform the following actions when this character casts their Special Skill

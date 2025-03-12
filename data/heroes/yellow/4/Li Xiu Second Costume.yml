@@ -1,7 +1,8 @@
 name: Li Xiu Second Costume
 is_costume: true
-source: Season1
-family: Classic
+design: costume2
+source: season1
+family: classic
 speed: Average
 class: Wizard
 power: 731
@@ -14,5 +15,5 @@ effects:
   - The target and nearby enemies get silenced for 3 turns.
 types:
   - Hit 3
-  - Silencer
+  - Silencer 3
 image: https://i.imgur.com/kSRi1Vn.jpg

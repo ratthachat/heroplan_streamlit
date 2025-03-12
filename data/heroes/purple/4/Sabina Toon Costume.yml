@@ -1,7 +1,8 @@
 name: Sabina Toon Costume
 is_costume: true
-source: Season1
-family: Classic
+design: toon
+source: season1
+family: classic
 speed: Average
 class: Sorcerer
 power: 742
@@ -15,7 +16,7 @@ effects:
   - Dispels buffs from all enemies.
 types:
   - Heal All
-  - Defense Buff
+  - Defense Buff All
   - Dispeller
 passives:
   - >-

@@ -1,7 +1,8 @@
 name: Kiril Second Costume
 is_costume: true
-source: Season1
-family: Classic
+design: costume2
+source: season1
+family: classic
 speed: Average
 class: Barbarian
 power: 739

@@ -1,6 +1,8 @@
 name: Graymane Toon Costume
-source: Season1
-family: Classic
+is_costume: true
+design: toon
+source: season1
+family: classic
 speed: Average
 class: Sorcerer
 power: 504

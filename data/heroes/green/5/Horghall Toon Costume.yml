@@ -1,7 +1,8 @@
 name: Horghall Toon Costume
 is_costume: true
-source: Season1
-family: Classic
+design: toon
+source: season1
+family: classic
 speed: Slow
 class: Druid
 power: 1111
