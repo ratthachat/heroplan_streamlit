@@ -311,6 +311,7 @@ class_values = ['None'] + list(df['class'].unique())
 star_values = ['None'] + list(df['star'].unique())
 color_values = ['None'] + list(df['color'].unique())
 speed_values = ['None'] + list(df['speed'].unique())
+family_values = ['None'] + list(df['family'].unique())
 source_values = ['None'] + list(df['source'].unique()) # Contain lot of typo bugs from HeroPlan
 
 #########################################
@@ -365,6 +366,7 @@ if genre == 'Heroes Explorer':
             color_option = st.selectbox(label='Color:', options=color_values, index=0)
             speed_option = st.selectbox(label='Speed:', options=speed_values, index=0)
             class_option = st.selectbox(label='Class:', options=class_values, index=0)
+            family_option = st.selectbox(label='Family:', options=family_values, index=0)
             source_option = st.selectbox(label='Origin:', options=source_values, index=0)
     
             special_type_option = st.text_input(label="SpecialSkill Category", value="Hit 3")
@@ -406,7 +408,10 @@ if genre == 'Heroes Explorer':
         idx_all.append(filter_by_1col(df, 'class', class_option, exact_flag=False))    
 
     if source_option != 'None':
-        idx_all.append(filter_by_1col(df, 'source', source_option, exact_flag=False))    
+        idx_all.append(filter_by_1col(df, 'source', source_option, exact_flag=False))
+
+    if family_option != 'None':
+        idx_all.append(filter_by_1col(df, 'family', family_option, exact_flag=False))
 
     if power_option != "0":
         power_option = int(power_option)
