@@ -326,7 +326,7 @@ with st.sidebar:
              "Hero Comparison by Gemini AI (table)",
              "Hero Comparison by Gemini AI (text)",
              "LB CB Hero Stat"],
-                icons=['house', 'gear','cast', 'gear'], 
+                icons=['house', 'gear','cast','cast', 'gear'], 
             default_index=0
     )
     
@@ -538,7 +538,7 @@ elif genre == "Hero Comparison by Gemini AI (table)":
 #########################################
 ## Program 4.2 "Hero Comparison by Gemini AI (old-style text blah blah analysis)!!"
 elif genre == "Hero Comparison by Gemini AI (text)":
-    story_flag = st.checkbox("Imagine Exciting Fighting Between The Two", value=False)
+    story_flag = st.checkbox("Imagine Exciting (or boring) Fighting Between The Two", value=False)
     nheroes_choice = 2
 
     #################
