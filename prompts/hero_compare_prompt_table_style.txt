@@ -1,15 +1,39 @@
 Lets assume you are an expert in a mobile game "Empires & Puzzles" from Zynga. Now I would like you to compare the two cards for pros and cons of each card. Be very critical and accurate. Do not need to emphasize the weaker hero.
 
 Some basic knowledge:
+- Speed is quite important.
+		○ Very Fast = 6 tiles (usually can fire at least twice in the PvP)
+		○ Fast = 7-8 tiles (usually can fire around 1-2  in PvP)
+		○ Average = 9 tiles (perhaps fire once in PvP)
+		○ Slow = 10 tiles (it may die before it can fire, so you need healer to keep this hero alive while waiting for enough tiles)
+		○ Very Slow = 12 tiles (usually no one use this speed beside PvE or rush mode)
+	
+	Magic, Ninja & Styx are special as they have different charges.
+		○ Magic: 1st charge is Very Fast (6 tiles), and 2nd charge is slow (12 tiles)
+		○ Styx: 1st charge is Very Fast (6 tiles), 2nd charge is Fast (8-9 tiles), and 3rd charge is "Slow" (12 tiles), 
+		○ Ninja: 1st charge is Extreme Fast (5 tiles), 2nd charge is average speed (10 tiles), while 3rd is "impractical", extremely slow (13 tiles) and do not need to be considered
+	With this multi-charge mechanic, Ninja, Styx and Magic are inherently mitigate the enemies mana-cut (good thing)
+	
+	You can see that "Very Fast" heroes usually cast at least twice, but to make this hero useful, the very fast special should provide some considerable effect to either enemies or allies. For "Slow", the effect must be pretty strong to be able to turn the table all around (e.g. Grimsteel or Starlass are good examples)
+
+	Some heroes which can increase mana directly are valuable. Uncleansible mana-generation buff is also good.
+	
+	- Dance, growth and stack are special buffs which cannot be dispel by regular means (still can be dispel by few very special skills)
+
 - Buffs = (positive) status effects affecting allies, Ailments = (negative) status affects affecting enemies
 - DoT : Damage over Time, HoT : Heal over Time, SS : Special Skill
 - Toon heroes have 75% chance to resist all ailments including DoT
 - Glass heroes have 60% chance to refect all ailments including DoT
 - Glass heroes can bypass all defensive buffs
+- Nevertheless, we do not give too much Toon / Glass worriness. In practice, common enemies team will consists 1-2 Toons or Glasses because other newer heroes are more deadly. Moreover, Toons / Glasses SS are usually just vanilla (hard damage dealing, and standard ailments/buffs which are easy to deal with). Further, enemies facing team full of Toons or Glasses can just use buff-oriented team, and avoid using ailments.
+- Having said that, some classic heroes wiht "superior talents" especially Fighter, Paladin and Cleric are very good in Defense. Ranger and Wizard are very good in attack.
+
 - Defensive buffs are (Normal / Special-skill / Elemental) Defense Up, Damage Reduction, Counter-Attack
 - Therefore, heroes with ailments are at risk if the enemies got lots of Toon or Glass
 - "Fiends" and "Wither" are not considered ailments, so heroes who can do wither are good against Toon & Glass. However, many fiends have ailment effects and can be resist by Toon, but this cannot be reflect by glass (since fiends themselves cannot be reflected)
-- 
+- Insanity is also not consider ailments. And, though, heroes who cast insanity always also have high chance to cast insanity to themselves, it is usually managable on that side to prepare other synergized heroes to remove insanity e.g. healers. But for opponents it's more difficult to deal with since heroes that we prepare to deal with Insanity may got insane themselves.
+
+- We will not put much weights on a hero's individual statisitcs. For example, comparing Hero A and B, where A has 10% more attack, defense and HP. However, if B has very good special skills that affect all allies (which can have stat comparable to A), B will arguarbly make more impact than A.
 
 
 Following these examples: (all stats are at 4/80)
@@ -75,6 +99,70 @@ From the above analysis and their stats, we can make create the following compar
 | **🔴 Damage**    | 335% to all, 945 @4/80    | 300% to all, 1140 stat @ 4/80  | *Eliane is better here*   |
 | **🟠 DoT**    | fiend 100% (200 damage?)   | 200 with troop @ 4/80   (activate for 4 turns)  | *Damage is per turn. Of course, Eliane may not work on Toon & Glass*  |
 | **🟣 Perpetual DoT / ailment**    | Enemies will continue to be attack down, and attack by fiends if not heal | Eliane passive give 15%-25% mana each turn, so she quickly fire again  | *Eliane passive give 5% mana per burn per enemy*   |
-| **🟢 Team survivability**    | 45% attack down  to all enemies | +30% def for SS to all red/allies  (4 turns)| *This is where BC really shines, while Eliane needs to wait 2026 and with another 2025 HOTMs to affect all* |
-| **🔵 DoT Passive** | Resist all DoT damage | Resist only Burn damage | *BC is def. better here* |
-| **🟡 Other**    | Prevent Heal | Dispel  | *this is the only main difference utility but they are quite compromise*  |
+| **🟢 Team survivability**    | 45% attack down  to all enemies | +30% def for SS to all/red allies  (4 turns)| *This is where BC really shines, while Eliane needs to wait 2026 and with another 2025 HOTMs to affect all* |
+| **🔵 DoT Resistance Passive** | Resist all DoT damage | Resist only Burn damage | *BC is def. better here* |
+| **🟡 Others**    | Prevent Heal | Dispel  | *this is the only main difference utility but they are quite compromise*  |
+
+=============================
+Example 2:
+Azlar C3 vs. Eliane
+
+Azlar C3 - Slow - Barbarian
+
+Attack:1143.0 — Defence:1021.0 — Health:2152.0
+
+Toon Explosion
+
+Special Skills
+
+['Deals 355% damage to all enemies.', 'All enemies receive 513 damage over 3 turns.', 'Deals extra damage against Nature.']
+
+Passives
+
+['Toon: 75% extra chance to resist all status ailments, mana reductions and buff dispels.']
+
+Family Bonus
+
+['Classic Family Heroes need to be fully ascended to receive the Family Bonus.', 'Bonus for 2/3/4/5 Heroes:', '+1%/+3%/+5%/+7% attack.', '+1%/+3%/+5%/+7% defense.', '+1%/+3%/+5%/+7% healing.', 'On Class Level 20, all of the Class Talents of this hero are upgraded into Superior Class Talent.']
+Eliane - Average - Wizard
+
+Attack:1104 — Defence:1097 — Health:1769
+
+Flame Surge
+
+Special Skills
+
+['Deals 300% damage to all enemies.', 'All enemies receive 640 Burn damage over 4 turns.', 'Dispel buffs from all enemies.', 'Elemental Link gives all Fire allies +30% defense against Special Skills for 4 turns. This effect can’t be dispelled.']
+
+Passives
+
+['Resist Burn: This character has innate resistance against Burn.', 'Mana on Burn: This character gains 5% mana each time an enemy receives Burn damage.']
+
+Family Bonus
+
+['(prediction) Bonus for 1/2/3 Hereos : +10%/+15%/+20% attack.', 'Bonus for 2+ heroes: Element Link affects all allies.']
+
+# Head to Head Analysis
+Breakdown: to compare, we have to see their similarities and their differences.
+
+## Similarities
+* The are both damage-dealers. Moreover, they are both hit-all-enemies heroes.
+* Azlar hit around 20% harder (355%x1145) than Eliane (300%x1104), but Eliane at Average speed is 20% faster. So they are roughly equal in this aspect.
+* They also both deal DoT (Damage-over-Time) with burn. Their DoTs per turn are comparable and not much different.
+
+## Differences
+
+* Eliane DoT seems to have property of "perpetual" or "continuous" hit if the enemies does not have a cleanser.This is due to her passive where she will get "Mana on Burn" 5% for each enemy and each turn. Imagine if there is 5 enemies, she will get 5 x 5% = 25% for free every turn (or 3x5% = 15% if there are 3 enemies left) , so she will have full 100% mana very quickly, so her burn DoT will likely very frequent. This is her niche so Eliane will charge much faster than Azlar. (Eliance much better)
+* Eliane can dispel all enemies buffs. (Eliane much better)
+* Eliane has elemental link that +30% defense for SS (Eliane is much better)
+* Azlar's toon passive have a high chance to neutralizes all DoT damage, but Eliane resist only burn damage. Actually, (Azlar much better)
+* Azlar has around 10% better stat compared to Eliance on average. (Azlar is a bit better)
+* Azlar is Barbarian which is the weakest class, however because he is classic, he has a superior Barbarian, so perhaps comparable to Eliane's Wizard.
+
+From the above analysis and their stats, we can make create the following comparison table:
+
+|**Functionality** | Azlar C3 | Eliane | Notes |
+|----------|----------|----------|----------|
+| **💪 Damage**    | 355% to all, 1145 @4/80 (slow speed)    | 300% to all, 1140 stat @ 4/80 (average speed, but much faster with passive)  | *They look comparable. Their DoTs also seems comparable, but Eliane may be a bit better due to her much faster speed*   |
+| **🛡️ Durability**    | 75% chance to resist all ailments | +30% defense for SS to all/red allies  (4 turns)| *Azlar is much more durable individually, but Eliane gives better support to the whole team* |
+| **✨ Others**    | Superior Barbarian, higher chance to have 30% more attack | Dispel, +5% mana on each burn  | *Again, Azlar looks better individually, but Eliane can help the whole team with dispel. This depends on each player style whether to support Azlar to hit hard, or to use Eliane to synergize with others*  |
