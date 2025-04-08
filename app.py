@@ -323,7 +323,8 @@ with st.sidebar:
     genre = option_menu("Choose how to explore heroes",
             ["Heroes Explorer", 
              "Team Simulation", 
-             "Hero Comparison by Gemini AI",
+             "Hero Comparison by Gemini AI (table)",
+             "Hero Comparison by Gemini AI (text)",
              "LB CB Hero Stat"],
                 icons=['house', 'gear','cast', 'gear'], 
             default_index=0
@@ -488,9 +489,55 @@ elif genre == "Team Simulation":
     
     display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=True) # display all except special-skill text
 
+# 
 #########################################
-## Program 4 "Hero Comparison by Gemini AI (new)!!"
-elif genre == "Hero Comparison by Gemini AI":
+## Program 4.1 "Hero Comparison by Gemini AI (table-style)"
+elif genre == "Hero Comparison by Gemini AI (table)":
+    nheroes_choice = 2
+
+    ############
+    # showcase
+    hero_showcase = []
+    # list cannot use numpy index
+    h1 = int(np.where(np.array(all_name_extra) == 'Black Caesar')[0][0])
+    h2 = int(np.where(np.array(all_name_extra) == 'Eliane')[0][0])
+    hero_showcase.append(h1)
+    hero_showcase.append(h2)
+    assert type(hero_showcase[0]) is int and type(hero_showcase[1]) is int
+    
+    col_list = st.columns(nheroes_choice)
+    df_hero_list = []
+    total_power = 0
+    for ii in range(nheroes_choice):
+        with col_list[ii]:
+            df_hero_list.append(choose_hero(key=f"Hero{ii+1}", default_index=hero_showcase[ii])) # 'key' in st.selectbox to differentiate widgets
+            write_short_description(df_hero_list[-1])
+        total_power += df_hero_list[ii]['power'].values[0]
+
+    df_hero_all5 = pd.concat(df_hero_list)
+
+    ### BEGIN Gemini API
+    GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+    import google.generativeai as genai
+    genai.configure(api_key=GOOGLE_API_KEY)
+    model = genai.GenerativeModel('gemini-2.0-flash')
+
+    with open('prompts/hero_compare_prompt_table_style.txt', 'r') as f:
+        prompt = f.read()
+
+    hero1 = df_hero_list[0]['name'].values[0]
+    hero2 = df_hero_list[1]['name'].values[0]
+    end_prompt = generate_end_prompt(df_extra, hero1, hero2, df1=df_hero_list[0] , df2=df_hero_list[1] )
+
+    current_prompt = prompt+end_prompt
+    response = model.generate_content(current_prompt)
+    st.write(response.text)
+
+    display_heroes_from_df(df_hero_all5, display_cols=df_hero_all5.columns[:-2], show_df=True) # display all except special-skill text
+
+#########################################
+## Program 4.2 "Hero Comparison by Gemini AI (old-style text blah blah analysis)!!"
+elif genre == "Hero Comparison by Gemini AI (text)":
     story_flag = st.checkbox("Imagine Exciting Fighting Between The Two", value=False)
     nheroes_choice = 2
 
