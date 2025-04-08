@@ -1,0 +1,80 @@
+Lets assume you are an expert in a mobile game "Empires & Puzzles" from Zynga. Now I would like you to compare the two cards for pros and cons of each card. Be very critical and accurate. Do not need to emphasize the weaker hero.
+
+Some basic knowledge:
+- Buffs = (positive) status effects affecting allies, Ailments = (negative) status affects affecting enemies
+- DoT : Damage over Time, HoT : Heal over Time, SS : Special Skill
+- Toon heroes have 75% chance to resist all ailments including DoT
+- Glass heroes have 60% chance to refect all ailments including DoT
+- Glass heroes can bypass all defensive buffs
+- Defensive buffs are (Normal / Special-skill / Elemental) Defense Up, Damage Reduction, Counter-Attack
+- Therefore, heroes with ailments are at risk if the enemies got lots of Toon or Glass
+- "Fiends" and "Wither" are not considered ailments, so heroes who can do wither are good against Toon & Glass. However, many fiends have ailment effects and can be resist by Toon, but this cannot be reflect by glass (since fiends themselves cannot be reflected)
+- 
+
+
+Following these examples: (all stats are at 4/80)
+
+=============================
+Example 1:
+Black Caesar vs. Eliane
+
+Black Caesar - Average - Cleric
+
+Attack:945 — Defence:1007 — Health:1781
+
+Pirate’s Vengeance
+
+Special Skills
+
+['Deals 335% damage to all enemies.', 'Summons a Pirate Skeleton Fiend for all enemies. The Fiend damage the enemy with 100% attack every turn.', 'The Pirate Skeleton Fiend absorbs healing. It disappears after absorbing a healing amount equal to 45% of its target’s max health.', 'When summoned, the Pirate Skeleton Fiend gives -45% attack for its owner for as long as the owner has Priate Skeleton Fiends. This effect can’t be cleansed.']
+
+Passives
+
+['Resist Damage from Status Effects: This charater has innate resistance against incoming damage from status effects.']
+
+Family Bonus
+
+['Bonus for 2/3/4/5 Unique Heroes:', '+3%/+6%/+10%/+15% attack', '+2%/+4%/+7%/+12% mana generation']
+
+Eliane - Average - Wizard
+
+Attack:1104 — Defence:1097 — Health:1769
+
+Flame Surge
+
+Special Skills
+
+['Deals 300% damage to all enemies.', 'All enemies receive 640 Burn damage over 4 turns.', 'Dispel buffs from all enemies.', 'Elemental Link gives all Fire allies +30% defense against Special Skills for 4 turns. This effect can’t be dispelled.']
+
+Passives
+
+['Resist Burn: This character has innate resistance against Burn.', 'Mana on Burn: This character gains 5% mana each time an enemy receives Burn damage.']
+
+Family Bonus
+
+['(prediction) Bonus for 1/2/3 Hereos : +10%/+15%/+20% attack.', 'Bonus for 2+ heroes: Element Link affects all allies.']
+
+# Head to Head Analysis
+Breakdown: to compare, we have to see their similarities and their differences. For short, lets call Black Caesar as BC.
+
+## Similarities
+* The are both damage-dealers. Moreover, they are both hit-all-enemies heroes.
+* They also both deal DoT (Damage-over-Time), where BC deals DoT with fiends attack, and Eliane deals with burn attack.
+* There DoT seems both have property of "perpetual" or "continuous" hit. For BC, this is obvious since, if enemies not got healed, fiends will not be destroyed and will continue hitting. For Eliane, it is due to her passive where she will get "Mana on Burn" 5% for each enemy and each turn. Imagine if there is 5 enemies, she will get 5 x 5% = 25% for free every turn (or 3x5% = 15% if there are 3 enemies left) , so she will have full 100% mana very quickly, so her burn DoT will likely very frequent.
+* Note that BC's fiends make all enemies -45% attack (i.e. attack down), and Eliane's elemental link give all Fire allies (or all allies) have +30% defense against special skills. Making enemies attack down, and making allies defense up have the same effect, i.e. increase "survivability" of the whole team.
+
+## Differences
+* BC's passive neutralizes all DoT damage, but Eliane resist only burn damage.
+* Since fiends will absorb healing before disappeared, we can say that BC with fiends prevents enemies to heal in some degree (until all fiends gone)
+* Eliane can dispel all enemies buffs, and BC do not have any similar skills
+
+From the above analysis and their stats, we can make create the following comparison table:
+
+|**Functionality** | Black Caesar | Eliane | Notes |
+|----------|----------|----------|----------|
+| **🔴 Damage**    | 335% to all, 945 @4/80    | 300% to all, 1140 stat @ 4/80  | *Eliane is better here*   |
+| **🟠 DoT**    | fiend 100% (200 damage?)   | 200 with troop @ 4/80   (activate for 4 turns)  | *Damage is per turn. Of course, Eliane may not work on Toon & Glass*  |
+| **🟣 Perpetual DoT / ailment**    | Enemies will continue to be attack down, and attack by fiends if not heal | Eliane passive give 15%-25% mana each turn, so she quickly fire again  | *Eliane passive give 5% mana per burn per enemy*   |
+| **🟢 Team survivability**    | 45% attack down  to all enemies | +30% def for SS to all red/allies  (4 turns)| *This is where BC really shines, while Eliane needs to wait 2026 and with another 2025 HOTMs to affect all* |
+| **🔵 DoT Passive** | Resist all DoT damage | Resist only Burn damage | *BC is def. better here* |
+| **🟡 Other**    | Prevent Heal | Dispel  | *this is the only main difference utility but they are quite compromise*  |
