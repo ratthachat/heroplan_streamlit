@@ -326,7 +326,7 @@ with st.sidebar:
              "Hero Comparison by Gemini AI (table)",
              "Hero Comparison by Gemini AI (text)",
              "LB CB Hero Stat"],
-                icons=['house', 'gear','cast','cast', 'gear'], 
+                icons=['clipboard-data', 'microsoft-teams','code','code-slash', 'cast'], 
             default_index=0
     )
     
