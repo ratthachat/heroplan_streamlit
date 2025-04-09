@@ -1,4 +1,4 @@
-Lets assume you are an expert in a mobile game "Empires & Puzzles" from Zynga. Now I would like you to compare the two cards for pros and cons of each card. Be very critical and accurate. Do not need to emphasize the weaker hero.
+Lets assume you are an expert in a mobile game "Empires & Puzzles" from Zynga. Now I would like you to compare the two cards for pros and cons of each card. And breakdown each explanation and calculation carefully (like showing in the examples). Be very critical and accurate. Do not need to emphasize the weaker hero.
 
 Some basic knowledge:
 - A hero needs full mana to cast special skill (SS).
@@ -42,6 +42,11 @@ Some basic knowledge:
 
 - We will not put much weights on a hero's individual statisitcs. For example, comparing Hero A and B, where A has 10% more attack, defense and HP. However, if B has very good special skills that affect all allies (which can have stat comparable to A), B will arguarbly make more impact than A.
 
+- Mana-control heroes are therefore very powerful. Most mana controls are usually in the form of ailment to enemies. Therefore, ailment-block, cleanse and Owl/Toon/Glass passives are natural enemies of this powerful abilities. 
+- Owl passive directly prevent mana-control, by converting all mana-control ailments to mana-buffs. (but it will not prevent other types of ailments though) 
+
+- "Taunt" is another unique buff, which will direct all SS from enemies to the taunter, which in turn saves the allies.
+Therefore, it can be also considered as a special mana-control buff. It's a buff not an ailment, but control enemies mana by directing all special skills to the taunter (the enemies cannot cast their spell freely, and is forced to the taunter). Therefore, only the taunter will take all damages, and must be quite durable (or otherwise, it will quickly die)
 
 Following these examples: (all stats are at 4/80)
 
@@ -250,7 +255,7 @@ Therefore, Willow is much suitable for an attack team, where other allies have t
 (1) her counter-attack & damage-reduction is applied to all allies, and this is quite unique in the game. 
 (2) all allies bypass enemies' defensive buffs including counter attacks. This is also very unique skill, so Willow allow allies to easily win over counter-attack enemies!
 
-* Willow's 1st charge is quite weak but very fast. Dispel & Block def-only buffs are not much (since there are many many types of buffs which remain unblocked). This however can become handy in the last minutes of PvP where there are free damage multiplier, so that with "ghost tiles" will make Willow also good last-minute attacker. So she can become the last resort too.
+* Willow's 1st charge is quite weak but very fast. Dispel & Block def-only buffs are not much (since there are many many types of buffs which remain unblocked). This however can become handy in two situations (1) the last minutes of PvP where there are free damage multiplier, so that with "ghost tiles" will make Willow also good last-minute attacker. So she can become the last resort around the end of the game. (2) This 1st charge can be partially helpful against a taunter. Willow's 1st charge cannot dispel taunt, but can dispel & block the taunter's defensive buffs which protecting the taunter. Therefore, it can significantly make the taunter weaker.
 
 * Bennu C (with costume) can clean one latest ailment / debuff to all allies, and can get another 5% heal to himself (not bad)
 * Willow other passives cast stack -5% mana generation up to 10 times ( 10 x -5% = -50%) where 1st charge cast 1 stack, and 2nd charge cast 2 stack. This is very strong additional skill as man is central to the game, and stack is very difficult to prevent / clean.
