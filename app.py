@@ -517,8 +517,8 @@ elif genre == "Hero Comparison by Gemini AI (table)":
     
     hero_showcase = []
     # list cannot use numpy index
-    h1 = int(np.where(np.array(all_name_extra) == 'Black Caesar')[0][0])
-    h2 = int(np.where(np.array(all_name_extra) == 'Eliane')[0][0])
+    h1 = int(np.where(np.array(all_name_extra) == hero1_name)[0][0])
+    h2 = int(np.where(np.array(all_name_extra) == hero2_name)[0][0])
     hero_showcase.append(h1)
     hero_showcase.append(h2)
     assert type(hero_showcase[0]) is int and type(hero_showcase[1]) is int
