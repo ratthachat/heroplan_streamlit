@@ -213,7 +213,7 @@ Attack: 793
 Defense: 859
 Health: 1563
 Speed: Average
-Class: Druid
+Class: Cleric
 
 Special Skills
 ['The caster and nearby allies counterattack with 100% of the damage received for 5 turns. The damage of the counterattack increases by +10% with each counterattack, maxing out at 160%.', 'The caster and nearby allies reduce all received damage by -30% for 5 turns.']
