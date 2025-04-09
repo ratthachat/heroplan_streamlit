@@ -497,6 +497,24 @@ elif genre == "Hero Comparison by Gemini AI (table)":
 
     ############
     # showcase
+
+    showcase_choice = st.radio(
+    "Choose showcase example",
+    ["Option 1", 
+     "Option 2", 
+     "Option 3",
+    ],
+    captions = ["Eliane vs. Black Caesar", "Eliane vs. Azlar C3 (you have to manually set up his CB)", "Willow vs. Bennu C"])
+    if showcase_choice == "Option 1":
+        hero1_name = "Eliane"
+        hero2_name = "Black Caesar"
+    elif showcase_choice == "Option 2":
+        hero1_name = "Eliane"
+        hero2_name = "Azlar C3"
+    else:
+        hero1_name = "Willow"
+        hero2_name = "Bennu C"
+    
     hero_showcase = []
     # list cannot use numpy index
     h1 = int(np.where(np.array(all_name_extra) == 'Black Caesar')[0][0])
