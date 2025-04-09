@@ -1,6 +1,11 @@
 Lets assume you are an expert in a mobile game "Empires & Puzzles" from Zynga. Now I would like you to compare the two cards for pros and cons of each card. Be very critical and accurate. Do not need to emphasize the weaker hero.
 
 Some basic knowledge:
+- A hero needs full mana to cast special skill (SS).
+- In attack team, players have to match tiles (solving puzzles) to increase heroes' mana
+- In defense team, mana is guarantee to increase steadily each turn, and all attack decisions are done by game AI
+- Defense team has tank, flank and wing positions. Tank will get most hits, flank is 2nd, while wing will get least hits.
+  So a tank hero in defense will likely to charge full mana quickly if he/she is not died first. However, we have to combine this position with a hero's speed.
 - Speed is quite important.
 		○ Very Fast = 6 tiles (usually can fire at least twice in the PvP)
 		○ Fast = 7-8 tiles (usually can fire around 1-2  in PvP)
@@ -17,10 +22,10 @@ Some basic knowledge:
 	You can see that "Very Fast" heroes usually cast at least twice, but to make this hero useful, the very fast special should provide some considerable effect to either enemies or allies. For "Slow", the effect must be pretty strong to be able to turn the table all around (e.g. Grimsteel or Starlass are good examples)
 
 	Some heroes which can increase mana directly are valuable. Uncleansible mana-generation buff is also good.
+	* NOTE that when one defense team's enemy is died out, there will be a space in that position. And it we match tiles on those blank position, it will consider "ghost tiles", and mana gains will be double!! So we have to take advantage of this ghost tiles.
 	
-	- Dance, growth and stack are special buffs which cannot be dispel by regular means (still can be dispel by few very special skills)
 
-- Buffs = (positive) status effects affecting allies, Ailments = (negative) status affects affecting enemies
+- Buffs = (positive) status effects affecting allies, Ailments / Debuffs = (negative) status affects affecting enemies
 - DoT : Damage over Time, HoT : Heal over Time, SS : Special Skill
 - Toon heroes have 75% chance to resist all ailments including DoT
 - Glass heroes have 60% chance to refect all ailments including DoT
@@ -30,7 +35,9 @@ Some basic knowledge:
 
 - Defensive buffs are (Normal / Special-skill / Elemental) Defense Up, Damage Reduction, Counter-Attack
 - Therefore, heroes with ailments are at risk if the enemies got lots of Toon or Glass
-- "Fiends" and "Wither" are not considered ailments, so heroes who can do wither are good against Toon & Glass. However, many fiends have ailment effects and can be resist by Toon, but this cannot be reflect by glass (since fiends themselves cannot be reflected)
+- "Fiends" and "Wither" are not considered ailments, so heroes who can do wither are good against Toon & Glass. However, many fiends have ailment effects and can be resist by Toon, but this cannot be reflect by glass (since fiends themselves cannot be reflected). High %HP Fiends have great potential to continuously attack enemies since it's not easy to heal in time.
+- "Minions" and "Growth" are ally-side comparable to fiends and wither (which are on enemy-side).
+- "Stack" ailment / buff are non-ordinary ailment / buff which cannot be dispelled or cleansed by ordinary mean. Require very unique dispellers or cleansers which are rare.
 - Insanity is also not consider ailments. And, though, heroes who cast insanity always also have high chance to cast insanity to themselves, it is usually managable on that side to prepare other synergized heroes to remove insanity e.g. healers. But for opponents it's more difficult to deal with since heroes that we prepare to deal with Insanity may got insane themselves.
 
 - We will not put much weights on a hero's individual statisitcs. For example, comparing Hero A and B, where A has 10% more attack, defense and HP. However, if B has very good special skills that affect all allies (which can have stat comparable to A), B will arguarbly make more impact than A.
@@ -85,7 +92,13 @@ Breakdown: to compare, we have to see their similarities and their differences. 
 * The are both damage-dealers. Moreover, they are both hit-all-enemies heroes.
 * They also both deal DoT (Damage-over-Time), where BC deals DoT with fiends attack, and Eliane deals with burn attack.
 * There DoT seems both have property of "perpetual" or "continuous" hit. For BC, this is obvious since, if enemies not got healed, fiends will not be destroyed and will continue hitting. For Eliane, it is due to her passive where she will get "Mana on Burn" 5% for each enemy and each turn. Imagine if there is 5 enemies, she will get 5 x 5% = 25% for free every turn (or 3x5% = 15% if there are 3 enemies left) , so she will have full 100% mana very quickly, so her burn DoT will likely very frequent.
-* Note that BC's fiends make all enemies -45% attack (i.e. attack down), and Eliane's elemental link give all Fire allies (or all allies) have +30% defense against special skills. Making enemies attack down, and making allies defense up have the same effect, i.e. increase "survivability" of the whole team.
+* Note that BC's fiends make all enemies -45% attack (i.e. attack down), and Eliane's elemental link give all Fire allies (or all allies) have +30% defense against special skills (SS). Making enemies attack down, and making allies defense up have the same effect, i.e. increase "survivability" of the whole team. In this regards, however, BC is really really strong since -45% attack down to all enemies (continuously if not heal enough), make the enemies' both normal and SS attacks much weakers.
+
+To compare 30% SS def up, and -45% attack down, we can normalize them into the same metric. To make numbers simple, assuming our defense is 100, and enemy attack is 100.
+--> BC -45% attack down --> our def 100 and enemy attack 100-45 = 55 
+--> Eliane +30% SS def up --> our SS def 130 and enemy attack 100 (normal attack barely matter, so SS-only def up is fine)
+You can see that in cases of BC, our def is almost double stronger than enemy's attack while in Eliane, our def is only 30% stronger. Therefore, you can see BC technique is very effective.
+Effectively, BC make allies very durable and last until allies' mana full.
 
 ## Differences
 * BC's passive neutralizes all DoT damage, but Eliane resist only burn damage.
@@ -99,9 +112,11 @@ From the above analysis and their stats, we can make create the following compar
 | **🔴 Damage**    | 335% to all, 945 @4/80    | 300% to all, 1140 stat @ 4/80  | *Eliane is better here*   |
 | **🟠 DoT**    | fiend 100% (200 damage?)   | 200 with troop @ 4/80   (activate for 4 turns)  | *Damage is per turn. Of course, Eliane may not work on Toon & Glass*  |
 | **🟣 Perpetual DoT / ailment**    | Enemies will continue to be attack down, and attack by fiends if not heal | Eliane passive give 15%-25% mana each turn, so she quickly fire again  | *Eliane passive give 5% mana per burn per enemy*   |
-| **🟢 Team survivability**    | 45% attack down  to all enemies | +30% def for SS to all/red allies  (4 turns)| *This is where BC really shines, while Eliane needs to wait 2026 and with another 2025 HOTMs to affect all* |
+| **💪 Team survivability**    | 45% attack down  to all enemies | +30% def for SS to all/red allies  (4 turns)| *This is where BC really shines. This ability of him is really unique and highly effective. Though Eliane does give partially protective and still considerably quite good elemental skill (However, need another same-family heroes to effect all allies.* |
 | **🔵 DoT Resistance Passive** | Resist all DoT damage | Resist only Burn damage | *BC is def. better here* |
 | **🟡 Others**    | Prevent Heal | Dispel  | *this is the only main difference utility but they are quite compromise*  |
+| **⚔️ Synergy Idea **    | Synergize with other heroes to significantly increase defense to allies, to mostly nullify all enemies attack further | Since Eliane is attack-oriented hero, who has potential to fire again and again, we synergize her with heroes who can buff her attack.   | *it depends on your taste*  |
+
 
 =============================
 Example 2:
@@ -163,6 +178,91 @@ From the above analysis and their stats, we can make create the following compar
 
 |**Functionality** | Azlar C3 | Eliane | Notes |
 |----------|----------|----------|----------|
-| **💪 Damage**    | 355% to all, 1145 @4/80 (slow speed)    | 300% to all, 1140 stat @ 4/80 (average speed, but much faster with passive)  | *They look comparable. Their DoTs also seems comparable, but Eliane may be a bit better due to her much faster speed*   |
+| **🔥 Damage**    | 355% to all, 1145 @4/80 (slow speed)    | 300% to all, 1140 stat @ 4/80 (average speed, but much faster with passive)  | *They look comparable. Their DoTs also seems comparable, but Eliane may be a bit better due to her much faster speed*   |
 | **🛡️ Durability**    | 75% chance to resist all ailments | +30% defense for SS to all/red allies  (4 turns)| *Azlar is much more durable individually, but Eliane gives better support to the whole team* |
 | **✨ Others**    | Superior Barbarian, higher chance to have 30% more attack | Dispel, +5% mana on each burn  | *Again, Azlar looks better individually, but Eliane can help the whole team with dispel. This depends on each player style whether to support Azlar to hit hard, or to use Eliane to synergize with others*  |
+| **⚔️ Synergy Idea **    | Synergize with other red/fire "slow" heroes so that when they fire together the results are devastiating | Since Eliane is attack-oriented hero, who has potential to fire again and again, we synergize her with heroes who can buff her attack.   | *it depends on your taste*  |
+
+=============================
+Example 3: 
+Willow vs. Bennu C
+
+Willow description:
+Element: Yellow
+Star: 5
+Power: 891
+Attack: 832
+Defense: 900
+Health: 1598
+Speed: Magic
+Class: Druid
+
+Special Skills
+['Special Skill has a different effect when charged with 100%/200% mana:', '1x Mana Charge:', ' * Deals 175% damage to all enemies.', ' * Dispels status effect buffs that affect defense from all enemies.', ' * All enemies are immune to new status effect buffs that affect defense for 3 turns.', '2x Mana Charge:', ' * All allies bypass defensive buffs with their attacks for 5 turns. Defensive buffs include counterattacks.', ' * All allies reduce all received damage by -45% for 5 turns.', ' * All allies counterattack with 115% of the damage received for 5 turns.']
+Passives
+['Health recovery on Special: When this character casts their Special Skill, they have a 50% chance to recover 15% health for all allies. If the Special Skill is fully charged, the chance is 100%.', 'Stack on Special: When this character casts their Special Skill, all enemies get -5% mana generation stack. If the Special Skill is fully charged, all enemies get two stacks. An enemy can have up to 10 stacks.']
+Family Bonus
+['Bonus for 1/2/3 Unique Heroes:', '50% / 75% / 100% chance to cast +5 mana generation stack on a random ally when this hero casts their Special Skill.', 'Maximum stack size: 10']
+
+
+Bennu C Description:
+Element: Blue
+Star: 5
+Power: 861
+Attack: 793
+Defense: 859
+Health: 1563
+Speed: Average
+Class: Druid
+
+Special Skills
+['The caster and nearby allies counterattack with 100% of the damage received for 5 turns. The damage of the counterattack increases by +10% with each counterattack, maxing out at 160%.', 'The caster and nearby allies reduce all received damage by -30% for 5 turns.']
+Passives
+['Effects on Special Skill: 60% chance to perform the following actions when this character casts their Special Skill', ' * Boosts health of all allies by 10%. Boosted health can exceed max HP.', ' * Cleanses the latest cleansable status ailment from all allies.', 'Guaranteed Effect on Special Skill: When this character casts their Special Skill, any of their Passive Skills that grant extra effects on cast are guaranteed to activate. (so with costume (C) here, the 60% chance is buffed to 100%)', 'Health Recover on Buff Received: This character recovers 5% HP when they receive a buff or positive stack.']
+Family Bonus
+['Bonus for 1/2 Unique Heroes:', '50% / 75% chance to make a cast -35% accuracy for 2 turns and 196/146/114 (5*/4*/3*) Burn damage over 2 turns on an enemy who deals Special Skill damage to this character.', 'If the enemy’s Special Skill defeats this character, the chance is 75%/100%']
+
+# Head to Head Analysis
+Breakdown: to compare, let us consider their similarities and their differences.
+
+## Similarities
+* Their main functions are both counter attack caster, and damage reduction provider. These two skills are very powerful as they counter attack with more damage than a combined damaged that an enemy orignal dealt. Also, damage on our side is much reduced. 
+
+To understand these two synergy skills, consider one enemy attack 3 of our allies (i.e. Hit-3 Special). Assuming original damage dealt is 100 for each allie. So the combined damage is 3x100=300
+With 120% counter-attack, the counter combined damage will be 120% x 300 = 360. So the attack will severely get massive 360 hit!!
+Meanwhile, suppose we also have -50% damage reduction, it means that each all ally will get only 100x50% = 50 only! 
+To summarize, originally we meant to get hit 3x100, but with these two skills, we get only 3x50, while counter back 360!!
+Most multi-hit damage-dealer enemies which is not bypass counter attack is likely dead or almost dead by killing themselves.
+
+* Both of them have one passive that increase HP (healing) to all allies, which is nice!
+
+## Differences
+
+* However, there are subtle differences for the 2 heroes on counter-attack & damage-reduciton. 
+Bennu provides this skill to only 3 allies, with average speed, while Willow provides to all with 2nd Magic charge (= Slow speed).
+This make them suitable in different situation i.e. Bennu is very suitable in defense team, espeically at tank position, where mana is steadily increased each turn. 
+With average speed & tank position, Bennu will fire quite quickly and protect the two flanks. As wings are less likely to be hit anyway, so his 3-allies protection make sense.
+
+In contrast, Willow comes with slow, and not at all suitable for defense team since AI may decide to fire with her 1st mana-charge first (which is much less effective compare to her 2nd).
+Therefore, Willow is much suitable for an attack team, where other allies have to protect her until her mana is fully charged.
+
+* Willow's slowness of 2nd charge come with huge compensation i.e. various utilities. 
+(1) her counter-attack & damage-reduction is applied to all allies, and this is quite unique in the game. 
+(2) all allies bypass enemies' defensive buffs including counter attacks. This is also very unique skill, so Willow allow allies to easily win over counter-attack enemies!
+
+* Willow's 1st charge is quite weak but very fast. Dispel & Block def-only buffs are not much (since there are many many types of buffs which remain unblocked). This however can become handy in the last minutes of PvP where there are free damage multiplier, so that with "ghost tiles" will make Willow also good last-minute attacker. So she can become the last resort too.
+
+* Bennu C (with costume) can clean one latest ailment / debuff to all allies, and can get another 5% heal to himself (not bad)
+* Willow other passives cast stack -5% mana generation up to 10 times ( 10 x -5% = -50%) where 1st charge cast 1 stack, and 2nd charge cast 2 stack. This is very strong additional skill as man is central to the game, and stack is very difficult to prevent / clean.
+
+* Both of them have nice-to-have family bonus, which are good but perhaps not game-changing.
+
+From the above analysis and their stats, we can make create the following comparison table:
+
+|**Functionality** | Willow | Bennu C | Notes |
+|----------|----------|----------|----------|
+| **💪 counter Attack**    | 115% to all allies, 5 turns, slow speed (2nd-charge magic)    | 100% - 160% to 3 allies, 5 turns, average speed | *As stated, Willow is suitable on attack team, while Bennu C is suitable as tank in the defense team*   |
+| **🛡️ Damage Reduction**    | -45% to all | -30% to all| *Willow has a bit stronger reduction, but again come with the cost of slow speed.* |
+| **🛡️ Passive Heal**    | 50% (1st charge) or 100% (2nd charge) chance to recover 15% health for all allies.|Boosts health of all allies by 10%.| *Nice to have minor abiity* |
+| **⚡️ Others**    | see above analysis | see above analysis  | *too many details already described, so we refer readers to above analysis*  |
+| **⚔️ Synergy Idea **    | Synergize with heroes that can have strong protection, so that she has time to charge for her 2nd magic | Since Bennu can be a reliable tank, and will get much hit, it also good to flank him with healers. But not a defense buffer since def-buff will make counter-attack weaker   | *it depends on your taste*  |
