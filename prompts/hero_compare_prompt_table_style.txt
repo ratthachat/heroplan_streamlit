@@ -24,7 +24,6 @@ Some basic knowledge:
 	Some heroes which can increase mana directly are valuable. Uncleansible mana-generation buff is also good.
 	* NOTE that when one defense team's enemy is died out, there will be a space in that position. And it we match tiles on those blank position, it will consider "ghost tiles", and mana gains will be double!! So we have to take advantage of this ghost tiles.
 	
-
 - Buffs = (positive) status effects affecting allies, Ailments / Debuffs = (negative) status affects affecting enemies
 - DoT : Damage over Time, HoT : Heal over Time, SS : Special Skill
 - Toon heroes have 75% chance to resist all ailments including DoT
@@ -47,6 +46,26 @@ Some basic knowledge:
 
 - "Taunt" is another unique buff, which will direct all SS from enemies to the taunter, which in turn saves the allies.
 Therefore, it can be also considered as a special mana-control buff. It's a buff not an ailment, but control enemies mana by directing all special skills to the taunter (the enemies cannot cast their spell freely, and is forced to the taunter). Therefore, only the taunter will take all damages, and must be quite durable (or otherwise, it will quickly die)
+
+All heroes have classes. In total, there are 10 classes. 
+Each class has a talent. Only heroes from "Classic" family will attain the "Superior Talent". Other heroes have normal talent.
+	○ Cleric : it has 30% chance to reject all mana-related attack & ailments and recover 10% HP. For Superior Cleric, the chance is 45% plus reflect the mana-ailment back!!
+	○ Monk: it has 50% chance to reject all ailments (but not mana-cut). Superior monk will make a small attack back when rejecting (but not quite significant)
+	○ Druid: it has 15% chance to summon a minion to protect the hero with 15%-25% HP. Superior Druid has 20% chance, with 30% HP! This normally activates at least once in each fight, so we can consider superior druid to have 30% more HP automatically.
+	○ Barbarian: it will make a small DoT (very weak talent). However, "Superior Barbarian" has 50% chance to have +30% attack buff, which is good.
+	○ Figher: it has 25% to revive with 20% attack-buff, where as "Superior Fighter" has 50% chance to revive, and also increase mana by 50% !!
+	○ Ranger: it has 25% chance to bypass defensive buff and -20% defense-down ailments to enemy. For Superior Ranger, it's 60% chance, with some DoT!!
+	○ Sorcerer: it has 15% chance to cast -50% attack-down and mana debuffs / ailments to targeted enemy for 2 turns (quite unreliable and perhaps useful only on defense team). For superior sorcerer, the chance is 60%! Good for defense only still I think.
+	○ Wizard: have 25% chance to deal 15%-25% extra damage for each buff enemy have. For "Superior Wizard" the chance become 50%, with dispelling the buffs!! And this is also work for normal tiles attack, so superior wizard is quite good for dealing with buff-oriented enemies!
+	○ Rogue: 20% chance to dodge. For Superior Rogue, the chance is 30%, plus gives +15% dodge buff to nearby allies.
+	○ Paladin: 25% chance to get +25% defense buff to nearby. For Superior Paladin, it is 50% chance, plus heal 10% HP to nearby, so very good!
+
+
+
+
+
+
+
 
 Following these examples: (all stats are at 4/80)
 
@@ -97,7 +116,7 @@ Breakdown: to compare, we have to see their similarities and their differences. 
 * The are both damage-dealers. Moreover, they are both hit-all-enemies heroes.
 * They also both deal DoT (Damage-over-Time), where BC deals DoT with fiends attack, and Eliane deals with burn attack.
 * There DoT seems both have property of "perpetual" or "continuous" hit. For BC, this is obvious since, if enemies not got healed, fiends will not be destroyed and will continue hitting. For Eliane, it is due to her passive where she will get "Mana on Burn" 5% for each enemy and each turn. Imagine if there is 5 enemies, she will get 5 x 5% = 25% for free every turn (or 3x5% = 15% if there are 3 enemies left) , so she will have full 100% mana very quickly, so her burn DoT will likely very frequent.
-* Note that BC's fiends make all enemies -45% attack (i.e. attack down), and Eliane's elemental link give all Fire allies (or all allies) have +30% defense against special skills (SS). Making enemies attack down, and making allies defense up have the same effect, i.e. increase "survivability" of the whole team. In this regards, however, BC is really really strong since -45% attack down to all enemies (continuously if not heal enough), make the enemies' both normal and SS attacks much weakers.
+* Note that BC's fiends make all enemies -45% attack (i.e. attack debuff ailment), and Eliane's elemental link give all Fire allies (or all allies) have +30% defense against special skills (SS) buff. Making enemies attack down, and making allies defense up have the same effect, i.e. increase "survivability" of the whole team. In this regards, however, BC is really really strong since -45% attack down to all enemies (continuously if not heal enough), make the enemies' both normal and SS attacks much weakers.
 
 To compare 30% SS def up, and -45% attack down, we can normalize them into the same metric. To make numbers simple, assuming our defense is 100, and enemy attack is 100.
 --> BC -45% attack down --> our def 100 and enemy attack 100-45 = 55 
