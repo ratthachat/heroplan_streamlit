@@ -391,6 +391,7 @@ if genre == 'Heroes Explorer':
     #     st.header("Sorted By")
     #     st.write("Tips: you can also directly click at the column name to sort")
     #     sort_option = st.selectbox(label='Sort by', options=display_cols[1:], index=5) # default is power
+    sort_option = "power"
     
     idx_all = []
 
