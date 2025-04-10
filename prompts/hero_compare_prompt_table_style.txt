@@ -128,6 +128,8 @@ Effectively, BC make allies very durable and last until allies' mana full.
 * BC's passive neutralizes all DoT damage, but Eliane resist only burn damage.
 * Since fiends will absorb healing before disappeared, we can say that BC with fiends prevents enemies to heal in some degree (until all fiends gone)
 * Eliane can dispel all enemies buffs, and BC do not have any similar skills
+* Eliane is Wizard (normal), and BC is figher (normal). Both are good, however, note the unintentional effect that when Eliane dispel enemies buffs, since wizard talent requires enemies' buffs, she couldn't activate her wizard talent. So this is a bit unfortunate  that she will rarely activates her talent except when dealing with undispellable buffs.
+
 
 From the above analysis and their stats, we can make create the following comparison table:
 
@@ -196,13 +198,14 @@ Breakdown: to compare, we have to see their similarities and their differences.
 * Eliane has elemental link that +30% defense for SS (Eliane is much better)
 * Azlar's toon passive have a high chance to neutralizes all DoT damage, but Eliane resist only burn damage. Actually, (Azlar much better)
 * Azlar has around 10% better stat compared to Eliance on average. (Azlar is a bit better)
-* Azlar is Barbarian which is the weakest class, however because he is classic, he has a superior Barbarian, so perhaps comparable to Eliane's Wizard.
+* Azlar is Barbarian which is the weakest class. However note that since he comes from classic family, he has a "Superior Barbarian" and have high chance to have +30% attack buffs most of the turns.
+* Eliane is Wizard (normal) which is normally good. However, note the unintentional effect that when Eliane dispel enemies buffs, since wizard talent requires enemies' buffs, she couldn't activate her wizard talent. So this is a bit unfortunate that she will rarely activates her talent except when dealing with undispellable buffs.
 
 From the above analysis and their stats, we can make create the following comparison table:
 
 |**Functionality** | Azlar C3 | Eliane | Notes |
 |----------|----------|----------|----------|
-| **🔥 Damage**    | 355% to all, 1145 @4/80 (slow speed)    | 300% to all, 1140 stat @ 4/80 (average speed, but much faster with passive)  | *They look comparable. Their DoTs also seems comparable, but Eliane may be a bit better due to her much faster speed*   |
+| **🔥 Damage**    | 355% to all, 1145 @4/80 (slow speed), with Superior Barbarian (+30% attack buff), usually it upgrades to 385% to all    | 300% to all, 1140 stat @ 4/80 (average speed, but much faster with passive)  | *They look comparable. Their DoTs also seems comparable, but Eliane may be a bit better due to her much faster speed*   |
 | **🛡️ Durability**    | 75% chance to resist all ailments | +30% defense for SS to all/red allies  (4 turns)| *Azlar is much more durable individually, but Eliane gives better support to the whole team* |
 | **✨ Others**    | Superior Barbarian, higher chance to have 30% more attack | Dispel, +5% mana on each burn  | *Again, Azlar looks better individually, but Eliane can help the whole team with dispel. This depends on each player style whether to support Azlar to hit hard, or to use Eliane to synergize with others*  |
 | **⚔️ Synergy Idea **    | Synergize with other red/fire "slow" heroes so that when they fire together the results are devastiating | Since Eliane is attack-oriented hero, who has potential to fire again and again, we synergize her with heroes who can buff her attack.   | *it depends on your taste*  |
@@ -280,6 +283,7 @@ Therefore, Willow is much suitable for an attack team, where other allies have t
 * Willow other passives cast stack -5% mana generation up to 10 times ( 10 x -5% = -50%) where 1st charge cast 1 stack, and 2nd charge cast 2 stack. This is very strong additional skill as man is central to the game, and stack is very difficult to prevent / clean.
 
 * Both of them have nice-to-have family bonus, which are good but perhaps not game-changing.
+* Willow is a (normal) druid, so have some chance to summon 15% HP minion to increase a bit of survivability. While Bennu is a (normal) cleric, so is even better in defense team since it's more difficult to prevent him to fire with mana-control.
 
 From the above analysis and their stats, we can make create the following comparison table:
 
