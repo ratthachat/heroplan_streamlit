@@ -357,10 +357,11 @@ with st.sidebar:
 ## Program 1
 if genre == 'Heroes Explorer':
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     with col1:
         st.header("Standard Filters:")
-        st.write("Tips: filter costume by typing ' C' 'C2' or 'C3' in the Name box.")
+        st.markdown("Tips: filter costume by typing ' C' 'C2' or 'C3' in the Name box.")
+        st.markdown("SpecialSkill Category: try **defense debuff**, **hit all**. See **types** column to learn more on SpecialSkill Category")
         with st.expander("Filter Options"):
             name_option = st.text_input(label="Name:", value="")
             star_option = st.selectbox(label='Star:', options=star_values, index=0)
@@ -375,7 +376,7 @@ if genre == 'Heroes Explorer':
             passive_text_option = st.text_input(label="Passive Text", value="")
     with col2:
         st.header("Stat Filters")
-        st.write("Tips: put the **minimum** att/def/hp stat you want to filter heroes")
+        st.markdown("Tips: put the **minimum** att/def/hp stat you want to filter heroes, e.g. put 1100 in **Power**")
         with st.expander("Stat Options"):   
             power_option = st.text_input(label="Power:", value="0")
             defense_option = st.text_input(label="Defense:", value="0")
@@ -386,10 +387,10 @@ if genre == 'Heroes Explorer':
             
             total_dot_option = st.text_input(label="Total DoT Damage:", value="0")
             dot_per_turn_option = st.text_input(label="DoT Damage Per Turn:", value="0")
-    with col3:
-        st.header("Sorted By")
-        st.write("Tips: you can also directly click at the column name to sort")
-        sort_option = st.selectbox(label='Sort by', options=display_cols[1:], index=5) # default is power
+    # with col3:
+    #     st.header("Sorted By")
+    #     st.write("Tips: you can also directly click at the column name to sort")
+    #     sort_option = st.selectbox(label='Sort by', options=display_cols[1:], index=5) # default is power
     
     idx_all = []
 
