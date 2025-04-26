@@ -3,7 +3,7 @@ source: moth
 family: moth
 speed: Slow
 class: Sorcerer
-power: 1153
+power: 1158
 attack: 1178
 defense: 1240
 health: 1954
@@ -19,7 +19,8 @@ types:
   - Hit 1
   - Bypass
   - Healer
-  - Grave Mothling Mega Fiend
+  - Grave Mothling Mega Fiend Summoner 1
+  - Damage Increasing Mega Fiend
 passives:
   - >- 
     Dodge Special Damage: This character has a 10% chance to dodge Special Skills that deal damage.

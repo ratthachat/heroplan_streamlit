@@ -3,8 +3,8 @@ source: secretsummon
 family: cultist
 speed: Fast
 class: Sorcerer
-power: 1055
-attack: 1116
+power: 1117
+attack: 1165
 defense: 1100
 health: 1975
 skill: Ritual of the Deep
@@ -17,8 +17,8 @@ effects:
   - Inflits 50 Instanity on the caster.
 types:
   - Hit 1
-  - Fiend
-  - Insanity
+  - Replicating Fiend Summoner 1
+  - Insanity Inflincting Fiend
 passives:
   - >-
     Marked by the Old Ones: All damage is reduced by 5% per 10 Insanity for this character up to a maximum reduction of 50%.
