@@ -19,7 +19,7 @@ effects:
   - ' * All enemies receive 436 Water damage over 4 turns. The caster absorbs 50% of the dealt Water damage as health.'
 types:
   - Hit All
-  - DoT
+  - DoT All
 passives:
   - >-
     Effects on Special Skill: 50% chance to perform the following actions when this character casts their Special Skill
@@ -29,10 +29,10 @@ image: https://i.imgur.com/eqqisr9.jpg
 costume:
   bonuses: 5/5/10/5
   class: Fighter
-  power: 1100
-  attack: 1191
-  defense: 992
-  health: 2003
+  power: 1164
+  attack: 1281
+  defense: 1067
+  health: 2085
   skill: Ocean Vortex
   effects:
     - 'Special Skill need consecutive uses to reach full power, the following order:'
@@ -42,10 +42,10 @@ costume:
     - '2nd:'
     - ' * Deals 500% damage to the target and minor damage to all other enemies.'
     - ' * If hit enemies use their Special Skill in the next 5 turns, they get -39% attack, -44% defense and -24% mana generation for 5 turns. Status effects are added at the end of a Special Skill. Status effects will not be added if this status effect is removed during a Special Skill.'
-    - ' * All enemies receive 680 Water damage over 5 turns. The caster absorbs 50% of the dealt Water damage as health.'
+    - ' * All enemies receive 735 Water damage over 5 turns. The caster absorbs 50% of the dealt Water damage as health.'
   types:
     - Hit All
-    - DoT
+    - DoT All
   passives:
     - >-
       Effects on Special Skill: 50% chance to perform the following actions when this character casts their Special Skill

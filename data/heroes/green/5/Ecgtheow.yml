@@ -3,10 +3,10 @@ source: beowulf
 family: beowulf
 speed: Slow
 class: Barbarian
-power: 1168
-attack: 1246
-defense: 1118
-health: 2099
+power: 1188
+attack: 1266
+defense: 1139
+health: 2156
 skill: Challenge the Strongest
 effects:
   - Deals 500% damage to the enemy with the highest remaining HP. Deals 300% damage to all other enemies.
@@ -20,5 +20,5 @@ passives:
   - >-
     Mana on Buff Received: This character gains 5% mana when they receive a buff or positive stack.
   - >-
-    Stacking Attack On Damage Received: When this character receives damage from Special Skills, they gain +25% attack Stack (Max: 10). One Stack can be gained per turn.
+    Stacking Attack On Damage Received: When this character receives damage from Special Skills, they gain +30% attack Stack (Max: 10). One Stack can be gained per turn.
 image: https://i.imgur.com/P9xj0rz.jpg
