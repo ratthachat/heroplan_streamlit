@@ -323,7 +323,7 @@ with st.sidebar:
     genre = option_menu("Choose how to explore heroes",
             ["Heroes Explorer", 
              "Team Simulation", 
-             "Hero Comparison by Gemini-Flash-2.0 AI",
+             "Hero Comparison by Gemini-Flash-2.5 AI",
              # "Hero Comparison by Gemini AI (text)", # Obsolete
              "LB CB Hero Stat"],
                 icons=['clipboard-data', 'microsoft-teams','code', 'cast'], 
@@ -494,7 +494,7 @@ elif genre == "Team Simulation":
 # 
 #########################################
 ## Program 4.1 "Hero Comparison by Gemini AI (table-style)"
-elif genre == "Hero Comparison by Gemini-Flash-2.0 AI":
+elif genre == "Hero Comparison by Gemini-Flash-2.5 AI":
     nheroes_choice = 2
 
     ############
@@ -540,7 +540,7 @@ elif genre == "Hero Comparison by Gemini-Flash-2.0 AI":
     GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
     import google.generativeai as genai
     genai.configure(api_key=GOOGLE_API_KEY)
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 
     with open('prompts/hero_compare_prompt_table_style.txt', 'r') as f:
         prompt = f.read()
@@ -595,7 +595,7 @@ elif genre == "Hero Comparison by Gemini AI (text)":
     GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
     import google.generativeai as genai
     genai.configure(api_key=GOOGLE_API_KEY)
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
 
     with open('prompts/hero_compare_prompt.txt', 'r') as f:
         prompt = f.read()
