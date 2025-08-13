@@ -13,7 +13,7 @@ effects:
   - All enemies can’t receive new status effects that would resurrect them for 5 turns.
   - Deals 430% damage to the target and minor damage to the nearby enemies.
 types:
-  - Revive Block
+  - Revive Block All
   - Hit 3
 passives:
   - >-
@@ -22,17 +22,17 @@ image: https://i.imgur.com/xMJYpsy.jpg
 costume:
   bonuses: 5/5/10/5
   class: Druid
-  power: 987
-  attack: 972
-  defense: 932
-  health: 1870
+  power: 1031
+  attack: 1019
+  defense: 993
+  health: 1942
   skill: Delicious Demise
   effects:
     - All enemies can’t revive their allies or themselves for 4 turns.
     - All enemies can’t receive new status effects that would resurrect them for 4 turns.
     - Deals 460% damage to the target and minor damage to nearby enemies.
   types:
-    - Revive Block
+    - Revive Block All
     - Hit 3
   passives:
     - >-
