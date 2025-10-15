@@ -20,15 +20,15 @@ types:
   - Bypass
 passives:
   - >-
-    Steal Buff: When this character casts their Special Skill, they have a 50% chance to steal the newest dispellable buff from a random enemy that has buffs. If no enemy has buffs, deals 70% damage to all enemies.
+    Steal Buff: When this character casts their Special Skill, they have a 65% chance to steal the newest dispellable buff from a random enemy that has buffs. If no enemy has buffs, deals 150% damage to all enemies.
 image: https://i.imgur.com/ZDIKUNx.jpg
 costume:
   bonuses: 5/5/10/5
   class: Wizard
-  power: 1013
-  attack: 1127
-  defense: 865
-  health: 1798
+  power: 1224
+  attack: 1386
+  defense: 1081
+  health: 2230
   skill: Vampire Heist
   effects:
     - Destroys all Minions from the target and nearby enemies. This effect damages Mega Minions.
@@ -42,5 +42,5 @@ costume:
     - Bypass
   passives:
     - >-
-      Steal Buff: When this character casts their Special Skill, they have a 50% chance to steal the newest dispellable buff from a random enemy that has buffs. If no enemy has buffs, deals 70% damage to all enemies.
+      Steal Buff: When this character casts their Special Skill, they have a 65% chance to steal the newest dispellable buff from a random enemy that has buffs. If no enemy has buffs, deals 150% damage to all enemies.
   image: https://i.imgur.com/ed8i62p.jpg

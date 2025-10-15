@@ -3,13 +3,13 @@ source: hotm
 family: 2024
 speed: Average
 class: Sorcerer
-power: 996
+power: 1017
 attack: 914
 defense: 1182
 health: 1728
 skill: Invigorating Pollen
 effects:
-  - Boosts health for all allies by 600. Boosted health can exceed max HP.
+  - Boosts health for all allies by 650. Boosted health can exceed max HP.
   - All allies regenerate 400 Bosted health over 4 turns. Boosted health can exceed max HP.
   - All allies get +50% attack as long as the caster has boosted health. This effect can’t be cleansed.
   - Element Link gives all Nature allies +20% critical chance for 6 turns. This effect cannot be dispelled.
