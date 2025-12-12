@@ -540,7 +540,7 @@ elif genre == "Hero Comparison by Gemini-Flash-2.5 AI":
     GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
     import google.generativeai as genai
     genai.configure(api_key=GOOGLE_API_KEY)
-    model = genai.GenerativeModel('gemini-2.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
     with open('prompts/hero_compare_prompt_table_style.txt', 'r') as f:
         prompt = f.read()
@@ -595,7 +595,7 @@ elif genre == "Hero Comparison by Gemini AI (text)":
     GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
     import google.generativeai as genai
     genai.configure(api_key=GOOGLE_API_KEY)
-    model = genai.GenerativeModel('gemini-2.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
     with open('prompts/hero_compare_prompt.txt', 'r') as f:
         prompt = f.read()
