@@ -18,6 +18,5 @@ types:
   - Fiend Summoner 3
   - Generated mana steal 3
 passives:
-  - >-
-    Gargoyle's Stoneskin: Every time this Gargoyle casts a Special Skill, their Stoneskin hardens. The next 4 times they receive damage, it is reduced by -90%, and they resist all status ailment and mana reduction. This effect can't be dispelled.
+  - "Gargoyle's Softskin: Every time this Gargoyle casts a Special Skill, their Softskin activates. The next 4 times they receive damage, it is reduced by -90%. They are also immune to all status ailmenta, mana reductions and Insanity. This effect can't be dispelled."
 image: https://i.imgur.com/rPeRNSA.jpg
