@@ -17,5 +17,5 @@ types:
   - Hit 3
   - Fluff Volley
 passives:
-  - "Gargoyle's Softskin: Every time this Gargoyle casts a Special Skill, their Softskin activates. The next 3 times they receive damage, it is reduced by -90%. They are also immune to all status ailmenta, mana reductions and Insanity. This effect can't be dispelled."
+  - "Gargoyle's Softskin: Every time this Gargoyle casts a Special Skill, their Softskin activates. The next 3 times they receive damage, it is reduced by -90%. They are also immune to all status ailments, mana reductions and Insanity. This effect can't be dispelled."
 image: https://i.imgur.com/y4ORfSh.jpg
