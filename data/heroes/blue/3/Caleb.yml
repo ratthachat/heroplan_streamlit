@@ -1,0 +1,32 @@
+---
+name: Caleb
+source: valiant
+family: vegetable
+speed: Average
+class: Fighter
+power: 540
+attack: 559
+defense: 556
+health: 886
+skill: Cabbage Barrage
+effects:
+- Deals 320% damage to the target.
+- Deals additional 5% damage for each Fiend or Mega Fiend owned by the enemies, up
+  to 370% damage in total.
+- The target get -25% attack for 4 turns.
+types:
+- Hit 1
+- Attack Debuff 1
+passives:
+- 'Empowered Resist Special Skill Blocking: This character is immune to status ailments
+  that prevent the use of Special Skills. They also gain 450 boosted health and 5%
+  mana each time they resist.'
+- 'Seedling Summoner: Summons a Seedling Fiend every turn to a random enemy.'
+- ' * The Seedling Fiend evolves into a Sprout Fiend after 2 turns.'
+- ' * The Sprout Fiend evolves into a Blossom Mega Fiend after 2 turns.'
+- ' * The evolution of the Fiends is delayed by 1 turn each time they absorb healing.'
+- ' 1) Seedling Fiend: 20% attack, 5% health'
+- ' 2) Sprout Fiend: 30% attack, 10% health'
+- ' 3) Blossom Mega Fiend: 150% attack, 25% health'
+image: https://imgur.com/7dB4odv.jpg
+...
