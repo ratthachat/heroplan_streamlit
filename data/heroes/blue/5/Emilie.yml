@@ -15,7 +15,7 @@ effects:
   - >-
     When the Abyss Ghost form expires:
     * Deals 1200 damage to all allies and inflicts 15 Insanity on them.
-  - Inflicts 50 Insanity on the caster.
+  - Inflicts 45 Insanity on the caster.
 types:
   - Full Removal 1
   - Abyss Ghost 1

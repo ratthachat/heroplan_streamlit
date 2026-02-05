@@ -9,14 +9,15 @@ defense: 1283
 health: 2259
 skill: Mutated Specimen
 effects:
-  - "Growth: The caster and nearby allies get 400 attack."
+  - "Growth: The caster and nearby allies get 400 attack and 400 defense."
   - Summon an Aberration Mega Minion with 40% HP and 170% attack inherited from the caster.
   - "Each hit from an Aberration Mega Minion gives the target the following status ailment:"
   - " * The target receives 489 Toxin damage over 3 turns. Damage is increased against targets with boosted health, Minions or a Mega Minion.  (The Toxin damage is increased by +100% against targets with boosted health. The Toxin damage is increased by +33% per Minion or Mega Minion owned by target. Maximum increased damage is +199%.)"
   - " * Inflicts 10 Insanity on the target."
-  - Inflicts 50 Insanity to the caster.
+  - Inflicts 45 Insanity to the caster.
 types:
-  - Growth 3
+  - Attack Growth 3
+  - Defense Growth 3
   - Aberration Mega Minion
   - MM DoT 1
   - MM Insanity 1
