@@ -1,0 +1,39 @@
+---
+name: Pineon
+source: valiant
+family: vegetable
+speed: Average
+class: Wizard
+power: 798
+attack: 860
+defense: 824
+health: 1300
+skill: Tangy Torture
+effects:
+- Deals 415% damage to the target.
+- Harvests buffs from the target. (Harvest safely removes 2 buffs, positive Stacks
+  or Growth effects from each target. This includes undispellable buffs and dance
+  effects. The caster receives 7% boosted health for each effect removed. Boosted
+  health can exceed max HP. Safe removal bypasses secondary effects, such as damage
+  on removal, from the removed status ailment. External effects such as passive skills
+  and family effects can still activate. Growth effects are removed first. Other effects,
+  the latest removed first.)
+- 'Stack (Max: 10): The caster gets +6% mana generation. (Affects only mana generated
+  from matching tiles or mana gained by the defense team at the end of their turn.)'
+types:
+- Hit 1
+- Harvest Buffs 1
+- Self Mana Gen Buff Stack
+passives:
+- 'Empowered Resist Special Skill Blocking: This character is immune to status ailments
+  that prevent the use of Special Skills. They also gain 450 boosted health and 5%
+  mana each time they resist.'
+- 'Seedling Summoner: Summons a Seedling Fiend every turn to a random enemy.'
+- ' * The Seedling Fiend evolves into a Sprout Fiend after 2 turns.'
+- ' * The Sprout Fiend evolves into a Blossom Mega Fiend after 2 turns.'
+- ' * The evolution of the Fiends is delayed by 1 turn each time they absorb healing.'
+- ' 1) Seedling Fiend: 35% attack, 10% health'
+- ' 2) Sprout Fiend: 60% attack, 20% health'
+- ' 3) Blossom Mega Fiend: 200% attack, 45% health'
+image: https://imgur.com/NVsztPf.jpg
+...

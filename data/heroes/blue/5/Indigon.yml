@@ -1,0 +1,35 @@
+---
+name: Indigon
+source: valiant
+family: vegetable
+speed: Average
+class: Monk
+power: 1278
+attack: 1349
+defense: 1289
+health: 2288
+skill: Brand of Reckoning
+effects:
+- Deals 300% damage to all enemies.
+- Deals additional 5% damage for each Fiend or Mega Fiend owned by the enemies, up
+  to 350% damage in total.
+- 'Stack (Max: 10): All damage all enemies receive is increased by 6%.'
+- 'Stack (Max: 10): All allies get +4% mana generation. (Affects only mana generated
+  from matching tiles or mana gained by the defense team at the end of their turn.)'
+types:
+- Hit All
+- Damage Increase Stack All
+- Mana Gen Buff Stack All
+passives:
+- 'Empowered Resist Special Skill Blocking: This character is immune to status ailments
+  that prevent the use of Special Skills. They also gain 450 boosted health and 5%
+  mana each time they resist.'
+- 'Seedling Summoner: Summons a Seedling Fiend every turn to a random enemy.'
+- ' * The Seedling Fiend evolves into a Sprout Fiend after 2 turns.'
+- ' * The Sprout Fiend evolves into a Blossom Mega Fiend after 2 turns.'
+- ' * The evolution of the Fiends is delayed by 1 turn each time they absorb healing.'
+- ' 1) Seedling Fiend: 50% attack, 20% health'
+- ' 2) Sprout Fiend: 75% attack, 30% health'
+- ' 3) Blossom Mega Fiend: 250% attack, 60% health'
+image: https://imgur.com/sr4g80Y.jpg
+...

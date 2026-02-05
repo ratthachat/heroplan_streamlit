@@ -18,5 +18,5 @@ types:
   - Stack
 passives:
   - >-
-    Resist Damage from Status Effects: This charater has innate resistance against incoming damage from status effects.
+    Resist Damage from Status Effects: This character has innate resistance against incoming damage from status effects.
 image: https://i.imgur.com/sPxC3Un.jpg

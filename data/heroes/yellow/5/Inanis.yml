@@ -13,7 +13,7 @@ effects:
   - Deals additional 330% damage to 2 random enemies.
   - All hit targets get 15 Insanity every time they are hit.
   - 'Stack (Max: 10): All damage the hit enemy receives is increased by 4%.'
-  - Inflicts 40 Insanity on the caster.
+  - Inflicts 35 Insanity on the caster.
 types:
   - Hit 1
   - Hit Random 2

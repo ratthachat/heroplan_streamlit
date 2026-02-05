@@ -1,0 +1,41 @@
+---
+name: Zheng Tianshou
+source: kingdom
+family: outlaws
+speed: Slow
+class: Monk
+power: 1276
+attack: 1310
+defense: 1326
+health: 2301
+skill: Gallant Stance
+effects:
+- This Special Skill has a chance to deal Critical hits. (The chance of dealing a
+  Critical hit is based on Hero's overall critical chance when the damage is dealt.
+  Critical hits caused by this Special Skill deal 50% more damage. Critical hits can
+  reduces enemies' max health on PVP battles. This effect is stronger against boosted
+  health.)
+- Deals 470% damage to all enemies.
+- Safely dispels status effect buffs from all enemies. (Safe dispel bypasses secondary
+  effects, such as damage on removal, from the removed status effect buffs. External
+  status effects such as passive skills and family effects can still activate.)
+- All allies reduce all received damage by -30% , with a further -2% reduction per
+  each removed status effect up to -50% damage reduction in total, for 5 turns.
+types:
+- Chance for Critical hit
+- Hit All
+- Safely Dispels All
+- Damage Reduction All
+passives:
+- 'Health Boost on Critical Special Attack: When this character scores a critical
+  hit with their Special Skill, they boost the health of all their allies by 10%.
+  This effect can activate once per turn.'
+- 'Righteous Rebellion:'
+- ' * When this character''s Special Skill hits a character that had higher current
+  HP, gain +20% boosted health.'
+- ' * When this character is hit by the Special Skill of a character that had higher
+  current HP, gain +20% mana.'
+- ' * Each of these effects can activate once per turn.'
+- 'Resist Bleed: This character is immune to status ailments that deal Bleed damage.'
+image: https://imgur.com/b7rZLXf.jpg
+...

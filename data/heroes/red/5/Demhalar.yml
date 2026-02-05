@@ -10,9 +10,9 @@ health: 2243
 skill: Drawn to the Depths
 effects:
   - Deals 350% damage to the target and nearby enemies and inflicts 35 Insanity on them.
-  - The target and nearby enemies receive 654 Water damage over 3 turns.
+  - The target and nearby enemies receive 654 Water damage over 3 turns. All allies absorb 50% of dealt Water damage as boosted health.
   - Inflicts the target and nearby enemies with Minion Corruption for 3 turns, that adds a chance of Minions transforming into Fiends. This effect is uncleansable.
-  - Inflicts 45 Insanity to the caster.
+  - Inflicts 40 Insanity to the caster.
 types:
   - Hit 3
   - Insanity 3
