@@ -9,6 +9,13 @@ from collections import defaultdict
 
 import os, time
 import random
+
+st.set_page_config(
+    page_title="Hero Database & AI Analyst",
+    layout="wide",
+    initial_sidebar_state="expanded"
+) # very first command required by streamlit
+
 #########################################
 # Helpers Functions
 
@@ -295,7 +302,6 @@ Now please begin with
 
 #########################################
 ## Load the main file (TODO: caching)=
-st.set_page_config(layout="wide")
 st.header(f'HeroPlan Explorer')
 st.write('Powered by Heroplan.io : Thanks E&P community for continually update hero data.')
 
@@ -455,7 +461,7 @@ if genre == 'Heroes Explorer':
     
     #########################################
 
-    df2 = df[np.all(idx_all,axis=0)]
+    df2 = df[np.all(np.stack(idx_all),axis=0)]
 
     display_heroes_from_df(df2.sort_values(sort_option, ascending=False))
 #########################################
