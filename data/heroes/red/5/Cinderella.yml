@@ -7,7 +7,7 @@ power: 1007
 attack: 1032
 defense: 1027
 health: 1672
-skill: Fairy Godmother’s Blessing
+skill: Fairy Godmother's Blessing
 effects:
   - Cleanses status ailments from all allies.
   - All allies become Soul Connected for 4 turns. Soul Connected allies share received damage.
@@ -22,5 +22,5 @@ types:
   - Defense Debuff All
 passives:
   - >-
-    Resist Damage from Status Effects: This charater has innate resistance against incoming damage from status effects.
+    Resist Damage from Status Effects: This character has innate resistance against incoming damage from status effects.
 image: https://i.imgur.com/8MZHUmV.jpg

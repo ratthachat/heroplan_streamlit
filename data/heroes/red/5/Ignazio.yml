@@ -21,7 +21,7 @@ types:
 passives:
   - 'Troop Mastery:'
   - >-
-    Passive Skill as attacking character: This hero’s Troops deal extra elemental damage against weaker element.
+    Passive Skill as attacking character: This hero's Troops deal extra elemental damage against weaker element.
   - ' - Dealt extra elemental damage: +100%'
   - >-
     Passive Skill as defending character: This hero receives less elemental damage from Troops of stronger element.
@@ -39,7 +39,7 @@ costume:
   effects:
     - Recovers 28% health for all allies.
     - Recovers additional 4% health per each Fire shield on the board, up to 60%.
-    - All allies get +55% attack for 4 turns.
+    - All allies get 55% attack for 4 turns. This status effect is undispellable and lasts 2 turns longer on Fire allies.
     - Cleanses status ailments from all allies.
   types:
     - Heal All
@@ -49,7 +49,7 @@ costume:
   passives:
     - 'Troop Mastery:'
     - >-
-      Passive Skill as attacking character: This hero’s Troops deal extra elemental damage against weaker element.
+      Passive Skill as attacking character: This hero's Troops deal extra elemental damage against weaker element.
     - ' - Dealt extra elemental damage: +150%'
     - >-
       Passive Skill as defending character: This hero receives less elemental damage from Troops of stronger element.

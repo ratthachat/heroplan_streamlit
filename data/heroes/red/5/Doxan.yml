@@ -19,7 +19,7 @@ types:
 passives:
   - 'Troop Mastery:'
   - >-
-    Passive Skill as attacking character: This hero’s Troops deal extra elemental damage against weaker element.
+    Passive Skill as attacking character: This hero's Troops deal extra elemental damage against weaker element.
   - ' - Dealt extra elemental damage: +100%'
   - >-
     Passive Skill as defending character: This hero receives less elemental damage from Troops of stronger element.
@@ -37,15 +37,17 @@ costume:
   effects:
     - Deals 550% damage to the target and minor damage to all Nature enemies.
     - The target and all Nature enemies receive 1504 Burn damage over 4 turns.
+    - The caster and all Fire allies get +30% attack for 4 turns.
   types:
     - Hit 1
     - Hit All Nature 
     - DoT 1
     - DoT All Nature 
+    - Attack Buff to Fire allies
   passives:
     - 'Troop Mastery:'
     - >-
-      Passive Skill as attacking character: This hero’s Troops deal extra elemental damage against weaker element.
+      Passive Skill as attacking character: This hero's Troops deal extra elemental damage against weaker element.
     - ' - Dealt extra elemental damage: +150%'
     - >-
       Passive Skill as defending character: This hero receives less elemental damage from Troops of stronger element.
