@@ -461,7 +461,12 @@ if genre == 'Heroes Explorer':
     
     #########################################
 
-    df2 = df[np.all(np.stack(idx_all),axis=0)]
+    # df2 = df[np.all(np.stack(idx_all),axis=0)]
+    if len(idx_all) == 0:
+        mask = np.ones(len(df), dtype=bool)
+    else:
+        mask = np.all(np.vstack(idx_all), axis=0)
+    df2 = df[mask]
 
     display_heroes_from_df(df2.sort_values(sort_option, ascending=False))
 #########################################
